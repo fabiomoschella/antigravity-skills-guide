@@ -1,37 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Antigravity Skills Guide</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="description" content="The Complete Guide to AI-Powered Development with Antigravity Awesome Skills">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <!-- Dark Theme -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.min.css">
   <style>
     :root {
-      --theme-color: #3f51b5;
-      --theme-color-dark: #303f9f;
+      --base-background-color: #0d1117;
+      --sidebar-background: #161b22;
+      --theme-color: #58a6ff;
+      --search-background: #21262d;
     }
-    .sidebar-nav > ul > li > a {
-      font-weight: bold;
+
+    /* Center search on homepage */
+    .app-nav,
+    .github-corner {
+      display: none;
     }
+
+    /* Search styling */
     .search {
-      margin-bottom: 20px;
-      padding: 6px;
-      border-bottom: 1px solid #eee;
+      margin: 0;
+      padding: 10px;
+      background: var(--sidebar-background);
     }
+
     .search input {
       width: 100%;
-      padding: 8px;
-      border: 1px solid #ddd;
-      border-radius: 4px;
+      padding: 12px 16px;
+      font-size: 16px;
+      border: 1px solid #30363d;
+      border-radius: 8px;
+      background: var(--search-background);
+      color: #f0f6fc;
+      outline: none;
     }
+
+    .search input:focus {
+      border-color: var(--theme-color);
+      box-shadow: 0 0 0 3px rgba(88, 166, 255, 0.3);
+    }
+
+    .search input::placeholder {
+      color: #8b949e;
+    }
+
     .matching-post {
-      border-bottom: 1px solid #eee;
-      padding: 10px;
+      background: #21262d;
+      border-radius: 6px;
+      margin: 8px 0;
+      padding: 12px;
+      border-left: 3px solid var(--theme-color);
+    }
+
+    .matching-post h2 {
+      color: #58a6ff;
+      margin: 0 0 8px 0;
+      font-size: 14px;
+    }
+
+    .matching-post p {
+      color: #8b949e;
+      font-size: 12px;
+      margin: 0;
+    }
+
+    /* Sidebar styling */
+    .sidebar {
+      background: var(--sidebar-background);
+      border-right: 1px solid #30363d;
+    }
+
+    .sidebar-nav a {
+      color: #c9d1d9;
+    }
+
+    .sidebar-nav a:hover {
+      color: #58a6ff;
+    }
+
+    .sidebar-nav>ul>li>a {
+      font-weight: 600;
+      color: #f0f6fc;
+    }
+
+    /* Content area */
+    .content {
+      background: var(--base-background-color);
+    }
+
+    .markdown-section {
+      color: #c9d1d9;
+    }
+
+    .markdown-section h1,
+    .markdown-section h2,
+    .markdown-section h3 {
+      color: #f0f6fc;
+    }
+
+    .markdown-section a {
+      color: #58a6ff;
+    }
+
+    .markdown-section code {
+      background: #21262d;
+      color: #f0f6fc;
+    }
+
+    .markdown-section pre {
+      background: #161b22 !important;
+      border-radius: 8px;
+      border: 1px solid #30363d;
+    }
+
+    /* Tables */
+    .markdown-section table {
+      border-collapse: collapse;
+    }
+
+    .markdown-section table th,
+    .markdown-section table td {
+      border: 1px solid #30363d;
+      padding: 8px 12px;
+    }
+
+    .markdown-section table th {
+      background: #21262d;
+    }
+
+    /* Cover page with centered search */
+    .cover {
+      background: var(--base-background-color) !important;
+    }
+
+    .cover-main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    .cover h1 {
+      color: #f0f6fc;
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .cover p {
+      color: #8b949e;
+      font-size: 1.2rem;
+    }
+
+    .cover .search-input {
+      margin-top: 2rem;
+      width: 100%;
+      max-width: 600px;
     }
   </style>
 </head>
+
 <body>
   <div id="app">Loading...</div>
   <script>
@@ -40,17 +174,17 @@
       repo: 'https://github.com/fabiomoschella/antigravity-skills-guide',
       loadSidebar: true,
       subMaxLevel: 2,
+      coverpage: true,
       search: {
         maxAge: 86400000,
         paths: 'auto',
-        placeholder: 'Search...',
+        placeholder: '🔍 Search skills, chapters, topics...',
         noData: 'No Results!',
         depth: 3,
         hideOtherSidebarContent: false,
       },
       auto2top: true,
-      coverpage: false,
-      themeColor: '#3f51b5',
+      themeColor: '#58a6ff',
       pagination: {
         previousText: '← Previous',
         nextText: 'Next →',
@@ -61,6 +195,8 @@
   </script>
   <!-- Docsify -->
   <script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>
+  <!-- Dark theme -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/js/docsify-themeable.min.js"></script>
   <!-- Search plugin -->
   <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.min.js"></script>
   <!-- Pagination plugin -->
@@ -75,4 +211,5 @@
   <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-yaml.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-json.min.js"></script>
 </body>
+
 </html>
