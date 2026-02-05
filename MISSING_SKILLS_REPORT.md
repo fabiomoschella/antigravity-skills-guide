@@ -32,75 +32,75 @@
 - [ ] `ai-wrapper-product`
 - [x] `autonomous-agent-patterns`
 - [x] `autonomous-agents`
-- [ ] `computer-use-agents`
-- [ ] `crewai`
+- [x] `computer-use-agents`
+- [x] `crewai`
 - [x] `dispatching-parallel-agents`
 - [x] `langchain-architecture`
-- [ ] `langfuse`
+- [x] `langfuse`
 - [x] `langgraph`
 - [x] `llm-app-patterns`
 - [ ] `llm-application-dev-ai-assistant`
 - [ ] `llm-application-dev-langchain-agent`
 - [ ] `llm-application-dev-prompt-optimize`
 - [x] `llm-evaluation`
-- [ ] `memory-systems`
+- [x] `memory-systems`
 - [ ] `multi-agent-brainstorming`
 - [x] `multi-agent-patterns`
 - [x] `parallel-agents`
-- [ ] `prompt-caching`
+- [x] `prompt-caching`
 - [x] `prompt-engineer`
-- [ ] `prompt-engineering`
-- [ ] `prompt-engineering-patterns`
-- [ ] `prompt-library`
+- [x] `prompt-engineering`
+- [x] `prompt-engineering-patterns`
+- [x] `prompt-library`
 - [x] `rag-engineer`
-- [ ] `rag-implementation`
+- [x] `rag-implementation`
 - [ ] `subagent-driven-development`
-- [ ] `voice-agents`
-- [ ] `voice-ai-development`
+- [x] `voice-agents`
+- [x] `voice-ai-development`
 - [ ] `voice-ai-engine-development`
 
 ### 🔐 Security & Penetration Testing (Chapter 23-27)
-- [ ] `active-directory-attacks`
+- [x] `active-directory-attacks`
 - [ ] `anti-reversing-techniques`
 - [x] `api-fuzzing-bug-bounty`
 - [ ] `attack-tree-construction`
-- [ ] `aws-penetration-testing`
+- [x] `aws-penetration-testing`
 - [ ] `binary-analysis-patterns`
-- [ ] `broken-authentication`
+- [x] `broken-authentication`
 - [x] `burp-suite-testing`
-- [ ] `cloud-penetration-testing`
-- [ ] `ethical-hacking-methodology`
+- [x] `cloud-penetration-testing`
+- [x] `ethical-hacking-methodology`
 - [ ] `ffuf-claude-skill`
-- [ ] `file-path-traversal`
-- [ ] `file-uploads`
+- [x] `file-path-traversal`
+- [x] `file-uploads`
 - [ ] `html-injection-testing`
-- [ ] `idor-testing`
-- [ ] `linux-privilege-escalation`
+- [x] `idor-testing`
+- [x] `linux-privilege-escalation`
 - [ ] `malware-analyst`
 - [ ] `memory-forensics`
-- [ ] `metasploit-framework`
+- [x] `metasploit-framework`
 - [x] `pentest-checklist`
 - [x] `pentest-commands`
 - [ ] `privilege-escalation-methods`
 - [ ] `protocol-reverse-engineering`
-- [ ] `red-team-tactics`
-- [ ] `red-team-tools`
+- [x] `red-team-tactics`
+- [x] `red-team-tools`
 - [ ] `reverse-engineer`
-- [ ] `scanning-tools`
+- [x] `scanning-tools`
 - [ ] `shodan-reconnaissance`
 - [ ] `smtp-penetration-testing`
-- [ ] `sql-injection-testing`
-- [ ] `sqlmap-database-pentesting`
+- [x] `sql-injection-testing`
+- [x] `sqlmap-database-pentesting`
 - [ ] `ssh-penetration-testing`
 - [ ] `stride-analysis-patterns`
 - [ ] `threat-mitigation-mapping`
-- [ ] `threat-modeling-expert`
+- [x] `threat-modeling-expert`
 - [x] `top-web-vulnerabilities`
 - [x] `vulnerability-scanner`
-- [ ] `windows-privilege-escalation`
-- [ ] `wireshark-analysis`
+- [x] `windows-privilege-escalation`
+- [x] `wireshark-analysis`
 - [ ] `wordpress-penetration-testing`
-- [ ] `xss-html-injection`
+- [x] `xss-html-injection`
 
 ### ⛓️ Blockchain & Web3 (Chapter 52 - FinTech)
 - [x] `blockchain-fintech`
