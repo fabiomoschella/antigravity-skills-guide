@@ -18,6 +18,15 @@ In the age of big data, data engineers must balance performance, reliability, an
 | `@airflow-expert` | Apache Airflow orchestration | DAG creation, workflow automation, scheduling |
 | `@spark-expert` | Apache Spark processing | Big data transformations, streaming, analytics |
 | `@dbt-expert` | dbt transformations | SQL-based transforms, data testing, documentation |
+| `@dbt-transformation-patterns` | dbt patterns | Best practices |
+| `@data-pipeline-patterns` | Pipeline patterns | ETL/ELT design |
+| `@data-modeling-expert` | Data modeling | Schema design |
+| `@data-warehouse-architect` | Warehousing | DWH architecture |
+| `@snowflake-expert` | Snowflake | Cloud data warehouse |
+| `@bigquery-expert` | BigQuery | GCP analytics |
+| `@databricks-expert` | Databricks | Lakehouse |
+| `@kafka-expert` | Apache Kafka | Event streaming |
+| `@flink-expert` | Apache Flink | Stream processing |
 
 ---
 

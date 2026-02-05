@@ -15,6 +15,17 @@ Large Language Model integration enables powerful AI-driven features in applicat
 | `@llm-engineer` | LLM integration | API integration, prompts |
 | `@prompt-engineer` | Prompt design | Effective prompts |
 | `@rag-expert` | RAG systems | Retrieval-augmented generation |
+| `@rag-engineer` | RAG engineering | Production RAG |
+| `@langchain-architecture` | LangChain | LLM chains |
+| `@langgraph` | LangGraph | Agent workflows |
+| `@openai-api` | OpenAI API | GPT integration |
+| `@anthropic-api` | Anthropic API | Claude integration |
+| `@openrouter-integration` | OpenRouter | Multi-LLM |
+| `@llm-evaluation` | LLM evaluation | Model testing |
+| `@llm-cost-optimization` | Cost optimization | Token management |
+| `@ai-sdk-patterns` | AI SDK | Vercel AI SDK |
+| `@agents-sdk-patterns` | Agents SDK | Agent frameworks |
+| `@mcp-builder` | MCP | Model Context Protocol |
 
 ---
 

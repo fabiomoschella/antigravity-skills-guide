@@ -18,6 +18,12 @@ This chapter covers essential code review skills for conducting and improving th
 | `@review-guidelines` | Review standards | Establishing review practices |
 | `@pr-analyzer` | PR analysis | Large PR review strategies |
 | `@feedback-coach` | Review feedback | Constructive communication |
+| `@code-quality-analyst` | Quality analysis | Code metrics |
+| `@static-analysis-expert` | Static analysis | Automated code analysis |
+| `@linter-configuration` | Linter setup | ESLint, Prettier config |
+| `@eslint-config` | ESLint | JavaScript linting |
+| `@prettier-config` | Prettier | Code formatting |
+| `@sonarqube-expert` | SonarQube | Code quality gates |
 
 ---
 

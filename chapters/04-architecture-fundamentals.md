@@ -12,11 +12,22 @@ This chapter covers the foundational architecture skills that help you design, d
 
 | Skill | Source | Purpose |
 |-------|--------|---------|
-| `architecture` | Unknown | Architectural decision-making framework |
-| `architect-review` | Unknown | Architecture review and validation |
-| `architecture-decision-records` | Unknown | ADR documentation |
-| `architecture-patterns` | Unknown | Clean Architecture, Hexagonal, DDD |
-| `senior-architect` | Unknown | Senior-level architectural guidance |
+| `@architecture` | Unknown | Architectural decision-making framework |
+| `@architect-review` | Unknown | Architecture review and validation |
+| `@architecture-decision-records` | Unknown | ADR documentation |
+| `@architecture-patterns` | Unknown | Clean Architecture, Hexagonal, DDD |
+| `@senior-architect` | Unknown | Senior-level architectural guidance |
+| `@system-design-expert` | antigravity | System design |
+| `@system-design-reviewer` | antigravity | Design review |
+| `@software-planner` | antigravity | Software planning |
+| `@technical-spec-writer` | antigravity | Technical specs |
+| `@scalability-architect` | antigravity | Scalability patterns |
+| `@performance-architect` | antigravity | Performance optimization |
+| `@microservices-architect` | antigravity | Microservices design |
+| `@ddd-expert` | antigravity | Domain-Driven Design |
+| `@monolith-to-microservices` | antigravity | Migration patterns |
+| `@modular-monolith` | antigravity | Modular architecture |
+| `@event-sourcing-architect` | antigravity | Event sourcing |
 
 ---
 

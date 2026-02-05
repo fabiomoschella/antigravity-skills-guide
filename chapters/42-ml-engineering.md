@@ -15,6 +15,15 @@ Machine Learning Engineering bridges the gap between ML research and production 
 | `@ml-engineer` | ML engineering | Model development, pipelines |
 | `@mlops-expert` | MLOps | Model deployment, monitoring |
 | `@feature-engineer` | Feature engineering | Data preparation |
+| `@data-scientist` | Data science | Analysis, modeling |
+| `@pytorch-training` | PyTorch | Deep learning training |
+| `@model-optimization` | Optimization | Model performance |
+| `@huggingface-expert` | HuggingFace | Transformers, models |
+| `@computer-vision-expert` | Computer vision | Image/video ML |
+| `@nlp-expert` | NLP | Text processing |
+| `@recommendation-systems` | Recommendations | Personalization |
+| `@ml-testing-patterns` | ML testing | Model testing |
+| `@data-pipeline-patterns` | Data pipelines | ETL/ELT |
 
 ---
 

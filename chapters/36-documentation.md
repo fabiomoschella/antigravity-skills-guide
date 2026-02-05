@@ -18,6 +18,14 @@ This chapter covers essential documentation skills for creating effective techni
 | `@api-docs-expert` | API documentation | OpenAPI, GraphQL docs |
 | `@readme-expert` | README creation | Project documentation |
 | `@docs-site-builder` | Documentation sites | Static site generators |
+| `@docusaurus-expert` | Docusaurus | React doc sites |
+| `@markdown-formatting` | Markdown | Document formatting |
+| `@mermaid-diagram` | Mermaid diagrams | Visual documentation |
+| `@diagram-generator` | Diagrams | Architecture diagrams |
+| `@changelog-generator` | Changelogs | Release notes |
+| `@openapi-spec-writer` | OpenAPI specs | API specification |
+| `@jsdoc-expert` | JSDoc | JavaScript documentation |
+| `@typedoc-expert` | TypeDoc | TypeScript documentation |
 
 ---
 
