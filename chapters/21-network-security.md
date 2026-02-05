@@ -18,6 +18,12 @@ This chapter covers essential networking skills for cloud and on-premises enviro
 | `@load-balancer-expert` | Load balancing | Traffic distribution, HA, performance |
 | `@dns-expert` | DNS configuration | Domain management, routing strategies |
 | `@firewall-expert` | Security infrastructure | Network security, segmentation |
+| `@vpn-expert` | VPN configuration | Secure connectivity |
+| `@zero-trust-architect` | Zero Trust | Modern security |
+| `@cloudflare-expert` | Cloudflare | CDN, security |
+| `@waf-configuration` | WAF | Web protection |
+| `@ddos-protection` | DDoS | Attack mitigation |
+| `@ssl-tls-expert` | SSL/TLS | Encryption |
 
 ---
 
