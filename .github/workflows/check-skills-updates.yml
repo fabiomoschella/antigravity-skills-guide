@@ -1,0 +1,142 @@
+name: Check Skills Updates
+
+on:
+  schedule:
+    # Run every Sunday at 9:00 AM UTC
+    - cron: '0 9 * * 0'
+  workflow_dispatch: # Allow manual trigger
+
+jobs:
+  check-updates:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout this repository
+        uses: actions/checkout@v4
+        
+      - name: Check for skills repository updates
+        id: check_updates
+        run: |
+          # Get the latest commit info from the skills repository
+          SKILLS_REPO="sickn33/antigravity-awesome-skills"
+          
+          # Fetch last 7 days of commits
+          SINCE_DATE=$(date -d '7 days ago' --iso-8601)
+          
+          # Get recent commits from the skills repo
+          COMMITS=$(curl -s "https://api.github.com/repos/${SKILLS_REPO}/commits?since=${SINCE_DATE}" | jq -r '.[].sha' | head -10)
+          
+          if [ -n "$COMMITS" ]; then
+            echo "has_updates=true" >> $GITHUB_OUTPUT
+            
+            # Get commit details
+            COMMIT_INFO=$(curl -s "https://api.github.com/repos/${SKILLS_REPO}/commits?since=${SINCE_DATE}" | jq -r '.[] | "- [\(.sha[0:7])](\(.html_url)): \(.commit.message | split("\n")[0])"' | head -10)
+            
+            # Save to file for the issue body
+            echo "$COMMIT_INFO" > /tmp/commits.txt
+            
+            # Count commits
+            COMMIT_COUNT=$(echo "$COMMITS" | wc -l)
+            echo "commit_count=$COMMIT_COUNT" >> $GITHUB_OUTPUT
+          else
+            echo "has_updates=false" >> $GITHUB_OUTPUT
+            echo "commit_count=0" >> $GITHUB_OUTPUT
+          fi
+          
+      - name: Get changed skills
+        if: steps.check_updates.outputs.has_updates == 'true'
+        id: changed_skills
+        run: |
+          SKILLS_REPO="sickn33/antigravity-awesome-skills"
+          SINCE_DATE=$(date -d '7 days ago' --iso-8601)
+          
+          # Get files changed in recent commits
+          CHANGED_FILES=$(curl -s "https://api.github.com/repos/${SKILLS_REPO}/commits?since=${SINCE_DATE}" | jq -r '.[].sha' | head -5 | while read sha; do
+            curl -s "https://api.github.com/repos/${SKILLS_REPO}/commits/${sha}" | jq -r '.files[]?.filename' 2>/dev/null
+          done | grep -E '\.(md|yaml|yml)$' | sort -u | head -20)
+          
+          if [ -n "$CHANGED_FILES" ]; then
+            echo "$CHANGED_FILES" > /tmp/changed_files.txt
+            echo "has_files=true" >> $GITHUB_OUTPUT
+          else
+            echo "has_files=false" >> $GITHUB_OUTPUT
+          fi
+          
+      - name: Create update issue
+        if: steps.check_updates.outputs.has_updates == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            
+            // Read commits
+            let commits = '';
+            try {
+              commits = fs.readFileSync('/tmp/commits.txt', 'utf8');
+            } catch (e) {
+              commits = 'Unable to fetch commit details';
+            }
+            
+            // Read changed files
+            let changedFiles = '';
+            try {
+              changedFiles = fs.readFileSync('/tmp/changed_files.txt', 'utf8');
+            } catch (e) {
+              changedFiles = 'Unable to fetch file changes';
+            }
+            
+            const commitCount = '${{ steps.check_updates.outputs.commit_count }}';
+            const today = new Date().toISOString().split('T')[0];
+            
+            const issueTitle = `🔄 Skills Repository Update - ${today}`;
+            
+            const issueBody = `## Skills Repository Updates Detected
+
+The [antigravity-awesome-skills](https://github.com/sickn33/antigravity-awesome-skills) repository has been updated.
+
+### 📊 Summary
+- **Commits in last 7 days:** ${commitCount}
+- **Check date:** ${today}
+
+### 📝 Recent Commits
+${commits}
+
+### 📁 Changed Files
+\`\`\`
+${changedFiles}
+\`\`\`
+
+### ✅ Action Required
+1. Review the changes in the skills repository
+2. Update relevant chapters in this guide if needed
+3. Close this issue when done
+
+### 🔗 Quick Links
+- [Skills Repository](https://github.com/sickn33/antigravity-awesome-skills)
+- [Recent Commits](https://github.com/sickn33/antigravity-awesome-skills/commits/main)
+- [Compare Changes](https://github.com/sickn33/antigravity-awesome-skills/compare)
+
+---
+*This issue was automatically created by the update checker workflow.*`;
+
+            // Check if similar issue already exists
+            const existingIssues = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              labels: 'skills-update'
+            });
+            
+            // Only create if no open issue with this label
+            if (existingIssues.data.length === 0) {
+              await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title: issueTitle,
+                body: issueBody,
+                labels: ['skills-update', 'enhancement']
+              });
+              console.log('Issue created successfully');
+            } else {
+              console.log('Open update issue already exists, skipping creation');
+            }
