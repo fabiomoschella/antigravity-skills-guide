@@ -26,6 +26,25 @@ This chapter covers essential application security skills to help you identify v
 | `@top-web-vulnerabilities` | OWASP Top 10 | Common vulnerabilities |
 | `@api-fuzzing-bug-bounty` | API fuzzing | Bug bounty hunting |
 | `@api-security-best-practices` | API security | Secure APIs |
+| `@ethical-hacking-methodology` | Ethical hacking | Methodology |
+| `@red-team-tactics` | Red team | Offensive security |
+| `@red-team-tools` | Red team tools | Tool usage |
+| `@threat-modeling-expert` | Threat modeling | STRIDE, attack trees |
+| `@sql-injection-testing` | SQL injection | Database testing |
+| `@xss-html-injection` | XSS testing | Client-side attacks |
+| `@broken-authentication` | Auth testing | Session attacks |
+| `@idor-testing` | IDOR | Access control testing |
+| `@file-path-traversal` | Path traversal | File access attacks |
+| `@file-uploads` | File upload | Upload vulnerabilities |
+| `@scanning-tools` | Scanning | nmap, nikto, etc. |
+| `@metasploit-framework` | Metasploit | Exploitation |
+| `@wireshark-analysis` | Wireshark | Network analysis |
+| `@sqlmap-database-pentesting` | SQLMap | DB exploitation |
+| `@aws-penetration-testing` | AWS pentesting | Cloud security |
+| `@cloud-penetration-testing` | Cloud pentest | Multi-cloud |
+| `@linux-privilege-escalation` | Linux privesc | Post-exploitation |
+| `@windows-privilege-escalation` | Windows privesc | Post-exploitation |
+| `@active-directory-attacks` | AD attacks | Enterprise pentesting |
 
 ---
 

@@ -22,6 +22,28 @@ This chapter covers the rapidly evolving field of AI agents and Large Language M
 | `@voice-agents` | Voice-enabled AI agents | Advanced |
 | `@llm-evaluation` | LLM testing and evaluation | Intermediate |
 | `@mcp-builder` | Model Context Protocol development | Advanced |
+| `@agent-evaluation` | Agent testing | Intermediate |
+| `@agent-manager-skill` | Agent management | Advanced |
+| `@agent-memory-mcp` | Memory via MCP | Advanced |
+| `@agent-memory-systems` | Memory systems | Advanced |
+| `@agent-orchestration-improve-agent` | Agent improvement | Advanced |
+| `@agent-orchestration-multi-agent-optimize` | Multi-agent optimization | Advanced |
+| `@agent-tool-builder` | Tool development | Intermediate |
+| `@ai-engineer` | AI engineering | Intermediate |
+| `@autonomous-agent-patterns` | Autonomous patterns | Advanced |
+| `@dispatching-parallel-agents` | Parallel execution | Advanced |
+| `@llm-app-patterns` | Application patterns | Intermediate |
+| `@parallel-agents` | Parallel agents | Advanced |
+| `@crewai` | CrewAI framework | Intermediate |
+| `@computer-use-agents` | Computer use | Advanced |
+| `@voice-ai-development` | Voice AI dev | Advanced |
+| `@langfuse` | LLM observability | Intermediate |
+| `@prompt-engineering` | Prompt design | Intermediate |
+| `@prompt-engineering-patterns` | Prompt patterns | Intermediate |
+| `@prompt-library` | Prompt templates | Beginner |
+| `@prompt-caching` | Caching strategies | Intermediate |
+| `@rag-implementation` | RAG systems | Intermediate |
+| `@memory-systems` | Agent memory | Advanced |
 
 ---
 
