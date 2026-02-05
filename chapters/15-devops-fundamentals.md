@@ -15,9 +15,20 @@ This chapter introduces foundational DevOps skills that will transform how you b
 | Skill | Purpose | Best For |
 |-------|---------|----------|
 | `@devops-expert` | General DevOps practices | Culture, processes, toolchain selection |
+| `@devops-troubleshooter` | Problem solving | Debugging DevOps issues |
 | `@cicd-architect` | CI/CD pipeline design | Build automation, deployment strategies |
+| `@cicd-automation-workflow-automate` | Workflow automation | Automated pipelines |
+| `@github-actions-templates` | GitHub Actions | CI/CD templates |
+| `@github-workflow-automation` | GitHub workflows | Automation |
+| `@gitlab-ci-patterns` | GitLab CI | Pipeline patterns |
+| `@gitops-workflow` | GitOps | Git-centric deployments |
 | `@sre-expert` | Site Reliability Engineering | Reliability, SLOs, incident management |
+| `@slo-implementation` | SLO implementation | Service level objectives |
+| `@on-call-handoff-patterns` | On-call | Handoff procedures |
 | `@release-engineer` | Release management | Versioning, rollouts, feature flags |
+| `@deployment-engineer` | Deployment | Deployment strategies |
+| `@deployment-pipeline-design` | Pipeline design | CI/CD architecture |
+| `@deployment-procedures` | Procedures | Deployment runbooks |
 
 ---
 

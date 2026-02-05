@@ -12,11 +12,24 @@ Search Engine Optimization and content marketing are essential for driving organ
 
 | Skill | Source | Purpose |
 |-------|--------|---------|
-| `seo-expert` | coreyhaines31/marketingskills | Technical and on-page SEO |
-| `content-strategist` | coreyhaines31/marketingskills | Content strategy development |
-| `keyword-researcher` | coreyhaines31/marketingskills | Keyword research and analysis |
-| `link-building-expert` | Unknown | Backlink strategies |
-| `local-seo` | Unknown | Local search optimization |
+| `@seo-expert` | coreyhaines31/marketingskills | Technical and on-page SEO |
+| `@seo-fundamentals` | antigravity | SEO basics |
+| `@seo-audit` | antigravity | Site audits |
+| `@seo-content-writer` | antigravity | SEO content creation |
+| `@seo-content-planner` | antigravity | Content planning |
+| `@seo-content-auditor` | antigravity | Content audits |
+| `@seo-content-refresher` | antigravity | Update old content |
+| `@seo-keyword-strategist` | antigravity | Keyword strategy |
+| `@seo-meta-optimizer` | antigravity | Meta optimization |
+| `@seo-structure-architect` | antigravity | Site architecture |
+| `@seo-authority-builder` | antigravity | Authority building |
+| `@seo-cannibalization-detector` | antigravity | Detect cannibalization |
+| `@seo-snippet-hunter` | antigravity | Featured snippets |
+| `@programmatic-seo` | antigravity | Programmatic SEO |
+| `@schema-markup` | antigravity | Structured data |
+| `@content-strategist` | coreyhaines31/marketingskills | Content strategy |
+| `@content-creator` | antigravity | Content creation |
+| `@content-marketer` | antigravity | Content marketing |
 
 ---
 

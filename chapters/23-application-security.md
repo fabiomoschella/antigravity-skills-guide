@@ -17,7 +17,15 @@ This chapter covers essential application security skills to help you identify v
 | `@security-architect` | Security architecture | Secure design, threat modeling |
 | `@secure-code-expert` | Secure coding | Code review, vulnerability prevention |
 | `@sast-expert` | Static analysis | Automated code scanning |
+| `@sast-configuration` | SAST setup | Tool configuration |
 | `@dast-expert` | Dynamic testing | Runtime security testing |
+| `@vulnerability-scanner` | Vuln scanning | Automated scanning |
+| `@pentest-checklist` | Pentest planning | Comprehensive testing |
+| `@pentest-commands` | Pentest commands | Quick reference |
+| `@burp-suite-testing` | Burp Suite | Web app testing |
+| `@top-web-vulnerabilities` | OWASP Top 10 | Common vulnerabilities |
+| `@api-fuzzing-bug-bounty` | API fuzzing | Bug bounty hunting |
+| `@api-security-best-practices` | API security | Secure APIs |
 
 ---
 

@@ -16,8 +16,16 @@ This chapter covers essential SecOps skills for building detection capabilities,
 |-------|---------|----------|
 | `@soc-analyst` | Security operations | Detection, triage, investigation |
 | `@incident-responder` | Incident handling | Response, containment, recovery |
+| `@incident-response-incident-response` | IR procedures | Structured response |
+| `@incident-runbook-templates` | IR runbooks | Documented procedures |
 | `@threat-hunter` | Proactive detection | Threat hunting, hypothesis-driven analysis |
 | `@siem-expert` | SIEM configuration | Log analysis, correlation, alerting |
+| `@red-team-tactics` | Offensive security | Attack simulation |
+| `@red-team-tools` | Pentest tools | Kali, Metasploit, etc. |
+| `@metasploit-framework` | Metasploit | Exploitation |
+| `@malware-analyst` | Malware analysis | Reverse engineering |
+| `@memory-forensics` | Memory analysis | Forensic investigation |
+| `@ethical-hacking-methodology` | Ethical hacking | Structured pentests |
 
 ---
 
