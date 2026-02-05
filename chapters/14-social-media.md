@@ -10,432 +10,301 @@ Social media and community building are essential for brand awareness, engagemen
 
 ### Skills Covered in This Chapter
 
-| Skill | Source | Purpose |
-|-------|--------|---------|
-| `social-media-strategist` | coreyhaines31/marketingskills | Social strategy |
-| `community-manager` | Unknown | Community building |
-| `influencer-marketing` | Unknown | Influencer partnerships |
-| `social-ads-expert` | coreyhaines31/marketingskills | Paid social |
-| `content-creator` | Unknown | Social content |
+| Skill | Purpose | Best For |
+|-------|---------|----------|
+| `@social-media-strategist` | Platform strategy | Multi-channel planning |
+| `@community-manager` | Community building | Engagement, moderation |
+| `@influencer-marketing` | Influencer partnerships | Campaign management |
+| `@social-ads-expert` | Paid social | Ad optimization |
+| `@content-creator` | Social content | Creative production |
+| `@discord-community` | Discord management | Developer communities |
+| `@linkedin-growth` | LinkedIn strategy | B2B engagement |
 
 ---
 
-## 14.1 Social Media Strategy
+## 14.1 Social Media Strategy with @social-media-strategist
 
-> **Source**: [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills)  
-> **License**: MIT  
-> **Tags**: social-media, strategy, marketing
+### Skill Introduction
 
-### Purpose
+The `@social-media-strategist` skill provides comprehensive guidance on developing and executing social media strategies across multiple platforms. It helps you create platform-specific content plans, build engagement, and measure social media ROI.
 
-The `social-media-strategist` skill helps develop comprehensive social media strategies.
+**When to use this skill:**
+- Developing a new social media strategy from scratch
+- Expanding to new social platforms
+- Revamping underperforming social channels
+- Creating content calendars and posting schedules
+- Analyzing competitors' social presence
 
-### Platform Comparison
-
-| Platform | Best For | Format | Audience |
-|----------|----------|--------|----------|
-| **LinkedIn** | B2B, Professional | Long-form, Articles | Professionals |
-| **Twitter/X** | Tech, News | Short-form, Threads | Tech-savvy |
-| **Instagram** | Visual brands | Images, Stories, Reels | Younger demos |
-| **TikTok** | Entertainment | Short video | Gen Z |
-| **YouTube** | Education | Long video | All ages |
-| **Facebook** | Community | Mixed | Older demos |
-
-### 40 Copy-Paste Prompts
-
-#### Strategy Development
-
-```
-1. "Use @social-media-strategist to create a social media strategy for B2B SaaS"
-
-2. "Apply @social-media-strategist to develop platform-specific strategies"
-
-3. "Use @social-media-strategist to create a content pillar framework"
-
-4. "Apply @social-media-strategist to develop a posting schedule"
-
-5. "Use @social-media-strategist to create social media goals and KPIs"
-
-6. "Apply @social-media-strategist to develop a brand voice for social"
-
-7. "Use @social-media-strategist to create a hashtag strategy"
-
-8. "Apply @social-media-strategist to develop a social listening plan"
-
-9. "Use @social-media-strategist to create a crisis response plan"
-
-10. "Apply @social-media-strategist to develop a competitor social analysis"
-```
-
-#### Content Planning
-
-```
-11. "Use @social-media-strategist to create a monthly content calendar"
-
-12. "Apply @social-media-strategist to plan a product launch campaign"
-
-13. "Use @social-media-strategist to create evergreen content strategy"
-
-14. "Apply @social-media-strategist to plan user-generated content campaign"
-
-15. "Use @social-media-strategist to develop thought leadership content"
-
-16. "Apply @social-media-strategist to create employee advocacy program"
-
-17. "Use @social-media-strategist to plan event social coverage"
-
-18. "Apply @social-media-strategist to develop behind-the-scenes content"
-
-19. "Use @social-media-strategist to create educational series"
-
-20. "Apply @social-media-strategist to plan seasonal campaigns"
-```
-
-#### Engagement Strategy
-
-```
-21. "Use @social-media-strategist to develop engagement tactics"
-
-22. "Apply @social-media-strategist to create a response protocol"
-
-23. "Use @social-media-strategist to plan interactive content"
-
-24. "Apply @social-media-strategist to develop a poll strategy"
-
-25. "Use @social-media-strategist to create a contest strategy"
-
-26. "Apply @social-media-strategist to plan live streaming content"
-
-27. "Use @social-media-strategist to develop Q&A sessions"
-
-28. "Apply @social-media-strategist to create a story strategy"
-
-29. "Use @social-media-strategist to plan threads strategy"
-
-30. "Apply @social-media-strategist to develop viral content tactics"
-```
-
-#### Analytics and Optimization
-
-```
-31. "Use @social-media-strategist to set up social analytics dashboard"
-
-32. "Apply @social-media-strategist to analyze engagement patterns"
-
-33. "Use @social-media-strategist to optimize posting times"
-
-34. "Apply @social-media-strategist to analyze content performance"
-
-35. "Use @social-media-strategist to create reporting templates"
-
-36. "Apply @social-media-strategist to benchmark against competitors"
-
-37. "Use @social-media-strategist to analyze audience growth"
-
-38. "Apply @social-media-strategist to optimize for reach vs engagement"
-
-39. "Use @social-media-strategist to plan A/B tests for content"
-
-40. "Apply @social-media-strategist to analyze ROI of social efforts"
-```
+**Key strengths:**
+- Platform-specific optimization expertise
+- Content pillar and calendar development
+- Engagement tactics and community building
+- Analytics and performance measurement
 
 ---
 
-## 14.2 Community Management
+### Social Media Strategy Prompts
 
-> **Source**: Unknown  
-> **Tags**: community, engagement, management
+#### Developing a Multi-Platform Strategy
 
-### Purpose
+**Context:** You're launching a B2B SaaS product and need a comprehensive social media presence.
 
-The `community-manager` skill helps build and manage engaged communities.
+```text
+@social-media-strategist Create a social media strategy for our B2B SaaS product:
 
-### Community Platforms
+Product: Project management tool for remote teams
+Target audience: Tech companies, 50-500 employees, decision makers
+Budget: $5,000/month for content and ads
+Current state: No social presence
 
-| Platform | Type | Best For |
-|----------|------|----------|
-| **Discord** | Chat | Real-time communities |
-| **Slack** | Chat | Professional communities |
-| **Facebook Groups** | Forum | General communities |
-| **Circle** | Platform | Paid communities |
-| **Reddit** | Forum | Topic-based discussion |
-| **Discourse** | Forum | Support communities |
-
-### 30 Copy-Paste Prompts
-
-#### Community Building
-
-```
-41. "Use @community-manager to create a community launch plan"
-
-42. "Apply @community-manager to develop community guidelines"
-
-43. "Use @community-manager to design an onboarding flow for members"
-
-44. "Apply @community-manager to create member engagement programs"
-
-45. "Use @community-manager to develop a moderation strategy"
-
-46. "Apply @community-manager to plan community events"
-
-47. "Use @community-manager to create a recognition program"
-
-48. "Apply @community-manager to develop a champion/ambassador program"
-
-49. "Use @community-manager to plan exclusive content strategy"
-
-50. "Apply @community-manager to create a community feedback loop"
+Please provide:
+1. Platform prioritization (LinkedIn, Twitter, etc.)
+2. Content pillars (3-5 themes)
+3. Posting frequency per platform
+4. Content mix (educational, promotional, engaging)
+5. Brand voice guidelines
+6. First 30-day launch plan
+7. KPIs and success metrics
 ```
 
-#### Discord Management
-
-```
-51. "Use @community-manager to design Discord server structure"
-
-52. "Apply @community-manager to create bot automation rules"
-
-53. "Use @community-manager to develop role hierarchy"
-
-54. "Apply @community-manager to plan welcome flow"
-
-55. "Use @community-manager to create engagement bots"
-
-56. "Apply @community-manager to design verification process"
-
-57. "Use @community-manager to plan channel organization"
-
-58. "Apply @community-manager to create moderation bot rules"
-
-59. "Use @community-manager to develop event hosting strategy"
-
-60. "Apply @community-manager to create community analytics"
-```
-
-#### Community Growth
-
-```
-61. "Use @community-manager to develop member acquisition strategy"
-
-62. "Apply @community-manager to create referral program"
-
-63. "Use @community-manager to plan cross-promotion strategy"
-
-64. "Apply @community-manager to develop SEO for community"
-
-65. "Use @community-manager to create content marketing for community"
-
-66. "Apply @community-manager to plan partnership outreach"
-
-67. "Use @community-manager to develop community-led growth"
-
-68. "Apply @community-manager to create invite campaigns"
-
-69. "Use @community-manager to plan member retention strategy"
-
-70. "Apply @community-manager to develop reactivation campaigns"
-```
+**Expected Output:** Complete social strategy document with platform recommendations, content calendar, and measurement framework.
 
 ---
 
-## 14.3 Influencer Marketing
+#### Creating a Content Calendar
 
-> **Source**: Unknown  
-> **Tags**: influencer, marketing, partnerships
+**Context:** You need a structured content plan for consistent social posting.
 
-### Purpose
+```text
+@social-media-strategist Design a monthly content calendar for our software company:
 
-The `influencer-marketing` skill helps plan and execute influencer campaigns.
+Platforms: LinkedIn, Twitter, YouTube
+Content team: 2 people
+Goals: Thought leadership + lead generation
+Industry: DevOps and cloud infrastructure
 
-### Influencer Tiers
-
-| Tier | Followers | Engagement | Cost |
-|------|-----------|------------|------|
-| **Nano** | 1K-10K | 5-10% | $ |
-| **Micro** | 10K-100K | 3-5% | $$ |
-| **Mid** | 100K-500K | 2-3% | $$$ |
-| **Macro** | 500K-1M | 1-2% | $$$$ |
-| **Mega** | 1M+ | <1% | $$$$$ |
-
-### 15 Copy-Paste Prompts
-
-```
-71. "Use @influencer-marketing to create an influencer strategy"
-
-72. "Apply @influencer-marketing to identify relevant influencers"
-
-73. "Use @influencer-marketing to develop outreach templates"
-
-74. "Apply @influencer-marketing to create influencer briefing document"
-
-75. "Use @influencer-marketing to design campaign structure"
-
-76. "Apply @influencer-marketing to develop compensation models"
-
-77. "Use @influencer-marketing to create content guidelines"
-
-78. "Apply @influencer-marketing to plan product seeding campaign"
-
-79. "Use @influencer-marketing to develop ambassador program"
-
-80. "Apply @influencer-marketing to create tracking and attribution"
-
-81. "Use @influencer-marketing to analyze influencer ROI"
-
-82. "Apply @influencer-marketing to develop long-term partnerships"
-
-83. "Use @influencer-marketing to create UGC repurposing strategy"
-
-84. "Apply @influencer-marketing to plan affiliate influencer program"
-
-85. "Use @influencer-marketing to develop micro-influencer campaign"
+Include:
+1. Weekly content themes
+2. Post types per platform
+3. Optimal posting times
+4. Content repurposing strategy
+5. Hashtag strategy per platform
+6. Team responsibilities
 ```
 
----
-
-## 14.4 Social Advertising
-
-> **Source**: [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills)  
-> **License**: MIT  
-> **Tags**: ads, paid-social, marketing
-
-### Purpose
-
-The `social-ads-expert` skill helps plan and optimize paid social campaigns.
-
-### 15 Copy-Paste Prompts
-
-```
-86. "Use @social-ads-expert to create a Facebook ads strategy"
-
-87. "Apply @social-ads-expert to develop LinkedIn ads for B2B"
-
-88. "Use @social-ads-expert to optimize ad targeting"
-
-89. "Apply @social-ads-expert to create lookalike audiences"
-
-90. "Use @social-ads-expert to develop retargeting campaigns"
-
-91. "Apply @social-ads-expert to optimize ad creative"
-
-92. "Use @social-ads-expert to create A/B testing strategy"
-
-93. "Apply @social-ads-expert to analyze campaign performance"
-
-94. "Use @social-ads-expert to optimize for conversions"
-
-95. "Apply @social-ads-expert to develop video ad strategy"
-
-96. "Use @social-ads-expert to create lead gen campaigns"
-
-97. "Apply @social-ads-expert to optimize ad spend allocation"
-
-98. "Use @social-ads-expert to develop brand awareness campaigns"
-
-99. "Apply @social-ads-expert to create sequential messaging"
-
-100. "Use @social-ads-expert to analyze attribution"
-```
+**Expected Output:** Detailed monthly calendar with specific content ideas, timing, and assignments.
 
 ---
 
-## Social Media Templates
+## 14.2 Community Management with @community-manager
 
-### Content Calendar Template
+### Skill Introduction
 
-| Day | Platform | Content Type | Topic | Status |
-|-----|----------|--------------|-------|--------|
-| Mon | LinkedIn | Thought leadership | Industry trends | Draft |
-| Tue | Twitter | Tips thread | Product tips | Scheduled |
-| Wed | LinkedIn | Case study | Customer success | Pending |
-| Thu | Twitter | Engagement | Question/Poll | Idea |
-| Fri | All | Behind-scenes | Team culture | Idea |
+The `@community-manager` skill helps build, grow, and engage online communities. It covers moderation strategies, member engagement, and community health metrics.
 
-### Social Media Audit Template
+**When to use this skill:**
+- Launching a new community (Discord, Slack, Circle)
+- Improving engagement in existing communities
+- Creating moderation guidelines
+- Developing member programs (ambassadors, champions)
+- Planning community events
 
-```markdown
-## Platform: [Platform Name]
+**Key strengths:**
+- Community platform expertise (Discord, Slack, Circle)
+- Moderation and conflict resolution
+- Member lifecycle management
+- Community-led growth strategies
 
-### Metrics Snapshot
-- Followers: [Count]
-- Engagement Rate: [%]
-- Avg. Reach: [Count]
-- Top Content: [Description]
+---
 
-### SWOT Analysis
-**Strengths**: [What's working]
-**Weaknesses**: [What needs improvement]
-**Opportunities**: [Untapped potential]
-**Threats**: [Competitive risks]
+### Community Management Prompts
 
-### Recommendations
-1. [Recommendation 1]
-2. [Recommendation 2]
-3. [Recommendation 3]
+#### Launching a Discord Community
+
+**Context:** You're building a developer community on Discord for your open-source project.
+
+```text
+@community-manager Design a Discord server for our open-source project:
+
+Project: JavaScript testing framework
+Expected members: 500 initial, growing to 5,000
+Goals: Support, contributions, engagement
+Team: 2 community managers + volunteer moderators
+
+Please provide:
+1. Channel structure and organization
+2. Role hierarchy and permissions
+3. Onboarding flow for new members
+4. Bot recommendations and configuration
+5. Moderation guidelines
+6. Engagement programs (monthly challenges, etc.)
+7. Metrics to track community health
 ```
 
----
-
-## Best Practices
-
-### 1. Platform-Native Content
-
-Create content specifically for each platform:
-- LinkedIn: Professional, long-form
-- Twitter: Conversational, threads
-- Instagram: Visual, stories
-- TikTok: Entertaining, trends
-
-### 2. Consistency Over Virality
-
-- Post regularly
-- Maintain brand voice
-- Build long-term relationships
-- Focus on engagement quality
-
-### 3. Community First
-
-- Listen more than broadcast
-- Respond authentically
-- Create value for members
-- Celebrate community wins
+**Expected Output:** Complete Discord server setup guide with channels, roles, bots, and engagement strategies.
 
 ---
 
-## Reflection Points for Chapter 14
+#### Creating a Community Engagement Program
 
-1. **Which platforms are most valuable for your audience?**
-   - Where do they spend time?
-   - What content do they prefer?
+**Context:** Your community has grown but engagement is declining.
 
-2. **How do you measure social success?**
-   - Vanity metrics vs business metrics?
-   - Attribution to revenue?
+```text
+@community-manager Develop an engagement program for our Slack community:
 
-3. **What's your community strategy?**
-   - Owned vs rented communities?
-   - Investment in community?
+Current state:
+- 2,000 members
+- Only 10% active weekly
+- Few new discussions started
+- Same 20 people always responding
 
-4. **How do you balance paid vs organic?**
-   - Budget allocation?
-   - Testing and optimization?
+Goals:
+- Increase weekly active members to 30%
+- More diverse participation
+- User-generated content
 
----
+Please provide:
+1. Engagement audit framework
+2. Re-activation campaign for silent members
+3. Weekly engagement rituals
+4. Recognition and reward system
+5. Champion/ambassador program
+6. Content prompts and discussion starters
+```
 
-## Summary
-
-This chapter covered social media and community management:
-
-- **@social-media-strategist**: Platform strategy and content planning
-- **@community-manager**: Community building and engagement
-- **@influencer-marketing**: Influencer partnerships
-- **@social-ads-expert**: Paid social optimization
-
-**Key Takeaway**: Social media success requires platform-specific strategies, authentic engagement, and consistent value creation. Build community, not just audience.
+**Expected Output:** Engagement playbook with specific tactics, timelines, and success metrics.
 
 ---
 
-**End of Part III: Business & Marketing Skills**
+## 14.3 Influencer Marketing with @influencer-marketing
+
+### Skill Introduction
+
+The `@influencer-marketing` skill helps plan and execute influencer partnerships. It covers influencer identification, outreach, campaign management, and ROI measurement.
+
+**When to use this skill:**
+- Planning an influencer marketing campaign
+- Identifying relevant influencers for your niche
+- Creating influencer briefs and contracts
+- Measuring influencer campaign effectiveness
+- Building long-term influencer relationships
+
+**Key strengths:**
+- Influencer tier strategy (nano to mega)
+- Outreach and negotiation tactics
+- Campaign structure and briefing
+- Attribution and ROI tracking
 
 ---
 
-**Next Part**: [Part IV: DevOps & Infrastructure →](chapter-15-devops-fundamentals.md)
+### Influencer Marketing Prompts
+
+#### Planning an Influencer Campaign
+
+**Context:** You want to launch your product through tech influencers.
+
+```text
+@influencer-marketing Create an influencer campaign for our developer tool:
+
+Product: AI code review tool, $29/month
+Budget: $20,000 for influencer spend
+Target: Software developers, engineering managers
+Timeline: 3-month campaign
+
+Please provide:
+1. Influencer tier strategy (micro vs macro)
+2. Platform focus (YouTube, Twitter, LinkedIn)
+3. Ideal influencer profile and criteria
+4. Outreach templates
+5. Compensation models (flat fee, affiliate, hybrid)
+6. Campaign brief template
+7. Tracking and attribution setup
+8. Expected reach and conversion estimates
+```
+
+**Expected Output:** Complete influencer campaign plan with budget allocation, outreach strategy, and measurement framework.
+
+---
+
+## 14.4 Social Advertising with @social-ads-expert
+
+### Skill Introduction
+
+The `@social-ads-expert` skill provides expertise in paid social media advertising across platforms like Facebook, LinkedIn, Twitter, and TikTok. It helps optimize targeting, creative, and bidding strategies.
+
+**When to use this skill:**
+- Setting up new paid social campaigns
+- Optimizing underperforming ad campaigns
+- Creating audience targeting strategies
+- A/B testing ad creative
+- Scaling successful campaigns
+
+**Key strengths:**
+- Platform-specific ad optimization
+- Audience building and targeting
+- Creative best practices per platform
+- Budget allocation and bidding strategies
+
+---
+
+### Social Advertising Prompts
+
+#### Creating a LinkedIn Ads Strategy
+
+**Context:** You want to generate leads for your B2B SaaS product via LinkedIn.
+
+```text
+@social-ads-expert Design a LinkedIn advertising strategy for B2B lead generation:
+
+Product: HR software for mid-market companies
+Target: HR Directors, CHROs, 200-2000 employee companies
+Monthly budget: $10,000
+Goal: Demo requests at <$200 CPL
+
+Please provide:
+1. Campaign structure (awareness to conversion)
+2. Audience targeting options
+3. Ad format recommendations
+4. Creative best practices for LinkedIn
+5. Landing page requirements
+6. Bidding strategy
+7. A/B testing plan
+8. Optimization playbook
+```
+
+**Expected Output:** LinkedIn ads playbook with targeting, creative guidelines, and optimization strategy.
+
+---
+
+## Best Practices Summary
+
+### Social Media Strategy
+- **Platform-first thinking:** Each platform requires unique content
+- **Consistency over virality:** Regular quality beats occasional viral
+- **Engagement before growth:** Build community, not just followers
+- **Data-driven iteration:** Let metrics guide your strategy
+
+### Community Management
+- **Listen more than broadcast:** Communities thrive on dialogue
+- **Celebrate members:** Recognition drives engagement
+- **Clear guidelines:** Set expectations early
+- **Authentic moderation:** Be human, not robotic
+
+### Influencer Marketing
+- **Relevance over reach:** Smaller engaged audiences often perform better
+- **Long-term relationships:** Ongoing partnerships beat one-offs
+- **Creative freedom:** Let influencers be authentic
+- **Track everything:** Attribution is challenging but essential
+
+---
+
+## Reflection Points
+
+1. **Platform Priority:** Which platforms matter most for your audience?
+2. **Content Mix:** What's the right balance of educational vs promotional?
+3. **Community Investment:** Should you build owned community vs rely on social?
+4. **Influencer Fit:** Are influencers right for your product and audience?
+
+---
+
+**Next Chapter:** [Chapter 15: DevOps Fundamentals →](15-devops-fundamentals.md)

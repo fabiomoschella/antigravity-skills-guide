@@ -10,524 +10,302 @@ Effective copywriting drives conversions and engagement. This chapter covers ski
 
 ### Skills Covered in This Chapter
 
-| Skill | Source | Purpose |
-|-------|--------|---------|
-| `copywriter` | coreyhaines31/marketingskills | Persuasive writing |
-| `email-copywriter` | coreyhaines31/marketingskills | Email marketing copy |
-| `landing-page-expert` | coreyhaines31/marketingskills | High-converting pages |
-| `ad-copywriter` | coreyhaines31/marketingskills | Advertising copy |
-| `ux-writer` | Unknown | Microcopy and UX writing |
+| Skill | Purpose | Best For |
+|-------|---------|----------|
+| `@copywriter` | Persuasive writing | Sales pages, ads, core messaging |
+| `@email-copywriter` | Email marketing | Newsletters, sequences, nurture |
+| `@landing-page-expert` | Conversion copy | Landing pages, CRO |
+| `@ad-copywriter` | Advertising copy | PPC, Social ads, display |
+| `@ux-writer` | Microcopy | App interfaces, buttons, errors |
 
 ---
 
-## 11.1 Persuasive Copywriting
+## 11.1 Persuasive Copywriting with @copywriter
 
-> **Source**: [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills)  
-> **License**: MIT  
-> **Tags**: copywriting, marketing, persuasion
+### Skill Introduction
 
-### Purpose
+The `@copywriter` skill specializes in persuasive writing techniques designed to drive action. It leverages proven frameworks like AIDA, PAS, and StoryBrand to craft compelling narratives that resonate with audiences.
 
-The `copywriter` skill provides expert guidance on writing persuasive copy that converts readers into customers.
+**When to use this skill:**
+- Writing sales pages for products or services
+- Crafting brand messaging and value propositions
+- Creating scripts for video sales letters (VSL)
+- Refining website headlines and subheadlines
+- Developing "About Us" or story-driven content
 
-### Copywriting Frameworks
-
-| Framework | Structure | Best For |
-|-----------|-----------|----------|
-| **AIDA** | Attention → Interest → Desire → Action | Sales pages |
-| **PAS** | Problem → Agitation → Solution | Pain-focused copy |
-| **BAB** | Before → After → Bridge | Transformation stories |
-| **4 Ps** | Picture → Promise → Prove → Push | Landing pages |
-| **QUEST** | Qualify → Understand → Educate → Stimulate → Transition | Long-form |
-
-### 40 Copy-Paste Prompts
-
-#### Headlines and Hooks
-
-```
-1. "Use @copywriter to write 10 compelling headlines for my SaaS product"
-
-2. "Apply @copywriter to create attention-grabbing hooks for a landing page"
-
-3. "Use @copywriter to write subject lines for cold outreach emails"
-
-4. "Apply @copywriter to create scroll-stopping social media hooks"
-
-5. "Use @copywriter to write a headline using the AIDA framework"
-
-6. "Apply @copywriter to create curiosity-driven headlines"
-
-7. "Use @copywriter to write benefit-focused headlines"
-
-8. "Apply @copywriter to create urgency-based headlines"
-
-9. "Use @copywriter to write headlines that address objections"
-
-10. "Apply @copywriter to create question-based hooks"
-```
-
-#### Value Propositions
-
-```
-11. "Use @copywriter to craft a unique value proposition"
-
-12. "Apply @copywriter to write a compelling elevator pitch"
-
-13. "Use @copywriter to create a benefit-driven product description"
-
-14. "Apply @copywriter to write feature-to-benefit conversions"
-
-15. "Use @copywriter to craft a differentiation statement"
-
-16. "Apply @copywriter to write a positioning statement"
-
-17. "Use @copywriter to create a tagline for my brand"
-
-18. "Apply @copywriter to write a mission statement"
-
-19. "Use @copywriter to craft a brand story"
-
-20. "Apply @copywriter to create an 'About Us' section"
-```
-
-#### Sales Copy
-
-```
-21. "Use @copywriter to write sales page copy using PAS framework"
-
-22. "Apply @copywriter to create urgency and scarcity elements"
-
-23. "Use @copywriter to write testimonial request templates"
-
-24. "Apply @copywriter to create social proof sections"
-
-25. "Use @copywriter to write objection-handling copy"
-
-26. "Apply @copywriter to create guarantee and risk reversal copy"
-
-27. "Use @copywriter to write pricing section copy"
-
-28. "Apply @copywriter to create comparison table copy"
-
-29. "Use @copywriter to write case study narratives"
-
-30. "Apply @copywriter to create FAQ section copy"
-```
-
-#### Website Copy
-
-```
-31. "Use @copywriter to write homepage copy"
-
-32. "Apply @copywriter to create service page descriptions"
-
-33. "Use @copywriter to write product descriptions"
-
-34. "Apply @copywriter to create category page copy"
-
-35. "Use @copywriter to write 404 error page copy"
-
-36. "Apply @copywriter to create contact page copy"
-
-37. "Use @copywriter to write careers page copy"
-
-38. "Apply @copywriter to create partner page descriptions"
-
-39. "Use @copywriter to write blog post introductions"
-
-40. "Apply @copywriter to create newsletter sign-up copy"
-```
+**Key strengths:**
+- Application of psychological triggers (urgency, scarcity, social proof)
+- Framework-based writing (AIDA, PAS)
+- Brand voice development
+- Objection handling
 
 ---
 
-## 11.2 Email Copywriting
+### Copywriting Prompts
 
-> **Source**: [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills)  
-> **License**: MIT  
-> **Tags**: email, marketing, copywriting
+#### Writing a Sales Page (PAS Framework)
 
-### Purpose
+**Context:** You are writing a sales page for a productivity course. You want to use the PAS (Problem-Agitation-Solution) framework.
 
-The `email-copywriter` skill helps craft high-converting email sequences and campaigns.
+```text
+@copywriter Write a sales page section using the PAS (Problem-Agitation-Solution) framework:
 
-### Email Types
+Product: "Deep Work Mastery" (Video Course)
+Target Audience: Remote software developers struggling with distractions.
 
-| Type | Purpose | Key Metrics |
-|------|---------|-------------|
-| **Welcome** | Onboard new subscribers | Open rate, clicks |
-| **Nurture** | Build relationship | Engagement |
-| **Promotional** | Drive sales | Conversions |
-| **Transactional** | Order updates | Delivery rate |
-| **Re-engagement** | Win back inactive | Recovery rate |
-| **Newsletter** | Regular updates | Retention |
+1. Problem: Identify the struggle with constant notifications and context switching.
+2. Agitation: Make them feel the pain of burnout, missed deadlines, and lack of career progress.
+3. Solution: Introduce "Deep Work Mastery" as the systematic way to reclaim focus.
 
-### 30 Copy-Paste Prompts
-
-#### Welcome & Onboarding
-
-```
-41. "Use @email-copywriter to create a 5-email welcome sequence"
-
-42. "Apply @email-copywriter to write a first-purchase thank you email"
-
-43. "Use @email-copywriter to create an account activation email"
-
-44. "Apply @email-copywriter to write a product tour email sequence"
-
-45. "Use @email-copywriter to create a trial-to-paid conversion email"
-
-46. "Apply @email-copywriter to write a feature introduction email"
-
-47. "Use @email-copywriter to create a milestone celebration email"
-
-48. "Apply @email-copywriter to write a user segmentation survey email"
-
-49. "Use @email-copywriter to create a referral program invitation"
-
-50. "Apply @email-copywriter to write an upgrade promotional email"
+Include a compelling headline and a clear Call to Action (CTA).
 ```
 
-#### Sales & Promotional
-
-```
-51. "Use @email-copywriter to write a product launch announcement"
-
-52. "Apply @email-copywriter to create a limited-time offer email"
-
-53. "Use @email-copywriter to write a flash sale email"
-
-54. "Apply @email-copywriter to create a cart abandonment sequence"
-
-55. "Use @email-copywriter to write a price increase notification"
-
-56. "Apply @email-copywriter to create a seasonal promotion email"
-
-57. "Use @email-copywriter to write a webinar invitation email"
-
-58. "Apply @email-copywriter to create a case study sharing email"
-
-59. "Use @email-copywriter to write an exclusive access email"
-
-60. "Apply @email-copywriter to create a pre-launch teaser sequence"
-```
-
-#### Retention & Re-engagement
-
-```
-61. "Use @email-copywriter to write a re-engagement campaign"
-
-62. "Apply @email-copywriter to create a win-back sequence"
-
-63. "Use @email-copywriter to write a feedback request email"
-
-64. "Apply @email-copywriter to create a review request email"
-
-65. "Use @email-copywriter to write a loyalty program email"
-
-66. "Apply @email-copywriter to create an anniversary email"
-
-67. "Use @email-copywriter to write a sunset/unsubscribe confirmation"
-
-68. "Apply @email-copywriter to create a pause account email"
-
-69. "Use @email-copywriter to write a cancellation follow-up"
-
-70. "Apply @email-copywriter to create a renewal reminder sequence"
-```
+**Expected Output:** A structured sales argument that emotionally connects with the reader and presents the product as the relief.
 
 ---
 
-## 11.3 Landing Page Copy
+#### Crafting Value Propositions
 
-> **Source**: [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills)  
-> **License**: MIT  
-> **Tags**: landing-page, cro, copywriting
+**Context:** Your SaaS product is confusing visitors. You need a clear, punchy value prop.
 
-### Purpose
+```text
+@copywriter Create 5 variations of a Unique Value Proposition (UVP) for our product:
 
-The `landing-page-expert` skill helps create high-converting landing pages with compelling copy.
+Product: AI-powered legal contract review software.
+Target: Small business owners (not lawyers).
+Key Benefit: Saves money on legal fees, prevents signing bad deals.
 
-### Landing Page Structure
-
-```
-┌────────────────────────────────────┐
-│           Hero Section             │
-│  Headline + Subhead + CTA          │
-├────────────────────────────────────┤
-│         Social Proof               │
-│  Logos / Testimonials / Stats      │
-├────────────────────────────────────┤
-│        Problem Section             │
-│  Pain points / Challenges          │
-├────────────────────────────────────┤
-│        Solution Section            │
-│  Features / Benefits               │
-├────────────────────────────────────┤
-│       How It Works                 │
-│  3-step process                    │
-├────────────────────────────────────┤
-│      Testimonials                  │
-│  Customer stories                  │
-├────────────────────────────────────┤
-│      Pricing / CTA                 │
-│  Final conversion point            │
-├────────────────────────────────────┤
-│           FAQ                      │
-│  Objection handling                │
-└────────────────────────────────────┘
+Variations needed:
+1. The "Joy" angle (Peace of mind)
+2. The "Fear" angle (Avoid lawsuits)
+3. The "Speed" angle (Review in seconds)
+4. The "Money" angle (Save $500/hour)
+5. The "Competitor" angle (Better than generic templates)
 ```
 
-### 15 Copy-Paste Prompts
-
-```
-71. "Use @landing-page-expert to write hero section copy"
-
-72. "Apply @landing-page-expert to create a feature-benefit section"
-
-73. "Use @landing-page-expert to write testimonial formatting"
-
-74. "Apply @landing-page-expert to create a 'How It Works' section"
-
-75. "Use @landing-page-expert to write pricing section copy"
-
-76. "Apply @landing-page-expert to create FAQ section copy"
-
-77. "Use @landing-page-expert to write a final CTA section"
-
-78. "Apply @landing-page-expert to create trust badge copy"
-
-79. "Use @landing-page-expert to write comparison sections"
-
-80. "Apply @landing-page-expert to create lead magnet landing page"
-
-81. "Use @landing-page-expert to write webinar registration page"
-
-82. "Apply @landing-page-expert to create demo request page"
-
-83. "Use @landing-page-expert to write free trial landing page"
-
-84. "Apply @landing-page-expert to create product launch page"
-
-85. "Use @landing-page-expert to write case study landing page"
-```
+**Expected Output:** Five distinct, high-impact headlines/subheadlines addressing different psychological motivators.
 
 ---
 
-## 11.4 UX Writing
+## 11.2 Email Copywriting with @email-copywriter
 
-> **Source**: Unknown  
-> **Tags**: ux, microcopy, interface
+### Skill Introduction
 
-### Purpose
+The `@email-copywriter` skill focuses on the unique constraints and opportunities of the inbox. It helps write subject lines that get opened and body copy that gets clicks, covering everything from newsletters to automated sequences.
 
-The `ux-writer` skill helps create clear, helpful microcopy for user interfaces.
+**When to use this skill:**
+- Writing cold outreach emails
+- Designing onboarding welcome sequences
+- Creating weekly newsletters
+- Crafting abandoned cart recovery emails
+- Re-engaging inactive subscribers
 
-### UX Writing Elements
-
-| Element | Purpose | Example |
-|---------|---------|---------|
-| **Button Labels** | Drive action | "Get Started Free" |
-| **Error Messages** | Guide recovery | "Password needs 8+ characters" |
-| **Empty States** | Encourage action | "No projects yet. Create your first!" |
-| **Tooltips** | Provide context | "This helps us personalize..." |
-| **Confirmation** | Verify intent | "Delete this item? This can't be undone." |
-| **Success States** | Celebrate wins | "You're all set! Welcome aboard." |
-
-### 15 Copy-Paste Prompts
-
-```
-86. "Use @ux-writer to write button labels for a checkout flow"
-
-87. "Apply @ux-writer to create error messages for form validation"
-
-88. "Use @ux-writer to write empty state copy for dashboards"
-
-89. "Apply @ux-writer to create tooltip text for complex features"
-
-90. "Use @ux-writer to write confirmation dialog copy"
-
-91. "Apply @ux-writer to create success state messages"
-
-92. "Use @ux-writer to write onboarding tooltip sequences"
-
-93. "Apply @ux-writer to create loading state messages"
-
-94. "Use @ux-writer to write notification copy"
-
-95. "Apply @ux-writer to create permission request copy"
-
-96. "Use @ux-writer to write settings description copy"
-
-97. "Apply @ux-writer to create placeholder text"
-
-98. "Use @ux-writer to write progress indicator copy"
-
-99. "Apply @ux-writer to create help text for forms"
-
-100. "Use @ux-writer to write accessibility labels"
-```
+**Key strengths:**
+- Subject line optimization (Open rates)
+- Personalization strategies
+- Sequence mapping and storytelling
+- "Soap Opera Sequence" knowledge
 
 ---
 
-## Copywriting Templates
+### Email Copywriting Prompts
 
-### AIDA Framework Example
+#### Writing a Welcome Sequence
 
-```markdown
-# [Product Name] - [Benefit Statement]
+**Context:** Someone just signed up for your free ebook. You need to nurture them into buying your course.
 
-## Attention (Headline)
-[Shocking statistic or question that stops the reader]
+```text
+@email-copywriter Write a 3-email "Welcome Sequence" for new subscribers:
 
-## Interest (Problem)
-You know that feeling when [describe pain point]...
-Every day, [target audience] struggle with [specific problem].
-The result? [negative consequences]
+Trigger: Downloaded "The Ultimate Guide to Plant-Based Tycoon".
+Goal: Build trust and sell the "Plant-Based Cooking 101" course ($49).
 
-## Desire (Solution)
-Introducing [Product Name] - the [category] that [unique benefit].
+Email 1 (Day 0): Deliver the asset + Set expectations. (Subject line ideas included)
+Email 2 (Day 1): The "Origin Story" - Why you started this, and effective vulnerability.
+Email 3 (Day 3): The "Soft Sell" - Introduce the course as the fast track to success.
 
-Unlike [alternatives], [Product Name]:
-- [Benefit 1]
-- [Benefit 2]  
-- [Benefit 3]
-
-## Action (CTA)
-Start your free trial today.
-[CTA Button: Get Started Free]
-
-No credit card required. Cancel anytime.
+Tone: Friendly, encouraging, slightly humorous.
 ```
 
-### Email Subject Line Formulas
-
-```markdown
-## Curiosity
-- "The [noun] that [unexpected result]..."
-- "[Number] reasons why [common belief] is wrong"
-- "What [successful person] won't tell you about..."
-
-## Benefit
-- "How to [achieve goal] without [pain point]"
-- "[Number] ways to [benefit] in [timeframe]"
-- "The secret to [desirable outcome]"
-
-## Urgency
-- "[Action] before [deadline]"
-- "Last chance: [offer]"
-- "[Hours/Days] left to [benefit]"
-
-## Personalization
-- "[Name], your [item] is waiting"
-- "For [role/demographic]: [benefit]"
-- "Based on your [activity]: [recommendation]"
-```
-
-### CTA Button Examples
-
-```markdown
-## Primary Actions
-- "Start Free Trial" (not "Submit")
-- "Get Your Quote" (not "Request")
-- "Join 10,000+ Users" (social proof)
-- "Claim Your Discount" (value)
-- "See It In Action" (demo)
-
-## Secondary Actions
-- "Learn More"
-- "See How It Works"
-- "Compare Plans"
-- "View Examples"
-- "Talk to Sales"
-
-## Microcopy Under CTA
-- "No credit card required"
-- "Free forever. No hidden fees."
-- "Join in 30 seconds"
-- "Cancel anytime"
-- "Used by teams at [logos]"
-```
+**Expected Output:** Three complete emails with subject lines, body copy, and logical flow.
 
 ---
 
-## Best Practices
+#### Cold Outreach Optimization
 
-### 1. Voice and Tone
+**Context:** Your cold emails to potential B2B partners are being ignored.
 
-| Context | Tone | Example |
-|---------|------|---------|
-| Error | Helpful, not blaming | "We couldn't find that page" |
-| Success | Celebratory | "You did it! 🎉" |
-| Warning | Clear, calm | "This action can't be undone" |
-| Onboarding | Encouraging | "You're doing great!" |
+```text
+@email-copywriter Rewrite this cold email to improve response rates:
 
-### 2. Clarity Over Cleverness
+Current Draft:
+"Hi, I'm [Name] from [Company]. We do web design. I saw your website and it looks old. We can fix it. Do you have time for a call?"
 
-```markdown
-# ✅ Clear
-"Start your 14-day free trial"
+Goal: Get a meeting with Marketing Directors at mid-sized firms.
+Critique: It's too generic, self-centered, and insulting.
 
-# ❌ Clever but confusing
-"Begin your journey to greatness"
+Please provide:
+1. A rewritten version that focuses on value/problem-solving.
+2. 3 alternative subject lines.
+3. A follow-up email script if they don't reply in 3 days.
 ```
 
-### 3. Benefit-First Writing
-
-```markdown
-# ✅ Benefit-first
-"Save 10 hours a week with automated reports"
-
-# ❌ Feature-first
-"Our platform has automated reporting"
-```
-
-### 4. Active Voice
-
-```markdown
-# ✅ Active
-"We'll send your receipt to your email"
-
-# ❌ Passive
-"Your receipt will be sent to your email"
-```
+**Expected Output:** A polished, professional cold email sequence designed to start a conversation, not just pitch.
 
 ---
 
-## Reflection Points for Chapter 11
+## 11.3 Landing Page Copy with @landing-page-expert
 
-1. **What's your brand voice and how is it documented?**
-   - Voice guidelines?
-   - Tone variations?
-   - Word lists?
+### Skill Introduction
 
-2. **How do you test copy effectiveness?**
-   - A/B testing?
-   - User testing?
-   - Conversion tracking?
+The `@landing-page-expert` skill combines copywriting with UX design principles. It helps structure the flow of information on a page to guide the visitor toward a single conversion goal (Sign up, Buy, Download).
 
-3. **What's your copy review process?**
-   - Brand consistency?
-   - Legal review?
-   - Accessibility check?
+**When to use this skill:**
+- Structuring a new landing page (Wireframing with words)
+- Optimizing "Above the Fold" content
+- Writing clear Features vs. Benefits sections
+- Creating trust-building elements (Social Proof)
+- crafting micro-copy for forms and buttons
 
-4. **How do you maintain copy consistency?**
-   - Style guide?
-   - Copy libraries?
-   - Templates?
+**Key strengths:**
+- Information hierarchy design
+- Hero section optimization
+- Social proof formatting
+- Call-to-Action (CTA) clarity
 
 ---
 
-## Summary
+### Landing Page Prompts
 
-This chapter covered copywriting and content creation skills:
+#### Structuring a "Hero" Section
 
-- **@copywriter**: Persuasive marketing copy
-- **@email-copywriter**: Email campaigns and sequences
-- **@landing-page-expert**: High-converting landing pages
-- **@ux-writer**: Interface microcopy
+**Context:** The top of your landing page is the most critical real estate.
 
-**Key Takeaway**: Great copy is customer-focused, benefit-driven, and clear. Use frameworks to structure your writing, but always prioritize clarity over cleverness.
+```text
+@landing-page-expert Write the "Hero Section" copy for a new fitness app:
+
+App Name: "FitIn15"
+Promise: Effective workouts in 15 minutes or less.
+Target: Busy parents.
+
+Please provide:
+1. Main Headline (Clear, benefit-driven)
+2. Sub-headline (Supporting detail/how it works)
+3. Primary CTA Button text (Action-oriented)
+4. "Trust Text" (Micro-copy below the button to reduce anxiety, e.g., "No credit card needed")
+```
+
+**Expected Output:** Optimized copy for the top section of the landing page.
 
 ---
 
-**Next Chapter**: [Chapter 12: Conversion Rate Optimization →](chapter-12-cro.md)
+#### Writing a "How It Works" Section
+
+**Context:** Users are confused about your complex service.
+
+```text
+@landing-page-expert Create a 3-step "How It Works" section for a grocery delivery service:
+
+Process to simplify:
+1. User downloads app & selects items.
+2. A personal shopper picks the freshest produce.
+3. Driver delivers in 2 hours or less.
+
+Requirement: Make it sound effortless and premium. Focus on the benefit of each step (e.g., "We pick" -> "You get the best").
+```
+
+**Expected Output:** Three concise steps with headings and short descriptions.
+
+---
+
+## 11.4 UX Writing with @ux-writer
+
+### Skill Introduction
+
+The `@ux-writer` skill focuses on the small bits of text that guide users through a product: button labels, error messages, empty states, and onboarding tooltips. Good UX writing reduces friction and frustration.
+
+**When to use this skill:**
+- Writing error messages that are helpful, not scary
+- Labeling navigation menus and buttons
+- Creating "Empty States" that encourage action
+- Writing onboarding tours strategies
+- Ensuring accessibility in language
+
+**Key strengths:**
+- Clarity and brevity
+- Empathy in error states
+- Consistency in terminology
+- Accessibility best practices
+
+---
+
+### UX Writing Prompts
+
+#### Improving Error Messages
+
+**Context:** Your login form says "Invalid Input" and users are frustrated.
+
+```text
+@ux-writer Rewrite these technical error messages to be human-friendly and helpful:
+
+1. "Error 404: Page Not Found" -> (Context: A missing blog post)
+2. "Invalid Input" -> (Context: Password is too short)
+3. "System Failure" -> (Context: Credit card declined)
+4. "Field Required" -> (Context: They missed their email address)
+
+Goal: Be clear, polite, and tell the user exactly how to fix it.
+```
+
+**Expected Output:** Revised microcopy that improves the user experience during failure states.
+
+---
+
+#### Designing Empty States
+
+**Context:** A new user logs into your project management app, but they haven't created any projects yet. The screen is blank.
+
+```text
+@ux-writer Write copy for the "No Projects Yet" empty state dashboard:
+
+Goal: Encourage the user to create their first project.
+Tone: Exciting, helpful.
+
+Elements needed:
+1. Headline (e.g., "Let's get to work")
+2. Body text (Benefits of creating a project)
+3. CTA Button text
+```
+
+**Expected Output:** Engaging copy that turns a dead end into a call to action.
+
+---
+
+## Best Practices Summary
+
+### Clarity Before Cleverness
+- **Don't Bury the Ledge:** Say the most important thing first.
+- **Use Simple Words:** Write for a 5th-grade reading level to maximize comprehension.
+- **Be Specific:** "Save $500/year" is better than "Save money."
+
+### Know Your Audience
+- **Speak Their Language:** Use the jargon they use, avoid the jargon they don't.
+- **Focus on Their Problems:** Nobody cares about your product; they care about their problems.
+- **Address Objections:** Answer the "But what about..." questions in your copy.
+
+### Formatting Matters
+- **Scan-ability:** Use bullet points, short paragraphs, and bold text.
+- **Visual Hierarchy:** Headlines should stand out.
+- **White Space:** Give the text room to breathe.
+
+---
+
+## Reflection Points
+
+1. **Brand Voice:** Is your voice consistent across your website, emails, and ads?
+2. **Features vs Benefits:** Audit your landing page. Are you selling the drill (feature) or the hole (benefit)?
+3. **The "So What?" Test:** Read your headline and ask "So what?". If you can't answer, rewrite it.
+4. **Testing:** Are you guessing what works, or are you A/B testing your headlines?
+
+---
+
+**Next Chapter:** [Chapter 12: Conversion Rate Optimization →](12-cro.md)

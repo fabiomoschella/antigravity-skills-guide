@@ -10,512 +10,279 @@ Conversion Rate Optimization is the systematic process of increasing the percent
 
 ### Skills Covered in This Chapter
 
-| Skill | Source | Purpose |
-|-------|--------|---------|
-| `cro-expert` | coreyhaines31/marketingskills | Conversion optimization |
-| `ab-testing-expert` | coreyhaines31/marketingskills | Experimentation |
-| `analytics-expert` | Unknown | Data analysis |
-| `user-research` | Unknown | User behavior insights |
-| `funnel-optimization` | Unknown | Funnel analysis |
+| Skill | Purpose | Best For |
+|-------|---------|----------|
+| `@cro-expert` | Conversion optimization | Site audits, hypothesis generation |
+| `@ab-testing-expert` | Experimentation | Test design, statistical analysis |
+| `@analytics-expert` | Data analysis | Traffic analysis, user flow tracking |
+| `@user-research` | User insights | Surveys, heatmaps, interviews |
+| `@funnel-optimization` | Funnel analysis | Drop-off reduction, checkout opt |
 
 ---
 
-## 12.1 CRO Fundamentals
+## 12.1 CRO Fundamentals with @cro-expert
 
-> **Source**: [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills)  
-> **License**: MIT  
-> **Tags**: cro, optimization, conversion
+### Skill Introduction
 
-### Purpose
+The `@cro-expert` skill provides a systematic approach to improving conversion rates. It helps you identify barriers to conversion, create hypotheses, and implement optimization strategies based on data and psychology.
 
-The `cro-expert` skill provides a systematic approach to improving conversion rates through data-driven optimization.
+**When to use this skill:**
+- Auditing a website or landing page for conversion issues
+- Developing a roadmap of optimization experiments
+- Analyzing high bounce rates or low engagement
+- Improving page load speed and technical performance concepts
+- Applying persuasion psychology principles (Cialdini, Fogg)
 
-### CRO Process
-
-```mermaid
-graph LR
-    A[Research] --> B[Hypothesis]
-    B --> C[Prioritize]
-    C --> D[Test]
-    D --> E[Analyze]
-    E --> F[Implement]
-    F --> A
-```
-
-### Conversion Metrics
-
-| Metric | Formula | Benchmark |
-|--------|---------|-----------|
-| **Conversion Rate** | Conversions / Visitors | 2-5% |
-| **Bounce Rate** | Single-page / Total sessions | 40-60% |
-| **Cart Abandonment** | Abandoned / Started checkout | 70% |
-| **Time on Page** | Avg time spent | 2-3 min |
-| **Click-Through Rate** | Clicks / Impressions | 2-3% |
-
-### 40 Copy-Paste Prompts
-
-#### Analysis and Research
-
-```
-1. "Use @cro-expert to audit the conversion funnel for my e-commerce site"
-
-2. "Apply @cro-expert to analyze why my landing page has low conversion"
-
-3. "Use @cro-expert to identify friction points in the checkout process"
-
-4. "Apply @cro-expert to analyze user behavior on my pricing page"
-
-5. "Use @cro-expert to create a CRO research plan"
-
-6. "Apply @cro-expert to analyze form abandonment issues"
-
-7. "Use @cro-expert to identify high-impact optimization opportunities"
-
-8. "Apply @cro-expert to analyze mobile conversion issues"
-
-9. "Use @cro-expert to review heatmap data"
-
-10. "Apply @cro-expert to analyze session recordings"
-```
-
-#### Homepage Optimization
-
-```
-11. "Use @cro-expert to optimize homepage for conversions"
-
-12. "Apply @cro-expert to improve above-the-fold engagement"
-
-13. "Use @cro-expert to optimize navigation for conversions"
-
-14. "Apply @cro-expert to improve hero section effectiveness"
-
-15. "Use @cro-expert to optimize homepage CTAs"
-
-16. "Apply @cro-expert to reduce homepage bounce rate"
-
-17. "Use @cro-expert to improve social proof placement"
-
-18. "Apply @cro-expert to optimize homepage load time"
-
-19. "Use @cro-expert to improve homepage mobile experience"
-
-20. "Apply @cro-expert to optimize homepage for different segments"
-```
-
-#### Product and Pricing Pages
-
-```
-21. "Use @cro-expert to optimize product page conversions"
-
-22. "Apply @cro-expert to improve pricing page effectiveness"
-
-23. "Use @cro-expert to design high-converting pricing tables"
-
-24. "Apply @cro-expert to optimize product descriptions"
-
-25. "Use @cro-expert to improve product image galleries"
-
-26. "Apply @cro-expert to optimize product reviews display"
-
-27. "Use @cro-expert to improve add-to-cart conversions"
-
-28. "Apply @cro-expert to optimize cross-sell recommendations"
-
-29. "Use @cro-expert to improve urgency elements"
-
-30. "Apply @cro-expert to optimize out-of-stock handling"
-```
-
-#### Forms and Checkout
-
-```
-31. "Use @cro-expert to optimize signup form conversions"
-
-32. "Apply @cro-expert to reduce checkout abandonment"
-
-33. "Use @cro-expert to optimize multi-step forms"
-
-34. "Apply @cro-expert to improve form field design"
-
-35. "Use @cro-expert to optimize form validation messaging"
-
-36. "Apply @cro-expert to reduce form friction"
-
-37. "Use @cro-expert to optimize guest checkout"
-
-38. "Apply @cro-expert to improve payment form design"
-
-39. "Use @cro-expert to optimize shipping options presentation"
-
-40. "Apply @cro-expert to improve order confirmation page"
-```
+**Key strengths:**
+- Heuristic analysis frameworks (LIFT, MECLABS)
+- Conversion copywriting and design principles
+- Hypothesis generation and prioritization (ICE/PIE)
+- Audit methodology
 
 ---
 
-## 12.2 A/B Testing
+### CRO Prompts
 
-> **Source**: [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills)  
-> **License**: MIT  
-> **Tags**: testing, experimentation, optimization
+#### Conducting a Heuristic Analysis
 
-### Purpose
+**Context:** You are optimizing a low-converting landing page for a B2B service.
 
-The `ab-testing-expert` skill provides guidance on running statistically valid experiments.
+```text
+@cro-expert Conduct a heuristic analysis of our landing page using the LIFT Model:
 
-### Test Types
+Scenario: B2B consulting service landing page.
+Current Conversion Rate: 0.5% (Benchmark: 2-3%)
 
-| Type | Description | Use Case |
-|------|-------------|----------|
-| **A/B Test** | Two variants | Simple changes |
-| **A/B/n Test** | Multiple variants | Comparing options |
-| **Multivariate** | Multiple variables | Complex pages |
-| **Split Test** | Different URLs | Major redesigns |
-| **Bandit** | Dynamic allocation | Fast optimization |
+Please analyze potential issues across these 6 factors:
+1. Value Proposition (Is it clear and relevant?)
+2. Relevance (Does it match ad intent?)
+3. Clarity (Is the design/copy clear?)
+4. Urgency (Is there a reason to act now?)
+5. Anxiety (Are there trust or risk issues?)
+6. Distraction (Are there competing elements?)
 
-### 30 Copy-Paste Prompts
-
-#### Test Planning
-
-```
-41. "Use @ab-testing-expert to create a hypothesis for this test"
-
-42. "Apply @ab-testing-expert to calculate required sample size"
-
-43. "Use @ab-testing-expert to determine test duration"
-
-44. "Apply @ab-testing-expert to define success metrics"
-
-45. "Use @ab-testing-expert to create a test plan document"
-
-46. "Apply @ab-testing-expert to prioritize test ideas using ICE"
-
-47. "Use @ab-testing-expert to design test variants"
-
-48. "Apply @ab-testing-expert to identify test segments"
-
-49. "Use @ab-testing-expert to plan multivariate test"
-
-50. "Apply @ab-testing-expert to create a testing roadmap"
+Provide specific recommendations to address the top 3 friction points identified.
 ```
 
-#### Analysis and Reporting
-
-```
-51. "Use @ab-testing-expert to analyze test results"
-
-52. "Apply @ab-testing-expert to determine statistical significance"
-
-53. "Use @ab-testing-expert to identify segment differences"
-
-54. "Apply @ab-testing-expert to calculate revenue impact"
-
-55. "Use @ab-testing-expert to create test report template"
-
-56. "Apply @ab-testing-expert to analyze inconclusive results"
-
-57. "Use @ab-testing-expert to identify learnings from failed tests"
-
-58. "Apply @ab-testing-expert to document test insights"
-
-59. "Use @ab-testing-expert to calculate lift and confidence"
-
-60. "Apply @ab-testing-expert to plan follow-up tests"
-```
-
-#### Common Tests
-
-```
-61. "Use @ab-testing-expert to test headline variations"
-
-62. "Apply @ab-testing-expert to test CTA button colors"
-
-63. "Use @ab-testing-expert to test pricing display formats"
-
-64. "Apply @ab-testing-expert to test form length"
-
-65. "Use @ab-testing-expert to test social proof placement"
-
-66. "Apply @ab-testing-expert to test image vs video"
-
-67. "Use @ab-testing-expert to test navigation layout"
-
-68. "Apply @ab-testing-expert to test checkout steps"
-
-69. "Use @ab-testing-expert to test urgency messaging"
-
-70. "Apply @ab-testing-expert to test personalization"
-```
+**Expected Output:** A detailed audit report identifying friction points and specific recommendations for improvement.
 
 ---
 
-## 12.3 Funnel Optimization
+#### Prioritizing Experiment Ideas
 
-> **Source**: Unknown  
-> **Tags**: funnel, optimization, analytics
+**Context:** You have a backlog of 20 ideas to test but limited traffic. You need to prioritize.
 
-### Purpose
+```text
+@cro-expert Prioritize these 5 test ideas using the ICE Framework (Impact, Confidence, Ease):
 
-The `funnel-optimization` skill helps analyze and optimize conversion funnels.
+Ideas:
+1. Redesign the entire homepage (High effort)
+2. Change the CTA button color (Low effort)
+3. Add customer testimonials near the form (Medium effort)
+4. Remove the navigation bar on checkout (Medium effort)
+5. Rewrite the main headline (Low effort)
 
-### Typical E-commerce Funnel
-
-```
-Landing Page    (100%) ───────────────────────────
-        │
-        ▼ (70% proceed)
-Product Page    (70%)  ────────────────────────
-        │
-        ▼ (30% add to cart)
-Cart            (21%)  ──────────────────
-        │
-        ▼ (60% proceed)
-Checkout        (12.6%) ─────────────
-        │
-        ▼ (70% complete)
-Thank You       (8.8%) ──────────
+For each, estimate ICE scores (1-10) and explain the reasoning.
+Rank them in order of implementation priority.
 ```
 
-### 15 Copy-Paste Prompts
-
-```
-71. "Use @funnel-optimization to analyze our acquisition funnel"
-
-72. "Apply @funnel-optimization to identify the biggest drop-off point"
-
-73. "Use @funnel-optimization to optimize top-of-funnel conversions"
-
-74. "Apply @funnel-optimization to improve mid-funnel engagement"
-
-75. "Use @funnel-optimization to reduce bottom-funnel abandonment"
-
-76. "Apply @funnel-optimization to create micro-conversion goals"
-
-77. "Use @funnel-optimization to design an onboarding funnel"
-
-78. "Apply @funnel-optimization to optimize SaaS trial funnel"
-
-79. "Use @funnel-optimization to improve webinar registration funnel"
-
-80. "Apply @funnel-optimization to analyze mobile vs desktop funnels"
-
-81. "Use @funnel-optimization to optimize email conversion funnel"
-
-82. "Apply @funnel-optimization to design lead nurturing funnel"
-
-83. "Use @funnel-optimization to create re-engagement funnel"
-
-84. "Apply @funnel-optimization to analyze segment-specific funnels"
-
-85. "Use @funnel-optimization to optimize upsell funnel"
-```
+**Expected Output:** A prioritized list of experiments with scored reasoning.
 
 ---
 
-## 12.4 User Research for CRO
+## 12.2 A/B Testing with @ab-testing-expert
 
-> **Source**: Unknown  
-> **Tags**: research, user, qualitative
+### Skill Introduction
 
-### Purpose
+The `@ab-testing-expert` skill applies scientific rigor to optimization. It covers experiment design, sample size calculation, statistical significance, and result interpretation to ensure you make data-backed decisions.
 
-The `user-research` skill provides methods for understanding user behavior and motivations.
+**When to use this skill:**
+- Designing valid A/B or multivariate tests
+- Calculating required sample sizes and test duration
+- Analyzing test results for statistical significance
+- Avoiding common testing pitfalls (Peeking, false positives)
+- Documenting test learnings
 
-### Research Methods
+**Key strengths:**
+- Statistical analysis expertise
+- Experiment design methodology
+- Test tool configuration (Optimizely, VWO, Google Optimize)
+- Result visualization and reporting
 
-| Method | Type | Best For |
-|--------|------|----------|
-| **Surveys** | Quantitative | Broad feedback |
-| **Interviews** | Qualitative | Deep insights |
-| **Usability Testing** | Qualitative | UX issues |
-| **Session Recording** | Behavioral | Friction points |
-| **Heatmaps** | Behavioral | Engagement patterns |
-| **Exit Surveys** | Quantitative | Abandonment reasons |
+---
 
-### 15 Copy-Paste Prompts
+### A/B Testing Prompts
 
-```
-86. "Use @user-research to create a post-purchase survey"
+#### Designing a Valid A/B Test
 
-87. "Apply @user-research to design exit intent survey"
+**Context:** You want to test a new checkout flow to reduce abandonment.
 
-88. "Use @user-research to plan usability testing sessions"
+```text
+@ab-testing-expert Design a robust A/B test for our checkout page:
 
-89. "Apply @user-research to create customer interview questions"
+Hypothesis: Removing the "Create Account" forced step and allowing "Guest Checkout" will increase purchase completion rate by 10%.
 
-90. "Use @user-research to analyze heatmap patterns"
+Traffic: 5,000 visitors/week to checkout.
+Current Conversion: 30%.
 
-91. "Apply @user-research to identify user pain points"
-
-92. "Use @user-research to create user persona research plan"
-
-93. "Apply @user-research to design NPS survey"
-
-94. "Use @user-research to analyze session recordings"
-
-95. "Apply @user-research to create Voice of Customer program"
-
-96. "Use @user-research to design card sorting exercise"
-
-97. "Apply @user-research to plan A/B preference testing"
-
-98. "Use @user-research to create prototype testing plan"
-
-99. "Apply @user-research to design tree testing"
-
-100. "Use @user-research to analyze qualitative feedback"
+Please provide:
+1. Test Variants (Control vs. Variation A)
+2. Primary Metric (e.g., Completed Orders)
+3. Secondary Metrics (e.g., AOV, Time on task)
+4. Sample Size Calculation (How many visitors needed per variant for 95% significance?)
+5. Estimated Test Duration
+6. Guardrail Metrics (What shouldn't decrease?)
 ```
 
+**Expected Output:** A complete test plan document including statistical calculations and metric definitions.
+
 ---
 
-## CRO Checklist Template
+#### Analyzing Inconclusive Results
 
-### Quick Wins Checklist
+**Context:** You ran a test for 2 weeks, and the result is "No significant difference."
 
-```markdown
-## Above the Fold
-- [ ] Clear value proposition headline
-- [ ] Compelling subheadline
-- [ ] Visible primary CTA
-- [ ] Trust signals (logos, badges, testimonials)
-- [ ] Professional imagery
+```text
+@ab-testing-expert Analyze these inconclusive A/B test results and recommend next steps:
 
-## CTAs
-- [ ] Action-oriented button text
-- [ ] Contrasting button color
-- [ ] Above and below fold CTAs
-- [ ] Micro-copy under buttons
-- [ ] Clear visual hierarchy
+Test: Headline change.
+Control: 2.1% CR
+Variation: 2.2% CR
+Confidence: 80% (not 95%)
+Sample size: 2,000 per variant.
 
-## Forms
-- [ ] Minimal required fields
-- [ ] Inline validation
-- [ ] Progress indicators
-- [ ] Clear labels and placeholders
-- [ ] Error message handling
-
-## Trust Elements
-- [ ] Customer testimonials with photos
-- [ ] Star ratings and review counts
-- [ ] Security badges
-- [ ] Money-back guarantee
-- [ ] Privacy policy links
-
-## Technical
-- [ ] Page load under 3 seconds
-- [ ] Mobile responsive
-- [ ] No broken links
-- [ ] Browser compatibility
-- [ ] SSL certificate
+Questions:
+1. Was the test underpowered? (Did we have enough sample?)
+2. Should we run it longer?
+3. Should we segment the data (Mobile vs Desktop)?
+4. What does a "flat" result tell us about the element tested?
+5. Recommendations for the next iteration.
 ```
 
-### Hypothesis Template
-
-```markdown
-## Hypothesis
-
-**Observation**: 
-[What we observed in data/research]
-
-**Because**:
-[Root cause analysis]
-
-**We believe**:
-[The change we want to make]
-
-**Will**:
-[Expected outcome]
-
-**We'll know when**:
-[Success metrics]
+**Expected Output:** An analysis of the test validity and strategic recommendations for next steps.
 
 ---
 
-**Test Type**: A/B
-**Primary Metric**: Conversion Rate
-**Secondary Metrics**: Bounce Rate, Time on Page
-**Sample Size**: 5,000 per variant
-**Duration**: 14 days
-**Confidence Level**: 95%
+## 12.3 Funnel Optimization with @funnel-optimization
+
+### Skill Introduction
+
+The `@funnel-optimization` skill focuses on analyzing the full user journey, identifying drop-off points, and optimizing specific stages of the funnel (Acquisition, Activation, Retention, Revenue, Referral).
+
+**When to use this skill:**
+- Mapping user flows and funnels
+- Identifying the biggest "leaks" in a conversion funnel
+- Optimizing onboarding flows
+- Reducing churn at specific funnel stages
+- Analyzing micro-conversions
+
+**Key strengths:**
+- Funnel visualization and analysis
+- Pirate Metrics (AARRR) framework
+- User journey mapping
+- Drop-off root cause analysis
+
+---
+
+### Funnel Optimization Prompts
+
+#### Analyzing Drop-off Points
+
+**Context:** You have an e-commerce site with high cart abandonment.
+
+```text
+@funnel-optimization Analyze our e-commerce checkout funnel to identify the biggest leak:
+
+Funnel Data (Last 30 days):
+1. Product Page View: 10,000 visitors
+2. Add to Cart: 500 visitors (5% conversion)
+3. View Cart: 450 visitors (90% of Add to Cart)
+4. Start Checkout: 300 visitors (66% of View Cart)
+5. Enter Shipping Info: 150 visitors (50% of Start Checkout)
+6. Enter Payment Info: 100 visitors (66% of Shipping)
+7. Purchase Complete: 80 visitors (80% of Payment)
+
+Task:
+1. Calculate the drop-off rate between each step.
+2. Identify the single biggest bottleneck.
+3. Propose 3 hypotheses for WHY users drop off there.
+4. Suggest 3 specific optimizations to fix that bottleneck.
 ```
 
+**Expected Output:** A funnel analysis report highlighting critical drop-offs and actionable fixes.
+
 ---
 
-## Best Practices
+## 12.4 User Research for CRO with @user-research
 
-### 1. Test High-Impact Elements First
+### Skill Introduction
 
-| Priority | Element | Potential Impact |
-|----------|---------|------------------|
-| High | Headlines | 20-50% lift |
-| High | CTAs | 10-30% lift |
-| High | Pricing display | 15-40% lift |
-| Medium | Images | 5-15% lift |
-| Medium | Copy length | 5-10% lift |
-| Low | Colors | 2-5% lift |
+The `@user-research` skill provides qualitative insights to complement quantitative data. It covers methods like surveys, user interviews, heatmaps, and session recordings to understand "Why" users behave the way they do.
 
-### 2. Statistical Rigor
+**When to use this skill:**
+- Gathering feedback from users who didn't convert
+- Analyzing heatmaps and scroll maps
+- Designing exit-intent surveys
+- Conducting usability testing sessions
+- creating user personas based on behavior
 
-```python
-# Minimum sample size calculation
-import math
+**Key strengths:**
+- Qualitative research methods
+- Survey design and analysis
+- Heatmap interpretation
+- Usability testing protocols
 
-def calculate_sample_size(
-    baseline_rate: float,
-    minimum_detectable_effect: float,
-    significance_level: float = 0.05,
-    power: float = 0.8
-) -> int:
-    p1 = baseline_rate
-    p2 = baseline_rate * (1 + minimum_detectable_effect)
-    p_avg = (p1 + p2) / 2
-    
-    z_alpha = 1.96  # for 95% confidence
-    z_beta = 0.84   # for 80% power
-    
-    n = (2 * p_avg * (1 - p_avg) * (z_alpha + z_beta)**2) / (p2 - p1)**2
-    return math.ceil(n)
+---
+
+### User Research Prompts
+
+#### Designing a Post-Purchase Survey
+
+**Context:** You want to understand what motivated successful customers to buy.
+
+```text
+@user-research Design a post-purchase survey to gather CRO insights:
+
+Goal: Understand the primary driver for purchase and any friction experienced.
+Placement: Thank You page (immediately after purchase).
+
+Please provide:
+1. 3-4 specific questions to ask.
+2. Question type (Open-ended vs Multiple choice).
+3. Explanation of what insight each question aims to uncover (e.g., "Voice of Customer" data).
+4. How to analyze the responses to improve the landing page.
 ```
 
-### 3. Document Everything
-
-- Test hypothesis
-- Implementation details
-- Results and analysis
-- Learnings and next steps
+**Expected Output:** A survey script with rationale for each question.
 
 ---
 
-## Reflection Points for Chapter 12
+## Best Practices Summary
 
-1. **What's your current testing velocity?**
-   - Tests per month?
-   - Success rate?
+### Systematic Process
+- **Research First:** Don't guess; use data and user feedback to inform ideas.
+- **Prioritize Ruthlessly:** You can't test everything. Focus on high-impact areas.
+- **Test to Learn:** Even "failed" tests provide valuable insights about your audience.
 
-2. **How do you prioritize optimization opportunities?**
-   - Data-driven?
-   - Impact vs effort?
+### Statistical Rigor
+- **Patience:** Wait for statistical significance. Don't stop tests early because they look "good."
+- **Sample Size:** Ensure you have enough traffic to run valid tests.
+- **Segmentation:** A test might lose overall but win for a specific segment (e.g., Mobile).
 
-3. **What's your statistical approach?**
-   - Significance level?
-   - Sample size calculation?
-
-4. **How do you share learnings?**
-   - Test library?
-   - Team reviews?
-
----
-
-## Summary
-
-This chapter covered conversion rate optimization skills:
-
-- **@cro-expert**: Systematic conversion optimization
-- **@ab-testing-expert**: Experimentation methodology
-- **@funnel-optimization**: Funnel analysis and improvement
-- **@user-research**: Understanding user behavior
-
-**Key Takeaway**: CRO is a continuous process of research, hypothesis, testing, and learning. Focus on high-impact opportunities and maintain statistical rigor.
+### User-Centricity
+- **Remove Friction:** Make it as easy as possible for users to act.
+- **Add Motivation:** Clearly communicate value and address anxieties.
+- **Listen:** User research often reveals "why" the numbers are "what" they represent.
 
 ---
 
-**Next Chapter**: [Chapter 13: Business Strategy & Analysis →](chapter-13-business-strategy.md)
+## Reflection Points
+
+1. ** Culture of Experimentation:** Is testing encouraged, or is failure punished?
+2. **Quality vs Quantity:** Are you running meaningless tests just to say you are testing?
+3. **Data Integrity:** Do you trust your analytics setup? If data is bad, decisions are bad.
+4. **Mobile Experience:** Are you optimizing for mobile users as a primary audience?
+
+---
+
+**Next Chapter:** [Chapter 13: Business Strategy & Analysis →](13-business-strategy.md)

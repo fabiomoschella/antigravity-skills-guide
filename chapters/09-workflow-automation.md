@@ -10,562 +10,319 @@ Workflow and automation architecture enables organizations to streamline complex
 
 ### Skills Covered in This Chapter
 
-| Skill | Source | Purpose |
-|-------|--------|---------|
-| `@workflow-architect` | Unknown | Workflow system design |
-| `@state-machine-patterns` | Unknown | State machine implementation |
-| `@process-automation` | Unknown | Business process automation |
-| `@orchestration-patterns` | Unknown | Service orchestration |
-| `@integration-architect` | Unknown | System integration design |
-| `@n8n-mcp-tools-expert` | antigravity | n8n MCP integration |
-| `@n8n-node-configuration` | antigravity | n8n node setup |
-| `@n8n-code-python` | antigravity | n8n Python code |
-| `@zapier-make-patterns` | antigravity | Zapier/Make automation |
-| `@trigger-dev` | antigravity | Trigger.dev workflows |
-| `@browser-automation` | antigravity | Browser automation |
-| `@playwright-skill` | antigravity | Playwright testing |
-| `@firecrawl-scraper` | antigravity | Web scraping |
-| `@discord-bot-builder` | antigravity | Discord bots |
-| `@telegram-bot-builder` | antigravity | Telegram bots |
-| `@telegram-mini-app` | antigravity | Telegram mini apps |
-| `@slack-bot-builder` | antigravity | Slack bots |
-| `@browser-extension-builder` | antigravity | Browser extensions |
-| `@automate-whatsapp` | antigravity | WhatsApp automation |
-| `@observe-whatsapp` | antigravity | WhatsApp monitoring |
-| `@twilio-communications` | antigravity | Twilio integration |
+| Skill | Purpose | Best For |
+|-------|---------|----------|
+| `@workflow-architect` | Workflow design | System architecture, process mapping |
+| `@process-automation` | Business automation | ROI analysis, efficiency |
+| `@n8n-mcp-tools-expert` | n8n integration | Self-hosted automation, AI agents |
+| `@zapier-make-patterns` | No-code automation | Quick integrations, prototyping |
+| `@playwright-skill` | Browser automation | Testing, scraping, simulation |
+| `@discord-bot-builder` | ChatOps | Community management, alerts |
+| `@telegram-bot-builder` | Messaging bots | Notifications, mini-apps |
+| `@automate-whatsapp` | Business messaging | Customer support, alerts |
 
 ---
 
-## 9.1 Workflow Architecture
+## 9.1 Workflow Architecture with @workflow-architect
 
-> **Source**: Unknown  
-> **Risk Level**: Unknown  
-> **Tags**: workflow, automation, architecture
+### Skill Introduction
 
-### Purpose
+The `@workflow-architect` skill helps you design robust, scalable automation systems. It focuses on the architectural patterns—sequential, parallel, conditional, and event-driven—required to build reliability and error handling into your workflows.
 
-The `workflow-architect` skill provides guidance on designing robust workflow systems for complex business processes.
+**When to use this skill:**
+- Designing a complex new automation system
+- Refactoring fragile "spaghetti" automations
+- Choosing the right tool (n8n vs Make vs Custom Code)
+- Implementing error handling and retry logic
+- Documenting process flows for stakeholders
 
-### Workflow Types
-
-| Type | Description | Use Case |
-|------|-------------|----------|
-| **Sequential** | Step-by-step execution | Document approval |
-| **Parallel** | Concurrent execution | Data processing |
-| **Conditional** | Branch-based logic | Order fulfillment |
-| **Event-driven** | Triggered by events | Notification system |
-| **Human-in-loop** | Requires human input | Review processes |
-
-### 40 Copy-Paste Prompts
-
-#### Workflow Design
-
-```
-1. "Use @workflow-architect to design an order fulfillment workflow"
-
-2. "Apply @workflow-architect to create a document approval process"
-
-3. "Use @workflow-architect to design a customer onboarding workflow"
-
-4. "Apply @workflow-architect to create an incident response workflow"
-
-5. "Use @workflow-architect to design a CI/CD pipeline workflow"
-
-6. "Apply @workflow-architect to create a hiring process workflow"
-
-7. "Use @workflow-architect to design a refund processing workflow"
-
-8. "Apply @workflow-architect to create a subscription lifecycle workflow"
-
-9. "Use @workflow-architect to design a data processing pipeline"
-
-10. "Apply @workflow-architect to create a compliance review workflow"
-```
-
-#### Error Handling
-
-```
-11. "Use @workflow-architect to implement retry strategies"
-
-12. "Apply @workflow-architect to design compensation patterns"
-
-13. "Use @workflow-architect to implement dead letter handling"
-
-14. "Apply @workflow-architect to create fallback workflows"
-
-15. "Use @workflow-architect to design timeout handling"
-
-16. "Apply @workflow-architect to implement circuit breakers"
-
-17. "Use @workflow-architect to create error notification workflows"
-
-18. "Apply @workflow-architect to design rollback procedures"
-
-19. "Use @workflow-architect to implement idempotent steps"
-
-20. "Apply @workflow-architect to create audit logging"
-```
-
-#### Scaling Workflows
-
-```
-21. "Use @workflow-architect to design horizontal scaling"
-
-22. "Apply @workflow-architect to implement workflow partitioning"
-
-23. "Use @workflow-architect to create priority queues"
-
-24. "Apply @workflow-architect to design rate limiting"
-
-25. "Use @workflow-architect to implement load balancing"
-
-26. "Apply @workflow-architect to create workflow sharding"
-
-27. "Use @workflow-architect to design batch processing"
-
-28. "Apply @workflow-architect to implement parallel execution"
-
-29. "Use @workflow-architect to create workflow caching"
-
-30. "Apply @workflow-architect to design workflow monitoring"
-```
-
-#### Advanced Patterns
-
-```
-31. "Use @workflow-architect to implement saga pattern"
-
-32. "Apply @workflow-architect to create choreography vs orchestration"
-
-33. "Use @workflow-architect to design long-running workflows"
-
-34. "Apply @workflow-architect to implement workflow versioning"
-
-35. "Use @workflow-architect to create dynamic workflows"
-
-36. "Apply @workflow-architect to design sub-workflows"
-
-37. "Use @workflow-architect to implement workflow templates"
-
-38. "Apply @workflow-architect to create conditional branching"
-
-39. "Use @workflow-architect to design human tasks"
-
-40. "Apply @workflow-architect to implement approval chains"
-```
+**Key strengths:**
+- Architectural pattern selection
+- Error handling strategies (Dead Letter Queues)
+- State management design
+- Scalability planning
 
 ---
 
-## 9.2 State Machine Patterns
+### Workflow Architecture Prompts
 
-> **Source**: Unknown  
-> **Risk Level**: Unknown  
-> **Tags**: state-machine, patterns, logic
+#### Designing a Resilient Order Processing Workflow
 
-### Purpose
+**Context:** You are designing an order fulfillment system that must handle failures gracefully.
 
-The `state-machine-patterns` skill provides guidance on implementing finite state machines for complex state management.
+```text
+@workflow-architect Design a resilient order processing workflow:
 
-### State Machine Structure
+Process:
+1. Receive Order (Webhook)
+2. Charge Credit Card (Stripe)
+3. Update Inventory (Shopify)
+4. Send Shipping Label (ShipStation)
+5. Notify Customer (Email)
 
-```typescript
-interface StateMachine {
-  id: string;
-  initial: string;
-  states: Record<string, StateConfig>;
-  context: object;
-}
+Requirements:
+- Must handle 1000 orders/hour.
+- If Inventory update fails, don't charge card (or refund).
+- If Shipping fails, retry 3 times, then alert support.
+- Must capture all failures in a log.
 
-interface StateConfig {
-  on: Record<string, string | Transition>;
-  entry?: Action[];
-  exit?: Action[];
-  type?: 'final' | 'parallel' | 'compound';
-}
+Please provide:
+1. Workflow Diagram (Mermaid or text description)
+2. Error Handling Strategy (Retries vs. Compensating Transactions)
+3. State Management approach (How to track status?)
+4. Tool selection recommendation (why n8n/Make/Temporal?)
 ```
 
-### 30 Copy-Paste Prompts
-
-#### State Design
-
-```
-41. "Use @state-machine-patterns to design order state machine"
-
-42. "Apply @state-machine-patterns to create user authentication states"
-
-43. "Use @state-machine-patterns to design payment processing states"
-
-44. "Apply @state-machine-patterns to create document lifecycle states"
-
-45. "Use @state-machine-patterns to design ticket workflow states"
-
-46. "Apply @state-machine-patterns to create subscription states"
-
-47. "Use @state-machine-patterns to design booking states"
-
-48. "Apply @state-machine-patterns to create approval states"
-
-49. "Use @state-machine-patterns to design game states"
-
-50. "Apply @state-machine-patterns to create wizard step states"
-```
-
-#### XState Implementation
-
-```
-51. "Use @state-machine-patterns to implement with XState"
-
-52. "Apply @state-machine-patterns to create hierarchical states"
-
-53. "Use @state-machine-patterns to implement parallel states"
-
-54. "Apply @state-machine-patterns to create guards and conditions"
-
-55. "Use @state-machine-patterns to implement actions and side effects"
-
-56. "Apply @state-machine-patterns to create context updates"
-
-57. "Use @state-machine-patterns to implement delayed transitions"
-
-58. "Apply @state-machine-patterns to create event composition"
-
-59. "Use @state-machine-patterns to implement history states"
-
-60. "Apply @state-machine-patterns to create spawned actors"
-```
-
-#### Testing
-
-```
-61. "Use @state-machine-patterns to test state transitions"
-
-62. "Apply @state-machine-patterns to create transition coverage"
-
-63. "Use @state-machine-patterns to test guard conditions"
-
-64. "Apply @state-machine-patterns to validate state invariants"
-
-65. "Use @state-machine-patterns to implement property-based testing"
-```
+**Expected Output:** A detailed architectural design document including failure scenarios and mitigation strategies.
 
 ---
 
-## 9.3 Orchestration Patterns
+#### Documenting an Existing Process
 
-> **Source**: Unknown  
-> **Risk Level**: Unknown  
-> **Tags**: orchestration, microservices, patterns
+**Context:** You have a messy manual process for employee onboarding that needs automation.
 
-### Purpose
+```text
+@workflow-architect Create a process map for Employee Onboarding to prepare for automation:
 
-The `orchestration-patterns` skill provides guidance on coordinating distributed services and workflows.
+Current steps (Manual):
+- HR sends offer letter via email.
+- Candidate signs PDF.
+- HR creates email account (Google Workspace).
+- HR adds to Slack.
+- IT ships laptop.
+- Manager schedules kick-off meeting.
 
-### Orchestration vs Choreography
+Goal: Automate 90% of this.
 
-| Aspect | Orchestration | Choreography |
-|--------|---------------|--------------|
-| **Control** | Centralized | Distributed |
-| **Coupling** | Higher | Lower |
-| **Visibility** | Clear | Complex |
-| **Debugging** | Easier | Harder |
-| **Scalability** | Bottleneck risk | Better |
-
-### 20 Copy-Paste Prompts
-
-```
-66. "Use @orchestration-patterns to design service orchestration"
-
-67. "Apply @orchestration-patterns to implement distributed saga"
-
-68. "Use @orchestration-patterns to create service mesh patterns"
-
-69. "Apply @orchestration-patterns to design API gateway orchestration"
-
-70. "Use @orchestration-patterns to implement workflow orchestration"
-
-71. "Apply @orchestration-patterns to create batch orchestration"
-
-72. "Use @orchestration-patterns to design event choreography"
-
-73. "Apply @orchestration-patterns to implement compensation logic"
-
-74. "Use @orchestration-patterns to create timeout handling"
-
-75. "Apply @orchestration-patterns to design retry patterns"
-
-76. "Use @orchestration-patterns to implement circuit breakers"
-
-77. "Apply @orchestration-patterns to create bulkhead patterns"
-
-78. "Use @orchestration-patterns to design fallback strategies"
-
-79. "Apply @orchestration-patterns to implement health checking"
-
-80. "Use @orchestration-patterns to create service discovery"
+Please provide:
+1. As-is Process Map (identifying bottlenecks).
+2. To-be Automated Workflow design.
+3. Trigger points (e.g., "Signed Contract" webhook).
+4. Integration points (DocuSign, Google Admin, Slack API).
 ```
 
+**Expected Output:** A clear "Before" and "After" process map ready for implementation.
+
 ---
 
-## 9.4 Integration Architecture
+## 9.2 n8n Automation with @n8n-mcp-tools-expert
 
-> **Source**: Unknown  
-> **Risk Level**: Unknown  
-> **Tags**: integration, api, patterns
+### Skill Introduction
 
-### Purpose
+The `@n8n-mcp-tools-expert` skill specializes in building workflows with n8n, a powerful extendable workflow automation tool. It covers node configuration, custom code (Python/JS), and integration with AI agents.
 
-The `integration-architect` skill provides guidance on designing robust system integrations.
+**When to use this skill:**
+- Building self-hosted automation pipelines
+- Integrating custom internal APIs
+- Creating complex data transformation workflows
+- Connecting AI agents/LLMs to tools
+- Processing large data sets (ETL)
 
-### Integration Patterns
+**Key strengths:**
+- Node configuration expertise
+- Function node coding (JavaScript/Python)
+- JSON data manipulation
+- Error trigger management
 
-| Pattern | Description | Use Case |
-|---------|-------------|----------|
-| **Point-to-Point** | Direct connection | Simple integrations |
-| **Hub-and-Spoke** | Central broker | Multiple systems |
-| **ESB** | Enterprise bus | Complex routing |
-| **Event Mesh** | Distributed events | Real-time systems |
-| **API Gateway** | Unified interface | Microservices |
+---
 
-### 20 Copy-Paste Prompts
+### n8n Automation Prompts
 
-```
-81. "Use @integration-architect to design API integration strategy"
+#### Building an AI-Powered News Summarizer
 
-82. "Apply @integration-architect to implement webhook handlers"
+**Context:** You want to build an n8n workflow that monitors RSS feeds, summarizes them with LLMs, and posts to Slack.
 
-83. "Use @integration-architect to create message transformation"
+```text
+@n8n-mcp-tools-expert Guide me to build an "AI News Summarizer" in n8n:
 
-84. "Apply @integration-architect to design data synchronization"
+Inputs:
+- RSS Feed URL (e.g., Hacker News)
 
-85. "Use @integration-architect to implement ETL pipelines"
+Process:
+1. Fetch latest items every hour.
+2. Filter for keywords (e.g., "AI", "LLM").
+3. Send content to OpenAI (GPT-4) for a succinct summary.
+4. Format output as a Slack block with link.
+5. Post to #news channel.
 
-86. "Apply @integration-architect to create real-time integration"
-
-87. "Use @integration-architect to design batch integration"
-
-88. "Apply @integration-architect to implement event-driven integration"
-
-89. "Use @integration-architect to create API versioning strategy"
-
-90. "Apply @integration-architect to design error handling"
-
-91. "Use @integration-architect to implement retry logic"
-
-92. "Apply @integration-architect to create monitoring and alerting"
-
-93. "Use @integration-architect to design security for integrations"
-
-94. "Apply @integration-architect to implement rate limiting"
-
-95. "Use @integration-architect to create integration testing"
-
-96. "Apply @integration-architect to design contract testing"
-
-97. "Use @integration-architect to implement mock servers"
-
-98. "Apply @integration-architect to create integration documentation"
-
-99. "Use @integration-architect to design multi-cloud integration"
-
-100. "Apply @integration-architect to implement legacy system integration"
+Please provide:
+1. List of n8n nodes required.
+2. The JavaScript code for the "Filter" Function node.
+3. The Prompt to send to the LLM node.
+4. JSON structure for the Slack message.
 ```
 
+**Expected Output:** Implementation details for each step of the n8n workflow.
+
 ---
 
-## Workflow Template (Temporal.io)
+#### Data Transformation with Python Node
 
-```typescript
-// Order fulfillment workflow
-import { proxyActivities, sleep, condition } from '@temporalio/workflow';
-import type * as activities from './activities';
+**Context:** You have messy JSON data from an API that needs cleaning before inserting into a database.
 
-const { validateOrder, processPayment, shipOrder, notifyCustomer } =
-  proxyActivities<typeof activities>({
-    startToCloseTimeout: '1 minute',
-    retry: {
-      initialInterval: '1s',
-      backoffCoefficient: 2,
-      maximumAttempts: 3,
-    },
-  });
+```text
+@n8n-mcp-tools-expert Write Python code for an n8n Code Node to transform this data:
 
-export async function orderFulfillmentWorkflow(order: Order): Promise<OrderResult> {
-  // Step 1: Validate
-  const validation = await validateOrder(order);
-  if (!validation.valid) {
-    return { status: 'rejected', reason: validation.reason };
-  }
+Input JSON (Array of objects):
+[
+  {"name": "John Doe", "signup_date": "2023-01-01T12:00:00Z", "plan": "free"},
+  {"name": "Jane Smith", "signup_date": "2023-02-15T09:30:00", "plan": "pro"}
+]
 
-  // Step 2: Payment
-  try {
-    await processPayment(order.paymentDetails);
-  } catch (error) {
-    await notifyCustomer(order.customerId, 'payment_failed');
-    return { status: 'payment_failed' };
-  }
-
-  // Step 3: Fulfillment
-  const shipmentId = await shipOrder(order);
-
-  // Step 4: Notify
-  await notifyCustomer(order.customerId, 'shipped', { shipmentId });
-
-  return { status: 'completed', shipmentId };
-}
+Requirements:
+1. Format `signup_date` to "YYYY-MM-DD".
+2. Capitalize `plan` ("Free", "Pro").
+3. Add a new field `is_active` = True.
+4. Return the modified JSON array.
 ```
 
+**Expected Output:** Python code snippet ready to paste into an n8n Code node.
+
 ---
 
-## State Machine Example (XState)
+## 9.3 No-Code Automation with @zapier-make-patterns
 
-```typescript
-import { createMachine, assign } from 'xstate';
+### Skill Introduction
 
-const orderMachine = createMachine({
-  id: 'order',
-  initial: 'pending',
-  context: {
-    orderId: null,
-    attempts: 0,
-  },
-  states: {
-    pending: {
-      on: {
-        SUBMIT: 'validating',
-      },
-    },
-    validating: {
-      invoke: {
-        src: 'validateOrder',
-        onDone: 'processing',
-        onError: 'invalid',
-      },
-    },
-    invalid: {
-      on: {
-        RETRY: {
-          target: 'validating',
-          actions: assign({ attempts: (ctx) => ctx.attempts + 1 }),
-          guard: 'canRetry',
-        },
-      },
-    },
-    processing: {
-      invoke: {
-        src: 'processPayment',
-        onDone: 'confirmed',
-        onError: 'paymentFailed',
-      },
-    },
-    paymentFailed: {
-      on: {
-        RETRY: 'processing',
-        CANCEL: 'cancelled',
-      },
-    },
-    confirmed: {
-      on: {
-        SHIP: 'shipped',
-      },
-    },
-    shipped: {
-      on: {
-        DELIVER: 'delivered',
-      },
-    },
-    delivered: {
-      type: 'final',
-    },
-    cancelled: {
-      type: 'final',
-    },
-  },
-});
+The `@zapier-make-patterns` skill focuses on using platform-as-a-service automation tools like Zapier and Make (formerly Integromat). It helps with quick prototyping, simple integrations, and utilizing scenarios efficiently.
+
+**When to use this skill:**
+- Rapidly prototyping an MVP feature
+- Connecting popular SaaS apps (Gmail, Trello, Airtable)
+- Simple "If This Then That" logic
+- Automating personal productivity tasks
+- Managing webhook integrations
+
+**Key strengths:**
+- Scenario optimization (reducing operation usage)
+- Filter and Router logic
+- Webhook configuration
+- Data mapping between apps
+
+---
+
+### No-Code Automation Prompts
+
+#### Optimizing a Make (Integromat) Scenario
+
+**Context:** Your Make scenario is consuming too many operations and costing too much.
+
+```text
+@zapier-make-patterns Optimize this Make scenario to reduce operation usage:
+
+Current Scenario:
+1. Trigger: Watch New Emails (Gmail) - Runs every 5 mins.
+2. Google Sheets: Search for Row (Check if sender exists).
+3. Google Sheets: Add Row (If not exists).
+4. Slack: Send Message.
+
+Problem: It runs every 5 minutes even if no email arrives, and "Search Row" uses an op every time.
+
+Goal: Reduce operations while keeping near real-time speed.
+
+Please suggest:
+1. Architectural changes (e.g., Webhooks vs Polling).
+2. Filter logic improvements.
+3. Error handling to prevent loops.
 ```
 
+**Expected Output:** Optimization strategy to lower costs and improve efficiency.
+
 ---
 
-## Best Practices
+## 9.4 Browser Automation with @playwright-skill
 
-### 1. Workflow Idempotency
+### Skill Introduction
 
-```typescript
-// Always check if step was already completed
-async function processStep(workflowId: string, stepId: string) {
-  const existing = await db.getStepResult(workflowId, stepId);
-  if (existing) {
-    return existing.result;
-  }
-  
-  const result = await executeStep();
-  await db.saveStepResult(workflowId, stepId, result);
-  return result;
-}
+The `@playwright-skill` enables you to automate web interactions that lack APIs. It uses Playwright to simulate user behavior for testing, scraping, or automating legacy web applications.
+
+**When to use this skill:**
+- Scaping data from websites without public APIs
+- Automating data entry into legacy portals
+- End-to-end (E2E) testing of web applications
+- Generating screenshots or PDFs from web pages
+- Monitoring website uptime and UI fidelity
+
+**Key strengths:**
+- Selector strategies (CSS, XPath)
+- Handling dynamic content (SPAs)
+- Authentication automation
+- Headless browser configuration
+
+---
+
+### Browser Automation Prompts
+
+#### Scraping Dynamic Data
+
+**Context:** You need to scrape prices from a competitor's website that uses heavy JavaScript (React).
+
+```text
+@playwright-skill specific Write a Playwright script (TypeScript) to scrape product prices:
+
+Target: `https://example-store.com/products`
+Requirement:
+1. Navigate to page.
+2. Wait for the product grid to load (div.product-grid).
+3. Scroll down to trigger lazy loading.
+4. Extract "Product Name" and "Price" for all items.
+5. Save to `products.json`.
+
+Handle potential timeouts and cookie consent popups.
 ```
 
-### 2. Visibility and Logging
-
-Log workflow state transitions for debugging:
-- Workflow started
-- Step completed
-- Error occurred
-- Compensation executed
-
-### 3. Timeout Handling
-
-Always set timeouts:
-- Step timeouts
-- Workflow timeouts
-- Overall SLA timeouts
-
-### 4. Testing
-
-Test workflows in isolation:
-- Unit test individual steps
-- Integration test full workflows
-- Simulate failure scenarios
+**Expected Output:** A ready-to-run Playwright script with comments explaining the logic.
 
 ---
 
-## Reflection Points for Chapter 9
+#### Automating a Legacy Login
 
-1. **What workflows in your organization could be automated?**
-   - Manual handoffs?
-   - Approval chains?
-   - Data processing?
+**Context:** You need to automate a daily report download from an old vendor portal.
 
-2. **How do you handle workflow failures today?**
-   - Manual intervention?
-   - Automatic retry?
-   - Compensation logic?
+```text
+@playwright-skill Create a Playwright automation for a legacy portal login:
 
-3. **What visibility do you have into workflow execution?**
-   - Status tracking?
-   - Error monitoring?
-   - Performance metrics?
+Steps:
+1. Go to `portal.legacy-vendor.com`.
+2. Enter Username and Password.
+3. Click "Login".
+4. Wait for the "Dashboard" element to appear.
+5. Click "Reports" > "Daily Export".
+6. specific Handle the file download event and save to `./downloads`.
 
-4. **How do you version and evolve workflows?**
-   - Backward compatibility?
-   - Migration strategies?
-   - Testing approaches?
+Include error handling if the login fails or site is down.
+```
+
+**Expected Output:** A robust automation script for handling login and file downloads.
 
 ---
 
-## Summary
+## Best Practices Summary
 
-This chapter covered workflow and automation architecture:
+### Architecture First
+- **Plan before building:** Draw the workflow before adding nodes.
+- **Idempotency:** Ensure that running the same event twice doesn't break things (e.g., charging a card twice).
+- **Loose Coupling:** Use webhooks and queues to decouple systems.
 
-- **@workflow-architect**: Workflow system design
-- **@state-machine-patterns**: State machine implementation
-- **@orchestration-patterns**: Service orchestration
-- **@integration-architect**: System integration
+### Error Handling
+- **Expect Failure:** APIs go down. Credentials expire. Build retries into every step.
+- **Dead Letter Queues:** Store failed events so they can be replayed later.
+- **Monitoring:** Set up alerts when workflows fail, don't just rely on checking logs manually.
 
-**Key Takeaway**: Well-designed workflows provide visibility, reliability, and scalability for complex business processes. Use state machines for clear state management and orchestration patterns for distributed coordination.
+### Tool Selection
+- **Zapier/Make:** Best for simple, linear integrations and prototyping.
+- **n8n:** Best for complex data transformation, self-hosting, and cost control.
+- **Code:** Best for highly specific logic or performance-critical tasks.
 
 ---
 
-**End of Part II: Architecture & System Design Skills**
+## Reflection Points
+
+1. **Fragility:** If one API changes, does your whole system break?
+2. **Visibility:** Can you easily see the status of an order that happened yesterday?
+3. **Security:** Are you managing API keys securely (not hardcoded)?
+4. **Maintenance:** Who fixes the bot when it breaks while you are on vacation?
 
 ---
 
-**Next Part**: [Part III: Business & Marketing Skills →](chapter-10-seo-content-marketing.md)
+**Next Chapter:** [Chapter 10: SEO & Content Marketing →](10-seo-content-marketing.md)

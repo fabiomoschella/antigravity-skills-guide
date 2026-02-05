@@ -10,486 +10,336 @@ Strategic thinking and business analysis are essential for making informed decis
 
 ### Skills Covered in This Chapter
 
-| Skill | Source | Purpose |
-|-------|--------|---------|
-| `@business-strategist` | coreyhaines31/marketingskills | Strategic planning |
-| `@competitive-analyst` | coreyhaines31/marketingskills | Competitor analysis |
-| `@market-researcher` | Unknown | Market analysis |
-| `@business-model-expert` | Unknown | Business model design |
-| `@financial-analyst` | Unknown | Financial analysis |
-| `@startup-advisor` | antigravity | Startup strategy |
-| `@product-market-fit` | antigravity | PMF validation |
-| `@go-to-market-expert` | antigravity | GTM strategy |
-| `@pricing-strategist` | antigravity | Pricing models |
-| `@investor-relations` | antigravity | Fundraising |
+| Skill | Purpose | Best For |
+|-------|---------|----------|
+| `@business-strategist` | Strategic planning | Long-term vision, roadmaps |
+| `@competitive-analyst` | Competitor analysis | Market positioning, intelligence |
+| `@market-researcher` | Market analysis | Trend spotting, validation |
+| `@business-model-expert` | Business model design | Revenue models, value prop |
+| `@financial-analyst` | Financial analysis | Projections, metrics, unit economics |
+| `@startup-advisor` | Startup strategy | Early-stage guidance, fundraising |
+| `@product-market-fit` | PMF validation | Product strategy, customer discovery |
+| `@go-to-market-expert` | GTM strategy | Launch planning, distribution |
+| `@pricing-strategist` | Pricing models | Monetization strategy |
+| `@investor-relations` | Fundraising | Pitch decks, investor comms |
 
 ---
 
-## 13.1 Business Strategy
+## 13.1 Business Strategy with @business-strategist
 
-> **Source**: [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills)  
-> **License**: MIT  
-> **Tags**: strategy, planning, business
+### Skill Introduction
 
-### Purpose
+The `@business-strategist` skill helps you develop comprehensive strategic plans, analyze business environments, and define long-term objectives. It applies frameworks like SWOT, PESTLE, and Blue Ocean Strategy to guide decision-making.
 
-The `business-strategist` skill provides frameworks for strategic planning and business development.
+**When to use this skill:**
+- Defining company vision and mission
+- Conducting annual strategic planning
+- Assessing new market opportunities
+- Navigating market shifts or crises
+- Aligning organizational objectives (OKRs)
 
-### Strategic Planning Frameworks
-
-| Framework | Purpose | Key Elements |
-|-----------|---------|--------------|
-| **SWOT** | Situational analysis | Strengths, Weaknesses, Opportunities, Threats |
-| **Porter's 5 Forces** | Industry analysis | Competition, Suppliers, Buyers, Substitutes, New Entrants |
-| **PESTLE** | Macro environment | Political, Economic, Social, Technology, Legal, Environmental |
-| **Value Chain** | Activity analysis | Primary and Support Activities |
-| **Blue Ocean** | Strategy canvas | Value innovation |
-
-### 40 Copy-Paste Prompts
-
-#### Strategic Analysis
-
-```
-1. "Use @business-strategist to conduct a SWOT analysis for my SaaS startup"
-
-2. "Apply @business-strategist to analyze Porter's 5 Forces for my industry"
-
-3. "Use @business-strategist to create a PESTLE analysis"
-
-4. "Apply @business-strategist to analyze our value chain"
-
-5. "Use @business-strategist to develop a Blue Ocean strategy"
-
-6. "Apply @business-strategist to create a strategic roadmap"
-
-7. "Use @business-strategist to identify core competencies"
-
-8. "Apply @business-strategist to analyze strategic options"
-
-9. "Use @business-strategist to create a mission and vision statement"
-
-10. "Apply @business-strategist to develop strategic objectives"
-```
-
-#### Growth Strategy
-
-```
-11. "Use @business-strategist to analyze growth opportunities using Ansoff Matrix"
-
-12. "Apply @business-strategist to develop market expansion strategy"
-
-13. "Use @business-strategist to plan product diversification"
-
-14. "Apply @business-strategist to create a geographic expansion plan"
-
-15. "Use @business-strategist to analyze acquisition targets"
-
-16. "Apply @business-strategist to develop partnership strategy"
-
-17. "Use @business-strategist to plan channel expansion"
-
-18. "Apply @business-strategist to create a vertical integration strategy"
-
-19. "Use @business-strategist to develop platform strategy"
-
-20. "Apply @business-strategist to plan ecosystem development"
-```
-
-#### Competitive Strategy
-
-```
-21. "Use @business-strategist to develop a cost leadership strategy"
-
-22. "Apply @business-strategist to create a differentiation strategy"
-
-23. "Use @business-strategist to plan a focus/niche strategy"
-
-24. "Apply @business-strategist to analyze competitive positioning"
-
-25. "Use @business-strategist to develop a moat strategy"
-
-26. "Apply @business-strategist to create barriers to entry"
-
-27. "Use @business-strategist to plan competitive response"
-
-28. "Apply @business-strategist to develop network effects strategy"
-
-29. "Use @business-strategist to create a switching cost strategy"
-
-30. "Apply @business-strategist to develop a first-mover strategy"
-```
-
-#### Strategic Execution
-
-```
-31. "Use @business-strategist to create an OKR framework"
-
-32. "Apply @business-strategist to develop a balanced scorecard"
-
-33. "Use @business-strategist to plan strategic initiatives"
-
-34. "Apply @business-strategist to create a strategy cascade"
-
-35. "Use @business-strategist to develop KPIs for strategy"
-
-36. "Apply @business-strategist to plan resource allocation"
-
-37. "Use @business-strategist to create a governance framework"
-
-38. "Apply @business-strategist to develop a change management plan"
-
-39. "Use @business-strategist to plan strategic communication"
-
-40. "Apply @business-strategist to create a strategy review process"
-```
+**Key strengths:**
+- Strategic framework application
+- Scenario planning and analysis
+- Objective setting and alignment
+- Risk assessment and mitigation
 
 ---
 
-## 13.2 Competitive Analysis
+### Strategic Planning Prompts
 
-> **Source**: [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills)  
-> **License**: MIT  
-> **Tags**: competitive, analysis, research
+#### Developing a 3-Year Strategic Plan
 
-### Purpose
+**Context:** You are the CEO of a mid-sized software company planning the next growth phase.
 
-The `competitive-analyst` skill helps analyze competitors and market positioning.
+```text
+@business-strategist Create a 3-year strategic growth plan for our company:
 
-### Competitive Analysis Framework
+Current state:
+- $10M ARR, growing 20% YoY
+- Focus: Enterprise B2B software
+- Key challenge: Increasing churn and new low-cost competitors
 
-```mermaid
-graph TB
-    A[Identify Competitors] --> B[Categorize]
-    B --> C[Analyze]
-    C --> D[Benchmark]
-    D --> E[Position]
-    
-    B --> B1[Direct]
-    B --> B2[Indirect]
-    B --> B3[Future]
-    
-    C --> C1[Products]
-    C --> C2[Pricing]
-    C --> C3[Marketing]
-    C --> C4[Operations]
+Goals:
+- Reach $25M ARR in 3 years
+- Expand into the European market
+- Launch a new complementary product line
+
+Please provide:
+1. Strategic pillars (3-4 key focus areas)
+2. SWOT analysis based on the context
+3. Year-by-year roadmap with milestones
+4. Market expansion strategy (Europe)
+5. Product diversification approach
+6. Key risks and mitigation strategies
+7. Resource requirements estimate
 ```
 
-### 30 Copy-Paste Prompts
-
-#### Competitor Identification
-
-```
-41. "Use @competitive-analyst to identify direct competitors"
-
-42. "Apply @competitive-analyst to find indirect competitors"
-
-43. "Use @competitive-analyst to identify potential future competitors"
-
-44. "Apply @competitive-analyst to map the competitive landscape"
-
-45. "Use @competitive-analyst to categorize competitor tiers"
-
-46. "Apply @competitive-analyst to identify substitute products"
-
-47. "Use @competitive-analyst to analyze market share distribution"
-
-48. "Apply @competitive-analyst to identify emerging players"
-
-49. "Use @competitive-analyst to track new entrants"
-
-50. "Apply @competitive-analyst to monitor competitor movements"
-```
-
-#### Competitor Deep Dive
-
-```
-51. "Use @competitive-analyst to analyze competitor product features"
-
-52. "Apply @competitive-analyst to decode competitor pricing strategy"
-
-53. "Use @competitive-analyst to analyze competitor marketing"
-
-54. "Apply @competitive-analyst to research competitor tech stack"
-
-55. "Use @competitive-analyst to analyze competitor funding"
-
-56. "Apply @competitive-analyst to research competitor team"
-
-57. "Use @competitive-analyst to analyze competitor reviews"
-
-58. "Apply @competitive-analyst to decode competitor positioning"
-
-59. "Use @competitive-analyst to analyze competitor SEO strategy"
-
-60. "Apply @competitive-analyst to research competitor partnerships"
-```
-
-#### Competitive Intelligence
-
-```
-61. "Use @competitive-analyst to create a competitor monitoring system"
-
-62. "Apply @competitive-analyst to set up competitive alerts"
-
-63. "Use @competitive-analyst to build a competitive intelligence database"
-
-64. "Apply @competitive-analyst to create competitor battle cards"
-
-65. "Use @competitive-analyst to develop win/loss analysis"
-
-66. "Apply @competitive-analyst to create competitive positioning map"
-
-67. "Use @competitive-analyst to analyze competitive pricing trends"
-
-68. "Apply @competitive-analyst to track competitor feature releases"
-
-69. "Use @competitive-analyst to monitor competitor hiring"
-
-70. "Apply @competitive-analyst to analyze competitor M&A activity"
-```
+**Expected Output:** A comprehensive strategic plan document outlining the path to growth, including analysis, milestones, and risk management.
 
 ---
 
-## 13.3 Business Model Design
+#### Conducting a PESTLE Analysis
 
-> **Source**: Unknown  
-> **Tags**: business-model, canvas, strategy
+**Context:** You're considering entering a new emerging market and need to understand the macro environment.
 
-### Purpose
+```text
+@business-strategist Conduct a PESTLE analysis for launching our fintech app in Southeast Asia:
 
-The `business-model-expert` skill helps design and analyze business models.
+Product: Mobile peer-to-peer payments and micro-lending
+Target markets: Vietnam, Indonesia, Philippines
 
-### Business Model Canvas
+Please analyze:
+1. Political: Regulatory stability and financial regulations
+2. Economic: Growth rates, currency stability, inflation
+3. Social: Mobile adoption, unbanked population behavior
+4. Technological: Internet infrastructure, smartphone penetration
+5. Legal: Data privacy, lending laws, licensing requirements
+6. Environmental: Sustainability concerns (if applicable)
 
-```
-┌─────────────────┬─────────────────┬─────────────────┐
-│ Key Partners    │ Key Activities  │ Value           │
-│                 ├─────────────────┤ Propositions    │
-│                 │ Key Resources   │                 │
-├─────────────────┼─────────────────┼─────────────────┤
-│ Cost Structure  │ Channels        │ Customer        │
-│                 ├─────────────────┤ Relationships   │
-│                 │ Customer        ├─────────────────┤
-│                 │ Segments        │ Revenue Streams │
-└─────────────────┴─────────────────┴─────────────────┘
+Provide actionable insights for market entry based on this analysis.
 ```
 
-### 15 Copy-Paste Prompts
-
-```
-71. "Use @business-model-expert to create a Business Model Canvas"
-
-72. "Apply @business-model-expert to analyze revenue streams"
-
-73. "Use @business-model-expert to design a subscription model"
-
-74. "Apply @business-model-expert to create a freemium strategy"
-
-75. "Use @business-model-expert to design a marketplace model"
-
-76. "Apply @business-model-expert to analyze value propositions"
-
-77. "Use @business-model-expert to design platform business model"
-
-78. "Apply @business-model-expert to create a licensing model"
-
-79. "Use @business-model-expert to analyze customer segments"
-
-80. "Apply @business-model-expert to design channel strategy"
-
-81. "Use @business-model-expert to create a razor-razorblade model"
-
-82. "Apply @business-model-expert to design an affiliate model"
-
-83. "Use @business-model-expert to analyze cost structure"
-
-84. "Apply @business-model-expert to create unit economics model"
-
-85. "Use @business-model-expert to design a franchise model"
-```
+**Expected Output:** Detailed PESTLE analysis highlighting opportunities and threats in the target region.
 
 ---
 
-## 13.4 Financial Analysis
+## 13.2 Competitive Analysis with @competitive-analyst
 
-> **Source**: Unknown  
-> **Tags**: finance, analysis, metrics
+### Skill Introduction
 
-### Purpose
+The `@competitive-analyst` skill specializes in dissecting competitor strategies, monitoring market movements, and identifying competitive advantages. It helps you stay ahead by understanding the landscape.
 
-The `financial-analyst` skill helps analyze financial performance and projections.
+**When to use this skill:**
+- Analyzing a new competitor entering your space
+- Benchmarking your product against market leaders
+- Identifying gaps in competitor offerings
+- Preparing sales battle cards
+- Monitoring competitor pricing and messaging changes
 
-### Key Financial Metrics
+**Key strengths:**
+- Deep competitor profiling
+- Feature and pricing comparison
+- Market positioning analysis
+- Win/Loss analysis interpretation
 
-| Metric | Formula | Purpose |
-|--------|---------|---------|
-| **Gross Margin** | (Revenue - COGS) / Revenue | Product profitability |
-| **CAC** | Marketing Spend / New Customers | Acquisition efficiency |
-| **LTV** | ARPU × Customer Lifetime | Customer value |
-| **LTV:CAC** | LTV / CAC | Unit economics health |
-| **Burn Rate** | Monthly operating expenses | Runway calculation |
-| **MRR** | Monthly recurring revenue | Subscription health |
+---
 
-### 15 Copy-Paste Prompts
+### Competitive Analysis Prompts
 
-```
-86. "Use @financial-analyst to calculate unit economics"
+#### Creating a Competitive Battle Card
 
-87. "Apply @financial-analyst to create a financial projection model"
+**Context:** Your sales team is losing deals to a specific competitor ("Competitor X"). You need a battle card to help them win.
 
-88. "Use @financial-analyst to analyze cash flow"
+```text
+@competitive-analyst Create a sales battle card for competing against "Competitor X":
 
-89. "Apply @financial-analyst to calculate customer lifetime value"
+Our Product: "CloudSafe" (Secure cloud storage for enterprise)
+Competitor: "BoxFast" (Cheaper, feature-rich, but less secure)
 
-90. "Use @financial-analyst to analyze profitability by segment"
+Our strengths:
+- Compliance certifications (HIPAA, SOC2)
+- Zero-knowledge encryption
+- Dedicated support
 
-91. "Apply @financial-analyst to create a pricing sensitivity analysis"
+Competitor strengths:
+- Lower price point
+- More 3rd party integrations
+- Faster file sync
 
-92. "Use @financial-analyst to analyze revenue cohorts"
-
-93. "Apply @financial-analyst to calculate breakeven point"
-
-94. "Use @financial-analyst to create a funding runway model"
-
-95. "Apply @financial-analyst to analyze margin optimization"
-
-96. "Use @financial-analyst to create a scenario planning model"
-
-97. "Apply @financial-analyst to analyze working capital"
-
-98. "Use @financial-analyst to calculate ROI on initiatives"
-
-99. "Apply @financial-analyst to analyze churn impact"
-
-100. "Use @financial-analyst to create a valuation model"
+Please provide:
+1. "Kill points" (our top distinct advantages)
+2. Responses to common objections (e.g., "They are cheaper")
+3. Landmines (questions to ask prospects to highlight competitor weaknesses)
+4. Feature comparison matrix spotlighting our wins
+5. Customer success story summary to reference
 ```
 
+**Expected Output:** A concise, actionable one-page battle card for sales representatives.
+
 ---
 
-## Strategic Templates
+#### Market Landscape Mapping
 
-### SWOT Analysis Template
+**Context:** You're exploring the "Generative AI for Marketing" landscape to find a niche.
 
-```markdown
-## SWOT Analysis: [Company Name]
+```text
+@competitive-analyst Map the competitive landscape for "Generative AI in Marketing":
 
-### Strengths (Internal, Positive)
-- Strong brand recognition
-- Proprietary technology
-- Experienced team
-- Low customer acquisition cost
+Goal: Identify underserved niches for a new SaaS product.
 
-### Weaknesses (Internal, Negative)
-- Limited market reach
-- High burn rate
-- Single revenue stream
-- Technical debt
-
-### Opportunities (External, Positive)
-- Growing market
-- Regulatory changes favorable
-- Competitor weakness
-- New technology enablers
-
-### Threats (External, Negative)
-- New entrants
-- Economic downturn
-- Changing customer preferences
-- Technology disruption
+Please identify:
+1. Major incumbents and their dominance (e.g., Jasper, Copy.ai)
+2. Emerging startups and their unique angles
+3. Feature saturation (what does everyone have?)
+4. Gap analysis (what problems are solved poorly?)
+5. Pricing trends in the market
+6. Potential "Blue Ocean" opportunities
 ```
 
-### Competitive Battle Card Template
+**Expected Output:** A market landscape report categorizing competitors and highlighting open opportunities.
 
-```markdown
-## [Competitor Name] Battle Card
+---
 
-### Overview
-- Founded: [Year]
-- Funding: [Amount]
-- Employees: [Count]
-- Target Market: [Description]
+## 13.3 Business Model Design with @business-model-expert
 
-### Their Strengths
-1. [Strength 1]
-2. [Strength 2]
+### Skill Introduction
 
-### Their Weaknesses
-1. [Weakness 1]
-2. [Weakness 2]
+The `@business-model-expert` skill assists in designing, testing, and refining business models. It uses tools like the Business Model Canvas to ensure all aspects of a business—from value proposition to revenue streams—are aligned.
 
-### Our Advantages
-| Feature | Us | Them |
-|---------|----|----|
-| Pricing | $X | $Y |
-| Feature A | ✅ | ❌ |
-| Feature B | ✅ | ✅ |
+**When to use this skill:**
+- Launching a new startup or product line
+- Pivoting an existing business
+- Analyzing revenue streams and cost structures
+- Designing partnership eco-systems
+- Validating business viability
 
-### Common Objections
-- "They're cheaper" → Response: [...]
-- "They have more features" → Response: [...]
+**Key strengths:**
+- Business Model Canvas generation
+- Value proposition design
+- Revenue stream modeling
+- Unit economics analysis
 
-### Win Stories
-- [Customer X chose us because...]
+---
+
+### Business Model Prompts
+
+#### Designing a Subscription Business Model
+
+**Context:** You are pivoting from a one-time purchase software model to a SaaS subscription model.
+
+```text
+@business-model-expert Design a SaaS business model for our video editing software:
+
+Current model: $299 lifetime license
+New model: Monthly/Annual subscription
+
+Goals:
+- Increase recurring revenue
+- Lower barrier to entry for creators
+- Introduce tiered pricing
+
+Please provide:
+1. Revised Value Propositions for subscription (e.g., continuous updates, cloud storage)
+2. Pricing Strategy:
+   - Free Tier features
+   - Pro Tier ($X/mo) features
+   - Enterprise Tier features
+3. Revenue Stream analysis (MRR vs ARR impact)
+4. Changes to Customer Relationships (support, community)
+5. Key Metrics to track (churn, LTV, CAC)
 ```
 
----
-
-## Best Practices
-
-### 1. Strategy Development
-
-- Start with customer insights
-- Validate assumptions quickly
-- Build flexibility into plans
-- Review and adapt regularly
-
-### 2. Competitive Intelligence
-
-- Monitor continuously, not periodically
-- Focus on actionable insights
-- Verify through multiple sources
-- Share across teams
-
-### 3. Financial Discipline
-
-- Track leading indicators
-- Scenario plan for uncertainty
-- Understand unit economics deeply
-- Align metrics with strategy
+**Expected Output:** A detailed business model transition plan focusing on the shift to subscription.
 
 ---
 
-## Reflection Points for Chapter 13
+#### Creating a Lean Canvas
 
-1. **How often do you review your strategy?**
-   - Annual? Quarterly?
-   - Trigger-based reviews?
+**Context:** You have an idea for a "Uber for Dog Walking" app and need to validate the concept quickly.
 
-2. **How do you gather competitive intelligence?**
-   - Systematic process?
-   - Cross-functional input?
+```text
+@business-model-expert Create a Lean Canvas for a "On-Demand Dog Walking" app:
 
-3. **What's your financial visibility?**
-   - Real-time dashboards?
-   - Forecast accuracy?
+Problem: Busy pet owners can't walk dogs midday; stiff scheduling with agencies.
+Solution: App to book vetted walkers instantly.
+Unique Value Prop: "Walk your dog within 30 mins, tracked via GPS."
 
-4. **How do you communicate strategy?**
-   - Team alignment?
-   - External communications?
+Please fill out the Lean Canvas sections:
+1. Problem (Top 3 problems)
+2. Customer Segments (Who are the early adopters?)
+3. Unique Value Proposition
+4. Solution (Top 3 features)
+5. Channels (How to reach customers?)
+6. Revenue Streams (Pricing model)
+7. Cost Structure (Development, marketing, insurance)
+8. Key Metrics (e.g., # of walks, retention)
+9. Unfair Advantage (Why can't this be easily copied?)
+```
 
----
-
-## Summary
-
-This chapter covered business strategy and analysis skills:
-
-- **@business-strategist**: Strategic planning and frameworks
-- **@competitive-analyst**: Competitor research and positioning
-- **@business-model-expert**: Business model design
-- **@financial-analyst**: Financial analysis and projections
-
-**Key Takeaway**: Effective strategy requires a combination of external analysis, internal assessment, and continuous adaptation. Use frameworks to structure thinking but stay flexible in execution.
+**Expected Output:** A completed Lean Canvas structured for validaton.
 
 ---
 
-**Next Chapter**: [Chapter 14: Social Media & Community →](chapter-14-social-media.md)
+## 13.4 Financial Analysis with @financial-analyst
+
+### Skill Introduction
+
+The `@financial-analyst` skill helps you model financial scenarios, analyze performance metrics, and understand the financial health of a business. It's crucial for fundraising, budgeting, and operational planning.
+
+**When to use this skill:**
+- Creating financial projections for investors
+- Analyzing unit economics (LTV:CAC)
+- Budgeting and forecasting
+- Assessing the financial impact of strategic decisions
+- calculating runway and burn rate
+
+**Key strengths:**
+- Financial modeling (P&L, Cash Flow)
+- Metric calculation and analysis
+- Valuation estimation
+- Scenario planning (Best/Base/Worst case)
+
+---
+
+### Financial Analysis Prompts
+
+#### Modeling Unit Economics
+
+**Context:** You need to present your SaaS unit economics to a potential Series A investor.
+
+```text
+@financial-analyst Analyze and project unit economics for our B2B SaaS:
+
+Data:
+- Average Revenue Per Account (ARQA): $12,000/year
+- Gross Margin: 80%
+- Churn Rate: 10% annual
+- Marketing Spend: $50,000/month
+- Sales Spend: $30,000/month
+- New Customers/month: 10
+
+Please calculate and analyze:
+1. Customer Acquisition Cost (CAC)
+2. Customer Lifetime Value (LTV)
+3. LTV:CAC Ratio
+4. Payback Period
+5. Impact of reducing churn to 5% on LTV
+6. Impact of increasing ARPA to $15k on LTV:CAC
+
+Provide a summary of the health of these metrics for a Series A investor.
+```
+
+**Expected Output:** Detailed calculation of unit economics with sensitivity analysis and investor-focused summary.
+
+---
+
+## Best Practices Summary
+
+### Strategic Thinking
+- **Look Outward:** Don't just focus internally; monitor the market shifts constantly.
+- **Challenge Assumptions:** Regularly test your core beliefs about the business.
+- **Focus on Execution:** A good strategy poorly executed fails; a mediocre strategy well executed can succeed.
+
+### Competitive Intelligence
+- **Don't Obsess:** Watch competitors, but focus on your customers.
+- **Differentiate:** Don't just copy features; solve problems differently or better.
+- **Win/Loss Analysis:** The best intel comes from deals you won or lost.
+
+### Financial Health
+- **Cash is King:** Always know your runway and cash flow status.
+- **Unit Economics First:** Ensure the core business model works before scaling.
+- **Plan for Scenarios:** Have a plan for best case, base case, and worst case.
+
+---
+
+## Reflection Points
+
+1. **Strategic Clarity:** Can every employee articulate the company's top 3 strategic priorities?
+2. **CompetitiveMoat:** What is your unfair advantage that is hard to copy?
+3. **Business Model Fit:** Does your revenue model align with how your customers get value?
+4. **Financial Literacy:** Does the leadership team understand the key drivers of financial health?
+
+---
+
+**Next Chapter:** [Chapter 14: Social Media & Community →](14-social-media.md)
