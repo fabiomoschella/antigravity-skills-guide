@@ -15,6 +15,14 @@ Version control is fundamental to modern software development, enabling collabor
 | `@git-expert` | Git mastery | Advanced Git operations |
 | `@branching-strategist` | Branch strategies | Team workflows |
 | `@merge-expert` | Merge handling | Conflict resolution |
+| `@git-best-practices` | Git practices | Conventions |
+| `@git-hooks` | Git hooks | Automation |
+| `@conventional-commits` | Commit format | Standardization |
+| `@semantic-versioning` | Versioning | Release numbering |
+| `@monorepo-version-control` | Monorepos | Large repos |
+| `@github-expert` | GitHub | Platform features |
+| `@github-actions` | Actions | CI/CD automation |
+| `@gitlab-expert` | GitLab | Platform features |
 
 ---
 

@@ -12,11 +12,16 @@ Strategic thinking and business analysis are essential for making informed decis
 
 | Skill | Source | Purpose |
 |-------|--------|---------|
-| `business-strategist` | coreyhaines31/marketingskills | Strategic planning |
-| `competitive-analyst` | coreyhaines31/marketingskills | Competitor analysis |
-| `market-researcher` | Unknown | Market analysis |
-| `business-model-expert` | Unknown | Business model design |
-| `financial-analyst` | Unknown | Financial analysis |
+| `@business-strategist` | coreyhaines31/marketingskills | Strategic planning |
+| `@competitive-analyst` | coreyhaines31/marketingskills | Competitor analysis |
+| `@market-researcher` | Unknown | Market analysis |
+| `@business-model-expert` | Unknown | Business model design |
+| `@financial-analyst` | Unknown | Financial analysis |
+| `@startup-advisor` | antigravity | Startup strategy |
+| `@product-market-fit` | antigravity | PMF validation |
+| `@go-to-market-expert` | antigravity | GTM strategy |
+| `@pricing-strategist` | antigravity | Pricing models |
+| `@investor-relations` | antigravity | Fundraising |
 
 ---
 

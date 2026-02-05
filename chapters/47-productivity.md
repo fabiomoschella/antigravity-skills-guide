@@ -18,6 +18,12 @@ This chapter covers essential skills for maximizing individual and team producti
 | `@automation-expert` | Workflow automation | Eliminating repetitive tasks |
 | `@tooling-expert` | Developer tools | Tool selection and mastery |
 | `@focus-coach` | Deep work practices | Concentration and flow |
+| `@vscode-expert` | VS Code | IDE mastery |
+| `@cursor-optimization` | Cursor IDE | AI-assisted coding |
+| `@terminal-expert` | Terminal | CLI productivity |
+| `@shell-scripting` | Shell scripts | Automation |
+| `@keyboard-shortcuts` | Shortcuts | Efficiency |
+| `@developer-experience` | DX | Team productivity |
 
 ---
 

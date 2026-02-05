@@ -18,6 +18,12 @@ This chapter covers essential skills for building secure, compliant financial so
 | `@banking-api-expert` | Banking integration | Open Banking, aggregation |
 | `@compliance-fintech` | Financial compliance | Regulatory requirements |
 | `@fintech-security` | Security for finance | Financial data protection |
+| `@plaid-integration` | Plaid API | Bank connections |
+| `@stripe-integration` | Stripe payments | Payment processing |
+| `@payment-processing` | Payments | Transaction handling |
+| `@cryptocurrency-expert` | Crypto | Digital assets |
+| `@blockchain-fintech` | Blockchain | DeFi applications |
+| `@trading-systems` | Trading | Order execution |
 
 ---
 

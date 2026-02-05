@@ -15,6 +15,13 @@ Refactoring improves code structure without changing behavior. This chapter cove
 | `@refactoring-expert` | Refactoring techniques | Code improvement |
 | `@legacy-code-expert` | Legacy code work | Old codebases |
 | `@tech-debt-analyst` | Technical debt | Debt prioritization |
+| `@code-modernization` | Code updates | Modern patterns |
+| `@migration-specialist` | Migrations | Framework upgrades |
+| `@dependency-updater` | Dependencies | Version updates |
+| `@deprecation-handler` | Deprecations | API transitions |
+| `@complexity-reducer` | Complexity | Simplification |
+| `@dead-code-eliminator` | Dead code | Code cleanup |
+| `@design-pattern-refactorer` | Patterns | Pattern application |
 
 ---
 

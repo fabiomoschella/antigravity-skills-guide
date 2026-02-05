@@ -18,6 +18,12 @@ This chapter covers essential skills for clear communication and productive coll
 | `@meeting-facilitator` | Meeting management | Productive meetings |
 | `@remote-collab-expert` | Remote collaboration | Distributed teams |
 | `@conflict-resolver` | Conflict resolution | Team disagreements |
+| `@presentation-expert` | Presentations | Tech talks |
+| `@stakeholder-management` | Stakeholders | Managing expectations |
+| `@cross-functional-collaboration` | Cross-team | Team alignment |
+| `@async-communication` | Async work | Remote-first practices |
+| `@tech-writing-expert` | Tech writing | Clear documentation |
+| `@diagram-expert` | Diagrams | Visual communication |
 
 ---
 

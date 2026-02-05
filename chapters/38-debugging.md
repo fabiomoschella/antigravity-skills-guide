@@ -18,6 +18,12 @@ This chapter covers essential debugging skills for diagnosing issues across diff
 | `@production-debugger` | Production issues | Live system debugging |
 | `@memory-debugger` | Memory issues | Leaks, crashes, profiling |
 | `@performance-debugger` | Performance issues | Bottleneck identification |
+| `@error-analyzer` | Error analysis | Stack traces, logs |
+| `@log-analyzer` | Log analysis | Log parsing, correlation |
+| `@root-cause-analyst` | RCA | Incident analysis |
+| `@troubleshooter` | Troubleshooting | Issue diagnosis |
+| `@crash-analyzer` | Crash analysis | Dump analysis |
+| `@network-debugger` | Network issues | Connectivity, latency |
 
 ---
 

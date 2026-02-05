@@ -18,6 +18,12 @@ This chapter covers essential performance testing skills for measuring, analyzin
 | `@k6-expert` | k6 load testing | Script development, testing |
 | `@jmeter-expert` | JMeter testing | Complex scenarios, enterprise |
 | `@performance-analyst` | Results analysis | Bottleneck identification |
+| `@gatling-expert` | Gatling | Scala-based load testing |
+| `@locust-expert` | Locust | Python load testing |
+| `@benchmark-expert` | Benchmarking | Micro-benchmarks |
+| `@stress-test-expert` | Stress testing | Breaking points |
+| `@web-vitals-expert` | Web Vitals | Core web vitals |
+| `@lighthouse-expert` | Lighthouse | Web performance audit |
 
 ---
 

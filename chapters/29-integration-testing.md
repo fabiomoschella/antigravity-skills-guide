@@ -18,6 +18,12 @@ This chapter covers skills for designing and implementing effective integration 
 | `@e2e-test-expert` | End-to-end testing | User workflow validation |
 | `@playwright-expert` | Browser automation | UI testing, cross-browser |
 | `@cypress-expert` | Cypress testing | Fast E2E, developer experience |
+| `@playwright-skill` | Playwright | Browser automation |
+| `@testcontainers-expert` | Testcontainers | Container-based testing |
+| `@api-testing-patterns` | API testing | REST/GraphQL testing |
+| `@contract-testing` | Contract tests | API contracts |
+| `@mock-service-worker` | MSW | API mocking |
+| `@selenium-expert` | Selenium | Browser automation |
 
 ---
 
