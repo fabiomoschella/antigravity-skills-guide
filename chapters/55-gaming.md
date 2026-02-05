@@ -15,6 +15,13 @@ This chapter covers essential skills for building games and interactive experien
 | Skill | Purpose | Best For |
 |-------|---------|----------|
 | `@game-architect` | Game architecture | Game systems design |
+| `@game-development` | General game dev | All game projects |
+| `@unity-developer` | Unity engine | 2D/3D games |
+| `@unity-ecs-patterns` | Unity ECS | Performance-critical |
+| `@unreal-engine-cpp-pro` | Unreal Engine | AAA quality games |
+| `@godot-gdscript-patterns` | Godot engine | Indie games |
+| `@threejs-skills` | Three.js/WebGL | Browser 3D games |
+| `@3d-web-experience` | Web 3D | Interactive web |
 | `@multiplayer-expert` | Multiplayer systems | Networking, sync |
 | `@game-backend-expert` | Game backends | LiveOps, services |
 | `@game-monetization` | Monetization design | F2P, IAP |
@@ -320,7 +327,7 @@ Please provide:
 
 Congratulations on completing **Antigravity Awesome Skills**! 
 
-You've explored 55 chapters covering:
+You've explored 57 chapters covering:
 
 | Part | Topics | Chapters |
 |------|--------|----------|
@@ -332,6 +339,7 @@ You've explored 55 chapters covering:
 | VIII | Data & AI | 41-46 |
 | IX | Productivity & General | 47-50 |
 | X | Specialized Domains | 51-55 |
+| XI | Advanced Topics | 56-57 |
 
 ### Key Takeaways
 

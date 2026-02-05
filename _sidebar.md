@@ -75,6 +75,10 @@
   * [EdTech](chapters/54-edtech.md)
   * [Gaming](chapters/55-gaming.md)
 
+* **Advanced Topics**
+  * [AI Agents & LLM](chapters/56-ai-agents-llm.md)
+  * [Blockchain & Web3](chapters/57-blockchain-web3.md)
+
 * **Appendices**
   * [A: Skills Reference](appendices/a-skills-reference.md)
   * [B: Prompt Templates](appendices/b-prompt-templates.md)
