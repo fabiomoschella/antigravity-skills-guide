@@ -1,4 +1,4 @@
-# Chapter 7: Monorepo & Build System Architecture
+# Chapter 7: Monorepo & Build Architecture
 
 **Last Updated:** February 5, 2026
 
@@ -6,483 +6,249 @@
 
 ## Overview
 
-Managing large codebases requires sophisticated approaches to code organization, dependency management, and build optimization. This chapter covers skills for designing and implementing monorepo architectures and efficient build systems.
+Modern scalable development often relies on Monorepos (multiple projects in a single repository). This chapter covers the architectural skills needed to design, maintain, and optimize these complex environments using tools like Nx and Turborepo.
 
 ### Skills Covered in This Chapter
 
-| Skill | Source | Purpose |
-|-------|--------|---------|
-| `monorepo-architect` | Unknown | Monorepo design patterns |
-| `nx-expert` | Unknown | Nx workspace management |
-| `turborepo-expert` | Unknown | Turborepo optimization |
-| `build-system-architect` | Unknown | Build pipeline design |
-| `dependency-management` | Unknown | Dependency optimization |
+| Skill | Purpose | Best For |
+|-------|---------|----------|
+| `@monorepo-architect` | Strategy & Structure | Workspace organization |
+| `@build-system-expert` | Performance | Caching, pipelines, CI |
+| `@nx-expert` | Nx Tooling | Angular/React enterprise scale |
+| `@turborepo-expert` | Turborepo Tooling | lightweight JS/TS scaling |
+| `@dependency-manager` | Package Management | Versioning, compatibility |
 
 ---
 
-## 7.1 Monorepo Architecture
+## 7.1 Monorepo Strategy with @monorepo-architect
 
-> **Source**: Unknown  
-> **Risk Level**: Unknown  
-> **Tags**: monorepo, architecture, organization
+### Skill Introduction
 
-### Purpose
+The `@monorepo-architect` skill helps you design the layout, dependency boundaries, and sharing strategy of your workspace. It prevents the "Distributed Monolith" anti-pattern.
 
-The `monorepo-architect` skill provides expert guidance on designing and managing monorepo structures for scalable development.
+**When to use this skill:**
+- Initializing a new monorepo
+- Migrating from polyrepo to monorepo
+- Designing shared library boundaries
+- Setting up code visibility rules (constraints)
+- Planning for independent deployability
 
-### Monorepo vs Polyrepo
-
-| Aspect | Monorepo | Polyrepo |
-|--------|----------|----------|
-| **Code sharing** | Easy | Challenging |
-| **Consistency** | High | Variable |
-| **Build complexity** | Higher | Lower per repo |
-| **CI/CD** | Complex | Simple per repo |
-| **Tooling** | Specialized | Standard |
-| **Dependencies** | Unified | Duplicated |
-
-### Monorepo Structure
-
-```
-my-monorepo/
-├── apps/
-│   ├── web/                 # Web application
-│   ├── mobile/              # Mobile app
-│   ├── admin/               # Admin dashboard
-│   └── api/                 # Backend API
-├── packages/
-│   ├── ui/                  # Shared UI components
-│   ├── utils/               # Shared utilities
-│   ├── config/              # Shared configurations
-│   └── types/               # Shared TypeScript types
-├── tools/
-│   ├── scripts/             # Build scripts
-│   └── generators/          # Code generators
-├── .github/                 # CI/CD workflows
-├── nx.json                  # Nx configuration
-├── turbo.json               # Turborepo config
-└── package.json             # Root package.json
-```
-
-### 40 Copy-Paste Prompts
-
-#### Structure Design
-
-```
-1. "Use @monorepo-architect to design the folder structure for our monorepo"
-
-2. "Apply @monorepo-architect to organize apps and shared packages"
-
-3. "Use @monorepo-architect to design package boundaries"
-
-4. "Apply @monorepo-architect to structure a full-stack TypeScript monorepo"
-
-5. "Use @monorepo-architect to organize a microservices monorepo"
-
-6. "Apply @monorepo-architect to design a design system monorepo"
-
-7. "Use @monorepo-architect to structure internal tools and packages"
-
-8. "Apply @monorepo-architect to organize shared configurations"
-
-9. "Use @monorepo-architect to design testing infrastructure layout"
-
-10. "Apply @monorepo-architect to structure documentation"
-```
-
-#### Dependency Management
-
-```
-11. "Use @monorepo-architect to manage internal package dependencies"
-
-12. "Apply @monorepo-architect to design dependency boundaries"
-
-13. "Use @monorepo-architect to handle circular dependency prevention"
-
-14. "Apply @monorepo-architect to optimize shared dependencies"
-
-15. "Use @monorepo-architect to manage version synchronization"
-
-16. "Apply @monorepo-architect to design dependency constraints"
-
-17. "Use @monorepo-architect to handle peer dependencies in packages"
-
-18. "Apply @monorepo-architect to design dependency graphs"
-
-19. "Use @monorepo-architect to implement dependency linting"
-
-20. "Apply @monorepo-architect to manage external dependency updates"
-```
-
-#### Scaling
-
-```
-21. "Use @monorepo-architect to optimize build times at scale"
-
-22. "Apply @monorepo-architect to implement incremental builds"
-
-23. "Use @monorepo-architect to design remote caching strategy"
-
-24. "Apply @monorepo-architect to parallelize CI/CD workflows"
-
-25. "Use @monorepo-architect to implement affected-only testing"
-
-26. "Apply @monorepo-architect to design code ownership"
-
-27. "Use @monorepo-architect to implement branch-based isolation"
-
-28. "Apply @monorepo-architect to handle large file storage"
-
-29. "Use @monorepo-architect to optimize git performance"
-
-30. "Apply @monorepo-architect to implement change detection"
-```
-
-#### Migration
-
-```
-31. "Use @monorepo-architect to plan polyrepo to monorepo migration"
-
-32. "Apply @monorepo-architect to design gradual migration strategy"
-
-33. "Use @monorepo-architect to preserve git history during migration"
-
-34. "Apply @monorepo-architect to handle team transition"
-
-35. "Use @monorepo-architect to migrate CI/CD pipelines"
-
-36. "Apply @monorepo-architect to update deployment workflows"
-
-37. "Use @monorepo-architect to handle package registry changes"
-
-38. "Apply @monorepo-architect to migrate documentation"
-
-39. "Use @monorepo-architect to update developer tooling"
-
-40. "Apply @monorepo-architect to implement rollback strategy"
-```
+**Key strengths:**
+- Workspace organization
+- Dependency graph design
+- Code sharing strategy guidance
+- Tool selection (Nx vs Turbo vs Bazel)
 
 ---
 
-## 7.2 Nx Workspace Management
+### Strategy Prompts
 
-> **Source**: Unknown  
-> **Risk Level**: Unknown  
-> **Tags**: nx, workspace, build
+#### Planning Workspace Structure
 
-### Purpose
+**Context:** You are planning a monorepo for a SaaS with a Web App, Mobile App, and Shared UI/Logic.
 
-The `nx-expert` skill provides guidance on using Nx for monorepo management, including workspace configuration, generators, and build optimization.
+```text
+@monorepo-architect Design the folder structure for our new SaaS monorepo:
 
-### Nx Core Concepts
+Apps:
+1. `dashboard-web` (React)
+2. `mobile-app` (React Native)
+3. `marketing-site` (Next.js)
 
-| Concept | Description |
-|---------|-------------|
-| **Workspace** | Root project containing all apps and libs |
-| **Project** | An app or library within the workspace |
-| **Target** | A task that can be run (build, test, lint) |
-| **Executor** | Implementation of a target |
-| **Generator** | Code scaffolding tool |
-| **Cache** | Computation caching system |
+Goals:
+- Maximize code sharing (UI components, API clients, Utils).
+- Keep apps thin.
 
-### 30 Copy-Paste Prompts
-
-#### Workspace Setup
-
-```
-41. "Use @nx-expert to initialize a new Nx workspace for React and Node"
-
-42. "Apply @nx-expert to configure workspace with custom presets"
-
-43. "Use @nx-expert to set up integrated vs package-based style"
-
-44. "Apply @nx-expert to configure TypeScript paths"
-
-45. "Use @nx-expert to set up shared ESLint and Prettier"
-
-46. "Apply @nx-expert to configure Jest for the workspace"
-
-47. "Use @nx-expert to set up Storybook integration"
-
-48. "Apply @nx-expert to configure Cypress for E2E testing"
-
-49. "Use @nx-expert to set up workspace plugins"
-
-50. "Apply @nx-expert to configure module boundaries"
+Please provide:
+1. Ideally detailed folder structure (libs/ui, libs/data-access, etc.).
+2. Dependency rules (e.g., UI cannot import Data Access).
+3. Strategy for sharing types/interfaces.
 ```
 
-#### Build Optimization
-
-```
-51. "Use @nx-expert to enable distributed task execution"
-
-52. "Apply @nx-expert to configure Nx Cloud caching"
-
-53. "Use @nx-expert to optimize affected commands"
-
-54. "Apply @nx-expert to configure task pipelines"
-
-55. "Use @nx-expert to implement custom executors"
-
-56. "Apply @nx-expert to optimize build performance"
-
-57. "Use @nx-expert to configure parallel execution"
-
-58. "Apply @nx-expert to implement incremental builds"
-
-59. "Use @nx-expert to configure remote caching"
-
-60. "Apply @nx-expert to optimize CI/CD with Nx Cloud"
-```
-
-#### Custom Generators
-
-```
-61. "Use @nx-expert to create a custom library generator"
-
-62. "Apply @nx-expert to implement component scaffolding"
-
-63. "Use @nx-expert to create API endpoint generator"
-
-64. "Apply @nx-expert to implement feature module generator"
-
-65. "Use @nx-expert to create workspace migration scripts"
-```
+**Expected Output:** A scalable directory tree and dependency boundary rules.
 
 ---
 
-## 7.3 Turborepo Optimization
+#### Migration Strategy
 
-> **Source**: Unknown  
-> **Risk Level**: Unknown  
-> **Tags**: turborepo, build, caching
+**Context:** You have 3 separate Git repos and want to merge them.
 
-### Purpose
+```text
+@monorepo-architect Create a migration plan to move 3 separate repos into a single Monorepo:
 
-The `turborepo-expert` skill provides guidance on using Turborepo for high-performance monorepo builds.
+Current State:
+1. `frontend-repo` (Create React App)
+2. `backend-repo` (Node/Express)
+3. `component-library` (Rollup/NPM)
 
-### turbo.json Configuration
-
-```json
-{
-  "$schema": "https://turbo.build/schema.json",
-  "globalDependencies": ["**/.env"],
-  "pipeline": {
-    "build": {
-      "dependsOn": ["^build"],
-      "outputs": ["dist/**", ".next/**"]
-    },
-    "test": {
-      "dependsOn": ["build"],
-      "inputs": ["src/**/*.tsx", "src/**/*.ts", "test/**/*.ts"]
-    },
-    "lint": {},
-    "dev": {
-      "cache": false,
-      "persistent": true
-    }
-  }
-}
+Please provide:
+1. Step-by-step git merge process (preserving history).
+2. How to handle CI/CD during the transition.
+3. Strategy for "breaking" the existing internal NPM dependency.
 ```
 
-### 20 Copy-Paste Prompts
-
-```
-66. "Use @turborepo-expert to configure the task pipeline"
-
-67. "Apply @turborepo-expert to optimize caching configuration"
-
-68. "Use @turborepo-expert to configure Vercel Remote Caching"
-
-69. "Apply @turborepo-expert to define build dependencies"
-
-70. "Use @turborepo-expert to optimize CI/CD with Turborepo"
-
-71. "Apply @turborepo-expert to configure environment variables"
-
-72. "Use @turborepo-expert to implement scoped tasks"
-
-73. "Apply @turborepo-expert to handle workspace package dependencies"
-
-74. "Use @turborepo-expert to configure outputs for caching"
-
-75. "Apply @turborepo-expert to implement filtering by package"
-
-76. "Use @turborepo-expert to configure global dependencies"
-
-77. "Apply @turborepo-expert to optimize development experience"
-
-78. "Use @turborepo-expert to handle persistent processes"
-
-79. "Apply @turborepo-expert to configure input file tracking"
-
-80. "Use @turborepo-expert to migrate from Lerna/Nx to Turborepo"
-```
+**Expected Output:** A safe migration plan preserving git history and workflow continuity.
 
 ---
 
-## 7.4 Build System Architecture
+## 7.2 Build Performance with @build-system-expert
 
-> **Source**: Unknown  
-> **Risk Level**: Unknown  
-> **Tags**: build, pipeline, optimization
+### Skill Introduction
 
-### Purpose
+The `@build-system-expert` skill optimizes the "Inner Loop" (local dev speed) and "Outer Loop" (CI speed). It focuses on caching, parallelization, and remote execution.
 
-The `build-system-architect` skill provides guidance on designing and optimizing build systems for large codebases.
+**When to use this skill:**
+- Debugging slow CI builds
+- Configuring remote caching (Nx Cloud / Vercel Remote Cache)
+- Optimizing task graphs (Parallel execution)
+- Reducing docker image sizes
+- Implementing "Affected" commands
 
-### Build Pipeline Stages
+**Key strengths:**
+- CI/CD pipeline optimization
+- Caching strategies
+- Task orchestration
+- Pruning/Hashing logic
 
-```mermaid
-graph LR
-    A[Source] --> B[Lint]
-    B --> C[Type Check]
-    C --> D[Unit Test]
-    D --> E[Build]
-    E --> F[Integration Test]
-    F --> G[Deploy]
+---
+
+### Build System Prompts
+
+#### Optimizing a Slow CI Pipeline
+
+**Context:** Your CI currently takes 20 minutes because it builds everything every time.
+
+```text
+@build-system-expert Optimize our GitHub Actions pipeline for a Monorepo:
+
+Current:
+- Simple "npm install && npm test && npm build" script.
+- Takes 20 minutes.
+
+Goal: Use "Affected" logic to only build changed apps.
+
+Please provide:
+1. The logic/command to detect changes (using Nx or Turbo).
+2. The GitHub Actions YAML snippet for parallel execution.
+3. How to implement caching for `node_modules` and build artifacts.
 ```
 
-### 20 Copy-Paste Prompts
-
-```
-81. "Use @build-system-architect to design the build pipeline stages"
-
-82. "Apply @build-system-architect to optimize build parallelization"
-
-83. "Use @build-system-architect to implement caching strategies"
-
-84. "Apply @build-system-architect to design artifact management"
-
-85. "Use @build-system-architect to optimize TypeScript compilation"
-
-86. "Apply @build-system-architect to configure bundler settings"
-
-87. "Use @build-system-architect to implement tree shaking"
-
-88. "Apply @build-system-architect to design code splitting"
-
-89. "Use @build-system-architect to optimize Docker builds"
-
-90. "Apply @build-system-architect to implement multi-stage builds"
-
-91. "Use @build-system-architect to configure source maps"
-
-92. "Apply @build-system-architect to design asset optimization"
-
-93. "Use @build-system-architect to implement build verification"
-
-94. "Apply @build-system-architect to design release management"
-
-95. "Use @build-system-architect to configure environment builds"
-
-96. "Apply @build-system-architect to implement build metrics"
-
-97. "Use @build-system-architect to design build notifications"
-
-98. "Apply @build-system-architect to implement build debugging"
-
-99. "Use @build-system-architect to configure build security"
-
-100. "Apply @build-system-architect to implement build compliance"
-```
+**Expected Output:** Optimized CI configuration focusing on "Run Only What Changed".
 
 ---
 
-## Monorepo Tool Comparison
+## 7.3 Nx Mastery with @nx-expert
 
-| Feature | Nx | Turborepo | Lerna | Rush |
-|---------|----|-----------| ------|------|
-| **Caching** | ✅ Local + Cloud | ✅ Local + Vercel | ❌ | ✅ Local |
-| **Affected** | ✅ | ✅ | ❌ | ✅ |
-| **Generators** | ✅ | ❌ | ❌ | ❌ |
-| **Task Graph** | ✅ | ✅ | ❌ | ✅ |
-| **Learning Curve** | Medium | Low | Low | High |
-| **Plugins** | ✅ Rich | ❌ | ❌ | ✅ |
+### Skill Introduction
+
+The `@nx-expert` skill is specialized for the Nx build system. It covers generators, executors, module boundaries, and deep Angular/React integration.
+
+**When to use this skill:**
+- Creating custom Nx Generators (scaffolding)
+- Configuring `project.json` targets
+- Setting up Module Boundary Linting roles
+- Debugging cyclic dependencies
+- Migrating to "Standalone" mode
+
+**Key strengths:**
+- Nx CLI mastery
+- Generator creation
+- Custom Executor implementation
+- Graph visualization
 
 ---
 
-## Best Practices
+### Nx Prompts
 
-### 1. Package Boundaries
+#### Creating a Scaffolding Generator
 
-```typescript
-// nx.json - enforce module boundaries
-{
-  "rules": {
-    "@nx/enforce-module-boundaries": [
-      "error",
-      {
-        "depConstraints": [
-          { "sourceTag": "scope:shared", "onlyDependOnLibsWithTags": ["scope:shared"] },
-          { "sourceTag": "scope:feature", "onlyDependOnLibsWithTags": ["scope:shared", "scope:feature"] }
-        ]
-      }
-    ]
-  }
-}
+**Context:** You want every new feature library to look exactly the same.
+
+```text
+@nx-expert detailed Help me create a custom Nx Generator for a "Feature Library":
+
+Requirements:
+- Takes a name (e.g., `user-profile`).
+- Creates a `data-access` lib and a `feature-ui` lib.
+- Updates the parent App's routing automatically.
+
+Please provide:
+1. The CLI command to generate the generator.
+2. The implementation logic (schema.json and generator.ts).
+3. How to test this generator locally.
 ```
 
-### 2. Consistent Tooling
-
-All packages should share:
-- TypeScript version and config
-- ESLint and Prettier configuration
-- Testing framework and config
-- Build tooling
-
-### 3. Semantic Versioning
-
-For publishable packages:
-- Use conventional commits
-- Automate changelog generation
-- Coordinate breaking changes
-
-### 4. Documentation
-
-Each package should have:
-- README with setup instructions
-- API documentation
-- Usage examples
-- Changelog
+**Expected Output:** Code for a custom Nx generator to standardize library creation.
 
 ---
 
-## Reflection Points for Chapter 7
+## 7.4 Turborepo Mastery with @turborepo-expert
 
-1. **Is a monorepo right for your organization?**
-   - Team size and distribution?
-   - Code sharing needs?
-   - Build infrastructure?
+### Skill Introduction
 
-2. **How do you manage package boundaries?**
-   - Dependency constraints?
-   - Code ownership?
-   - Breaking changes?
+The `@turborepo-expert` skill focuses on the Vercel ecosystem's build tool. It emphasizes simplicity, configuration via `turbo.json`, and handling environment variables.
 
-3. **What's your caching strategy?**
-   - Local vs remote caching?
-   - Cache invalidation?
-   - CI/CD integration?
+**When to use this skill:**
+- optimizing a Yarn/npm/pnpm workspace
+- Configuring complex task dependencies (Topo-sort)
+- Managing Environment Variables in cached builds
+- Pruning builds for Docker deployment
 
-4. **How do you handle scaling?**
-   - Build times?
-   - Git performance?
-   - Developer experience?
+**Key strengths:**
+- pipeline configuration
+- Remote cache setup
+- Docker container pruning
+- Variable dependency management
 
 ---
 
-## Summary
+### Turborepo Prompts
 
-This chapter covered monorepo and build system architecture:
+#### Docker Entrypoint Optimization
 
-- **@monorepo-architect**: Monorepo design and organization
-- **@nx-expert**: Nx workspace management and optimization
-- **@turborepo-expert**: Turborepo build optimization
-- **@build-system-architect**: Build pipeline design
+**Context:** You are deploying a Next.js app from a Turborepo to Docker. The image is huge.
 
-**Key Takeaway**: Monorepos enable code sharing and consistency but require specialized tooling. Choose your tools based on team size, build complexity, and integration needs.
+```text
+@turborepo-expert detailed Guide me to create an optimized Dockerfile using `turbo prune`:
+
+App: `apps/web`
+PackageManager: `pnpm`
+
+Goal: A minimal production image containing only necessary dependencies for `web`.
+
+Please provide:
+1. The `turbo prune` command.
+2. The multi-stage Dockerfile (Builder stage vs Runner stage).
+3. How to handle `lockfile` consistency.
+```
+
+**Expected Output:** An optimized multi-stage Dockerfile using turbo pruning.
 
 ---
 
-**Next Chapter**: [Chapter 8: Design Systems & UI Architecture →](chapter-08-design-systems.md)
+## Best Practices Summary
+
+### Architecture
+- **Libs > Apps:** Keep apps as thin containers. Move logic to libraries.
+- **Strict Boundaries:** Enforce rules (e.g., "UI cannot import Data"). Use `eslint-plugin-nx` or similar.
+
+### Performance
+- **Cache Everything:** If you run it twice, the second time should be instant.
+- **Parallelize:** Don't run tests sequentially if they don't depend on each other.
+
+### Developer Experience
+- **Single Command Start:** A new dev should run `npm start` and see the whole system.
+- **Scaffold:** Don't let devs Copy-Paste folders. Use generators.
+
+---
+
+## Reflection Points
+
+1. **Complexity Cost:** Is the tooling overhead worth it for your team size?
+2. **Ghost Dependencies:** Are you relying on hoisted packages that aren't in your `package.json`?
+3. **CI Bottlenecks:** Is the limitation CPU or Network/IO?
+4. **Onboarding:** How long does it take a new hire to understand the workspace map?
+
+---
+
+**Next Chapter:** [Chapter 8: Design Systems & UI Architecture →](08-design-systems.md)

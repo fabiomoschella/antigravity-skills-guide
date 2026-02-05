@@ -6,471 +6,299 @@
 
 ## Overview
 
-Search Engine Optimization and content marketing are essential for driving organic growth. This chapter covers skills that help you create SEO-optimized content, improve search rankings, and develop effective content strategies.
+Search Engine Optimization (SEO) and content marketing are the engines of organic growth. This chapter covers skills for technical optimization, content strategy, keyword research, and authority building to ensure your content reaches its intended audience.
 
 ### Skills Covered in This Chapter
 
-| Skill | Source | Purpose |
-|-------|--------|---------|
-| `@seo-expert` | coreyhaines31/marketingskills | Technical and on-page SEO |
-| `@seo-fundamentals` | antigravity | SEO basics |
-| `@seo-audit` | antigravity | Site audits |
-| `@seo-content-writer` | antigravity | SEO content creation |
-| `@seo-content-planner` | antigravity | Content planning |
-| `@seo-content-auditor` | antigravity | Content audits |
-| `@seo-content-refresher` | antigravity | Update old content |
-| `@seo-keyword-strategist` | antigravity | Keyword strategy |
-| `@seo-meta-optimizer` | antigravity | Meta optimization |
-| `@seo-structure-architect` | antigravity | Site architecture |
-| `@seo-authority-builder` | antigravity | Authority building |
-| `@seo-cannibalization-detector` | antigravity | Detect cannibalization |
-| `@seo-snippet-hunter` | antigravity | Featured snippets |
-| `@programmatic-seo` | antigravity | Programmatic SEO |
-| `@schema-markup` | antigravity | Structured data |
-| `@content-strategist` | coreyhaines31/marketingskills | Content strategy |
-| `@content-creator` | antigravity | Content creation |
-| `@content-marketer` | antigravity | Content marketing |
+| Skill | Purpose | Best For |
+|-------|---------|----------|
+| `@seo-expert` | Technical & On-page SEO | Site audits, optimization |
+| `@content-strategist` | Content planning | Editorial calendars, pillars |
+| `@seo-content-writer` | Optimization writing | Blog posts, landing pages |
+| `@keyword-researcher` | Keyword discovery | Finding ranking opportunities |
+| `@programmatic-seo` | Scalable content | Large-scale page generation |
+| `@link-building-expert` | Off-page SEO | Authority, outreach |
 
 ---
 
-## 10.1 SEO Expert Skills
+## 10.1 Technical & On-Page SEO with @seo-expert
 
-> **Source**: [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills)  
-> **License**: MIT  
-> **Tags**: seo, search, optimization
+### Skill Introduction
 
-### Purpose
+The `@seo-expert` skill provides comprehensive guidance on technical SEO foundation and on-page optimization. It helps diagnose crawling issues, optimize site structure, and implement schema markup for better visibility.
 
-The `seo-expert` skill provides comprehensive guidance on technical SEO, on-page optimization, and search engine best practices.
+**When to use this skill:**
+- Conducting a technical site audit
+- Optimizing meta tags (Title, Description)
+- Implementing structured data (Schema.org)
+- Fixing Core Web Vitals issues
+- Planning site architecture and internal linking
 
-### SEO Pillars
-
-| Pillar | Description | Focus Areas |
-|--------|-------------|-------------|
-| **Technical** | Site infrastructure | Speed, crawling, indexing |
-| **On-Page** | Content optimization | Keywords, meta tags, structure |
-| **Off-Page** | External signals | Backlinks, social signals |
-| **Content** | Quality content | E-E-A-T, user intent |
-
-### 50 Copy-Paste Prompts
-
-#### Technical SEO
-
-```
-1. "Use @seo-expert to audit the technical SEO of my website"
-
-2. "Apply @seo-expert to optimize page load speed for SEO"
-
-3. "Use @seo-expert to fix crawl errors and indexing issues"
-
-4. "Apply @seo-expert to implement proper canonical tags"
-
-5. "Use @seo-expert to optimize the robots.txt file"
-
-6. "Apply @seo-expert to create an XML sitemap"
-
-7. "Use @seo-expert to implement structured data markup"
-
-8. "Apply @seo-expert to optimize Core Web Vitals"
-
-9. "Use @seo-expert to fix mobile usability issues"
-
-10. "Apply @seo-expert to implement HTTPS correctly"
-```
-
-#### On-Page Optimization
-
-```
-11. "Use @seo-expert to optimize this page's title tag and meta description"
-
-12. "Apply @seo-expert to create an SEO-optimized heading structure"
-
-13. "Use @seo-expert to optimize images for SEO"
-
-14. "Apply @seo-expert to improve internal linking"
-
-15. "Use @seo-expert to optimize URL structure"
-
-16. "Apply @seo-expert to create SEO-friendly content"
-
-17. "Use @seo-expert to optimize for featured snippets"
-
-18. "Apply @seo-expert to add FAQ schema markup"
-
-19. "Use @seo-expert to optimize for voice search"
-
-20. "Apply @seo-expert to improve content readability for SEO"
-```
-
-#### Keyword Strategy
-
-```
-21. "Use @seo-expert to research keywords for my SaaS product"
-
-22. "Apply @seo-expert to analyze competitor keyword rankings"
-
-23. "Use @seo-expert to find long-tail keyword opportunities"
-
-24. "Apply @seo-expert to create a keyword mapping strategy"
-
-25. "Use @seo-expert to optimize for search intent"
-
-26. "Apply @seo-expert to identify keyword cannibalization"
-
-27. "Use @seo-expert to create keyword clusters"
-
-28. "Apply @seo-expert to analyze keyword difficulty"
-
-29. "Use @seo-expert to optimize for semantic keywords"
-
-30. "Apply @seo-expert to track keyword rankings"
-```
-
-#### Local SEO
-
-```
-31. "Use @seo-expert to optimize Google Business Profile"
-
-32. "Apply @seo-expert to create local landing pages"
-
-33. "Use @seo-expert to build local citations"
-
-34. "Apply @seo-expert to optimize for local pack results"
-
-35. "Use @seo-expert to manage local reviews"
-
-36. "Apply @seo-expert to implement local schema markup"
-
-37. "Use @seo-expert to optimize for 'near me' searches"
-
-38. "Apply @seo-expert to create a local link building strategy"
-
-39. "Use @seo-expert to optimize for multiple locations"
-
-40. "Apply @seo-expert to track local search rankings"
-```
-
-#### E-commerce SEO
-
-```
-41. "Use @seo-expert to optimize product pages for SEO"
-
-42. "Apply @seo-expert to create SEO-friendly category pages"
-
-43. "Use @seo-expert to implement product schema markup"
-
-44. "Apply @seo-expert to optimize for product searches"
-
-45. "Use @seo-expert to handle duplicate content for products"
-
-46. "Apply @seo-expert to optimize faceted navigation"
-
-47. "Use @seo-expert to create buying guide content"
-
-48. "Apply @seo-expert to optimize for Google Shopping"
-
-49. "Use @seo-expert to improve product page conversions"
-
-50. "Apply @seo-expert to optimize user-generated reviews"
-```
+**Key strengths:**
+- Technical diagnostics (indexing, canonicals)
+- On-page optimization checklists
+- Schema markup generation
+- Core Web Vitals optimization
 
 ---
 
-## 10.2 Content Strategy
+### SEO Prompts
 
-> **Source**: [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills)  
-> **License**: MIT  
-> **Tags**: content, strategy, marketing
+#### Conducting a Technical Audit
 
-### Purpose
+**Context:** You noticed a drop in organic traffic and suspect technical issues.
 
-The `content-strategist` skill helps develop comprehensive content strategies that drive traffic, engagement, and conversions.
+```text
+@seo-expert Conduct a technical SEO audit plan for our SaaS website:
 
-### Content Strategy Framework
+Symptoms:
+- Traffic dropped 15% last month
+- "Crawled - currently not indexed" errors increasing in Search Console
+- Site speed feels slow on mobile
 
-```mermaid
-graph TD
-    A[Business Goals] --> B[Audience Research]
-    B --> C[Content Audit]
-    C --> D[Content Strategy]
-    D --> E[Content Calendar]
-    E --> F[Content Creation]
-    F --> G[Distribution]
-    G --> H[Measurement]
-    H --> A
+Tech Stack: Next.js hosted on Vercel.
+
+Please provide:
+1. A checklist of technical elements to investigate (Robots.txt, Sitemap, Canonical tags).
+2. How to debug the indexing issue specifically.
+3. Core Web Vitals assessment plan (LCP, CLS, INP).
+4. Tools recommended for the diagnosis.
 ```
 
-### 30 Copy-Paste Prompts
-
-#### Strategy Development
-
-```
-51. "Use @content-strategist to create a content strategy for my B2B SaaS"
-
-52. "Apply @content-strategist to define content pillars"
-
-53. "Use @content-strategist to create audience personas for content"
-
-54. "Apply @content-strategist to audit existing content"
-
-55. "Use @content-strategist to identify content gaps"
-
-56. "Apply @content-strategist to create a content calendar"
-
-57. "Use @content-strategist to develop a blog strategy"
-
-58. "Apply @content-strategist to plan video content strategy"
-
-59. "Use @content-strategist to create a newsletter strategy"
-
-60. "Apply @content-strategist to develop thought leadership content"
-```
-
-#### Content Types
-
-```
-61. "Use @content-strategist to plan a pillar-cluster content model"
-
-62. "Apply @content-strategist to create a case study template"
-
-63. "Use @content-strategist to plan webinar content"
-
-64. "Apply @content-strategist to develop whitepaper strategy"
-
-65. "Use @content-strategist to create podcast content plan"
-
-66. "Apply @content-strategist to plan infographic content"
-
-67. "Use @content-strategist to develop comparison content"
-
-68. "Apply @content-strategist to create how-to guide templates"
-
-69. "Use @content-strategist to plan listicle content"
-
-70. "Apply @content-strategist to develop original research content"
-```
-
-#### Distribution and Promotion
-
-```
-71. "Use @content-strategist to create a content distribution plan"
-
-72. "Apply @content-strategist to develop social media content strategy"
-
-73. "Use @content-strategist to plan content repurposing"
-
-74. "Apply @content-strategist to create email content strategy"
-
-75. "Use @content-strategist to develop content syndication plan"
-
-76. "Apply @content-strategist to plan influencer collaboration content"
-
-77. "Use @content-strategist to create content promotion checklist"
-
-78. "Apply @content-strategist to develop community content strategy"
-
-79. "Use @content-strategist to plan paid content promotion"
-
-80. "Apply @content-strategist to create content partnership strategy"
-```
+**Expected Output:** A prioritized audit checklist and debugging steps for the indexing and speed issues.
 
 ---
 
-## 10.3 Link Building
+#### Optimizing Schema Markup
 
-> **Source**: Unknown  
-> **Tags**: seo, backlinks, outreach
+**Context:** You want your product pages to show price and ratings in search results (Rich Snippets).
 
-### Purpose
+```text
+@seo-expert Generate JSON-LD Schema markup for our product page:
 
-The `link-building-expert` skill provides strategies for acquiring high-quality backlinks to improve domain authority.
+Product: "ErgoChair Pro"
+Price: $399.00
+Currency: USD
+Availability: In Stock
+Rating: 4.8 (based on 150 reviews)
+Description: "The ultimate ergonomic office chair for remote work."
+Image URL: "https://example.com/ergochair.jpg"
 
-### Link Building Methods
-
-| Method | Description | Difficulty |
-|--------|-------------|------------|
-| **Guest Posting** | Write for other sites | Medium |
-| **Broken Link Building** | Replace dead links | Medium |
-| **Resource Link Building** | Create linkable assets | High |
-| **Digital PR** | News coverage | High |
-| **Skyscraper** | Improve existing content | Medium |
-| **HARO** | Expert quotes | Low |
-
-### 20 Copy-Paste Prompts
-
-```
-81. "Use @link-building-expert to create a link building strategy"
-
-82. "Apply @link-building-expert to find guest posting opportunities"
-
-83. "Use @link-building-expert to identify broken link opportunities"
-
-84. "Apply @link-building-expert to create linkable assets"
-
-85. "Use @link-building-expert to develop a digital PR strategy"
-
-86. "Apply @link-building-expert to write outreach email templates"
-
-87. "Use @link-building-expert to find resource page opportunities"
-
-88. "Apply @link-building-expert to create skyscraper content"
-
-89. "Use @link-building-expert to find HARO opportunities"
-
-90. "Apply @link-building-expert to analyze competitor backlinks"
-
-91. "Use @link-building-expert to disavow toxic links"
-
-92. "Apply @link-building-expert to build relationships for links"
-
-93. "Use @link-building-expert to create infographic outreach"
-
-94. "Apply @link-building-expert to develop expert roundup strategy"
-
-95. "Use @link-building-expert to find podcast guest opportunities"
-
-96. "Apply @link-building-expert to create data-driven content"
-
-97. "Use @link-building-expert to build industry association links"
-
-98. "Apply @link-building-expert to create scholarship link strategy"
-
-99. "Use @link-building-expert to leverage testimonials for links"
-
-100. "Apply @link-building-expert to measure link building ROI"
+Please provide:
+1. Valid JSON-LD code block.
+2. Where to place it in the HTML/Next.js head.
+3. How to test if Google can read it.
 ```
 
+**Expected Output:** Ready-to-copy JSON-LD code and implementation instructions.
+
 ---
 
-## SEO Technical Checklist
+## 10.2 Content Strategy with @content-strategist
 
-### On-Page Elements
+### Skill Introduction
 
-```html
-<!-- Title Tag (50-60 characters) -->
-<title>Primary Keyword | Secondary Keyword | Brand</title>
+The `@content-strategist` skill helps you plan, organize, and execute a content marketing strategy. It focuses on topical authority, content pillars, and mapping content to the buyer's journey.
 
-<!-- Meta Description (150-160 characters) -->
-<meta name="description" content="Compelling description with primary keyword that encourages clicks.">
+**When to use this skill:**
+- Developing a quarterly editorial calendar
+- Defining content pillars and topic clusters
+- Conducting a content gap analysis
+- Creating buyer personas for content
+- Repurposing content strategies
 
-<!-- Canonical URL -->
-<link rel="canonical" href="https://example.com/page">
+**Key strengths:**
+- Topic cluster strategy (Hub & Spoke)
+- Buyer journey mapping (Awareness, Consideration, Decision)
+- Editorial planning
+- Content audit frameworks
 
-<!-- Open Graph Tags -->
-<meta property="og:title" content="Page Title">
-<meta property="og:description" content="Description for social sharing">
-<meta property="og:image" content="https://example.com/image.jpg">
+---
 
-<!-- Structured Data -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "Article Title",
-  "author": {"@type": "Person", "name": "Author Name"},
-  "datePublished": "2026-02-05"
-}
-</script>
+### Content Strategy Prompts
+
+#### Developing Topic Clusters
+
+**Context:** You want to build authority in the "Remote Team Management" niche.
+
+```text
+@content-strategist Design a Topic Cluster strategy for "Remote Team Management":
+
+Pillar Page: "The Ultimate Guide to Managing Remote Teams"
+
+Goal: Rank for broad terms and capture long-tail traffic.
+
+Please provide:
+1. The Pillar Page structure (H2 topics).
+2. 10 related "Cluster Content" ideas (Blog posts) that link back to the pillar.
+3. User intent for each cluster topic (Informational vs Transactional).
+4. Internal linking strategy between them.
 ```
 
-### Technical Requirements
+**Expected Output:** A structured content plan with a central pillar and supporting satellite articles.
 
-```yaml
-# robots.txt
-User-agent: *
-Allow: /
-Disallow: /admin/
-Disallow: /api/
-Sitemap: https://example.com/sitemap.xml
+---
 
-# Core Web Vitals Targets
-LCP: < 2.5s    # Largest Contentful Paint
-FID: < 100ms   # First Input Delay
-CLS: < 0.1     # Cumulative Layout Shift
+#### Content Gap Analysis
+
+**Context:** Your competitor is outranking you. You need to find what they are writing that you aren't.
+
+```text
+@content-strategist Guide me through a Content Gap Analysis:
+
+My Site: [MySaaS.com]
+Key Competitor: [CompetitorSaaS.com]
+
+Goal: Identify high-value topics they cover that I'm missing.
+
+Please provide:
+1. The process/tools to identify gaps.
+2. Criteria for prioritizing which gaps to fill first (Volume vs Difficulty).
+3. A template for a content brief to give to writers to fill these gaps.
 ```
 
+**Expected Output:** A step-by-step process for finding and exploiting content gaps.
+
 ---
 
-## Content Calendar Template
+## 10.3 SEO Content Writing with @seo-content-writer
 
-```markdown
-| Week | Topic | Format | Target Keyword | Funnel Stage |
-|------|-------|--------|----------------|--------------|
-| 1 | How to Use X | Blog Post | how to use X | Awareness |
-| 1 | X vs Y Comparison | Blog Post | X vs Y | Consideration |
-| 2 | Case Study: Company | Case Study | X software | Decision |
-| 2 | Beginner's Guide to X | Pillar Page | X guide | Awareness |
-| 3 | Expert Tips for X | Blog Post | X tips | Consideration |
-| 3 | X Templates | Resource | X templates | Decision |
-| 4 | Podcast: Industry Trends | Podcast | - | Awareness |
-| 4 | Monthly Newsletter | Email | - | Retention |
+### Skill Introduction
+
+The `@seo-content-writer` skill is specialized in creating content that appeals to both humans and search engines. It balances keyword usage with readability, engagement, and conversion optimization.
+
+**When to use this skill:**
+- Writing blog posts optimized for specific keywords
+- Creating landing page copy
+- Optimizing existing articles to rank higher
+- Writing compelling meta titles and descriptions
+- Structuring articles for featured snippets
+
+**Key strengths:**
+- Keyword integration (Primary + LSI)
+- Readability optimization
+- Search intent alignment
+- Featured snippet optimization
+
+---
+
+### Content Writing Prompts
+
+#### Writing an Optimized Blog Post Outline
+
+**Context:** You are writing a post targeting the keyword "Best AI Coding Tools 2026".
+
+```text
+@seo-content-writer Create an SEO-optimized outline for "Best AI Coding Tools 2026":
+
+Target Keyword: "Best AI Coding Tools"
+Secondary Keywords: "AI code assistant", "coding copilot", "developer productivity"
+Target Length: 2000 words
+Audience: Senior Developers and CTOs
+
+Please provide:
+1. Optimized H1 Title (high CTR).
+2. Detailed H2 and H3 structure.
+3. Where to place primary and secondary keywords.
+4. "Key Takeaways" section for Featured Snippet optimization.
+5. Internal link suggestions.
 ```
 
----
-
-## Best Practices
-
-### 1. Search Intent Alignment
-
-| Keyword Type | Intent | Content Format |
-|--------------|--------|----------------|
-| "What is X" | Informational | Educational article |
-| "Best X software" | Commercial | Comparison, reviews |
-| "Buy X online" | Transactional | Product page |
-| "X near me" | Local | Local landing page |
-
-### 2. E-E-A-T Signals
-
-- **Experience**: Show first-hand experience
-- **Expertise**: Demonstrate subject knowledge
-- **Authoritativeness**: Build reputation
-- **Trustworthiness**: Provide accurate information
-
-### 3. Content Quality Checklist
-
-- [ ] Answers user's question completely
-- [ ] Well-structured with headings
-- [ ] Includes relevant visuals
-- [ ] Updated regularly
-- [ ] No factual errors
-- [ ] Properly sourced
+**Expected Output:** A detailed content outline ready for drafting.
 
 ---
 
-## Reflection Points for Chapter 10
+#### Optimizing for Featured Snippets
 
-1. **How do you currently measure SEO success?**
-   - Organic traffic?
-   - Keyword rankings?
-   - Conversions from organic?
+**Context:** You rank #4 for "How to optimize React performance" and want to capture "Position Zero" (the snippet).
 
-2. **What's your content production capacity?**
-   - Weekly articles?
-   - Monthly pillar content?
-   - Resource investments?
+```text
+@seo-content-writer Optimize a paragraph to capture the Featured Snippet for "How to optimize React performance":
 
-3. **How do you prioritize SEO opportunities?**
-   - Traffic potential?
-   - Conversion value?
-   - Competition level?
+Current Content: "There are many ways to make React faster. You should look at memoization and also aggressive code splitting..." (It's too vague).
 
-4. **What's your competitive advantage for content?**
-   - Unique data?
-   - Industry expertise?
-   - Brand authority?
+Requirement:
+- Clear, direct answer.
+- Definition style or list style.
+- 40-60 words optimal length.
 
----
+Please provide:
+1. The optimized paragraph/list.
+2. HTML formatting advice (e.g., use <li> tags?).
+```
 
-## Summary
-
-This chapter covered SEO and content marketing skills:
-
-- **@seo-expert**: Technical and on-page SEO optimization
-- **@content-strategist**: Content strategy development
-- **@link-building-expert**: Backlink acquisition strategies
-
-**Key Takeaway**: SEO success requires a combination of technical excellence, quality content, and authoritative backlinks. Focus on user intent and create content that genuinely helps your audience.
+**Expected Output:** A snippet-optimized text block designed to answer the user's query instantly.
 
 ---
 
-**Next Chapter**: [Chapter 11: Copywriting & Content Creation →](chapter-11-copywriting.md)
+## 10.4 Keyword Research with @keyword-researcher
+
+### Skill Introduction
+
+The `@keyword-researcher` skill helps validte content ideas by analyzing search volume, difficulty, and intent. It ensures you don't waste time writing about things nobody is searching for.
+
+**When to use this skill:**
+- Finding low-competition, high-volume keywords
+- Analyzing search intent (Navigational, Informational, Transactional)
+- Discovering long-tail keyword opportunities
+- Validating product naming ideas
+- Seasonal trend analysis
+
+**Key strengths:**
+- Search volume vs difficulty analysis
+- Intent classification
+- Long-tail discovery
+- Competitor keyword analysis
+
+---
+
+### Keyword Research Prompts
+
+#### Finding Low-Hanging Fruit
+
+**Context:** You have a new domain (low authority) and need keywords you can actually rank for.
+
+```text
+@keyword-researcher Help me find "low-hanging fruit" keywords for a new coffee blog:
+
+Niche: Specialty Coffee / Home Brewing.
+Constraint: Domain Authority (DA) is low (10). Can't compete for "coffee beans".
+
+Please provide:
+1. A strategy to find low-difficulty (KD < 20) long-tail keywords.
+2. 5 example keyword patterns (e.g., "best coffee for [specific machine]").
+3. How to validte if the SERP is "weak" (e.g., forums ranking on page 1).
+```
+
+**Expected Output:** A strategy for finding accessible keywords and specific examples.
+
+---
+
+## Best Practices Summary
+
+### User Experience is SEO
+- **Speed Matters:** Google penalizes slow sites. Optimize images and scripts.
+- **Engagement Signals:** Dwell time and bounce rate matter. Write engaging intros.
+- **Mobile First:** Most indexing is mobile-first. Ensure your mobile UX is flawless.
+
+### Content Quality
+- **E-E-A-T:** Experience, Expertise, Authoritativeness, Trustworthiness. Show your credentials.
+- **Uniqueness:** Don't just rewrite the top result. Add new data, a unique angle, or personal experience.
+- **Freshness:** Update old content regularly. Current year in title helps CTR.
+
+### Ethics
+- **White Hat Only:** Avoid buying links or keyword stuffing. It works short term, but kills you long term.
+- **Focus on the User:** If it helps the user, it usually helps SEO.
+
+---
+
+## Reflection Points
+
+1. **Search Intent:** Are you trying to sell on a "How to" keyword? (Mismatched intent).
+2. **Authority:** Are you staying in your lane (topical authority) or writing about everything?
+3. **Patience:** SEO is a marathon. Are you tracking progress over months, not days?
+4. **Diversification:** Do you rely 100% on Google? What if an algorithm update hits?
+
+---
+
+**Next Chapter:** [Chapter 11: Copywriting & Content Creation →](11-copywriting.md)

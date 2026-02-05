@@ -1,4 +1,4 @@
-# Chapter 5: C4 Model Documentation Suite
+# Chapter 5: C4 Model & Visual Systems
 
 **Last Updated:** February 5, 2026
 
@@ -6,612 +6,230 @@
 
 ## Overview
 
-The C4 Model is a powerful approach to documenting software architecture using four levels of abstraction: Context, Containers, Components, and Code. This chapter covers the complete suite of C4 skills for creating professional architecture documentation.
+Software architecture is notoriously difficult to communicate. The "C4 Model" (Context, Container, Component, Code) is the industry standard for visualizing software architecture at different levels of abstraction. This chapter covers the skills to create clarity through diagrams and visual models using "Diagrams as Code".
 
 ### Skills Covered in This Chapter
 
-| Skill | Source | Purpose |
-|-------|--------|---------|
-| `c4-context` | Unknown | System context diagrams |
-| `c4-container` | Unknown | Container-level diagrams |
-| `c4-component` | Unknown | Component diagrams |
-| `c4-system-documentation` | Unknown | Complete C4 documentation |
-| `plantuml-generator` | Unknown | Code to diagram generation |
+| Skill | Purpose | Best For |
+|-------|---------|----------|
+| `@c4-architect` | Core Methodology | Abstraction levels strategy |
+| `@plantuml-expert` | Diagram Generation | Creating standard diagrams |
+| `@mermaid-expert` | Markdown Diagrams | Quick, inline documentation |
+| `@system-context` | Level 1: Scope | High-level overviews |
+| `@container-diagram` | Level 2: Tech Stack | Applications & databases |
 
 ---
 
-## 5.1 Understanding the C4 Model
+## 5.1 The C4 Philosophy with @c4-architect
 
-### The Four Levels
+### Skill Introduction
 
-```
-Level 1: Context    → System and its environment
-Level 2: Container  → Applications and data stores
-Level 3: Component  → Internal structure of containers
-Level 4: Code       → Class diagrams (optional)
-```
+The `@c4-architect` skill acts as a mentor for the C4 methodology. NOT a drawing tool itself, but a guide on *what* to draw. It ensures you don't mix abstraction levels (e.g., showing a SQL table implementation on a high-level system diagram).
 
-### C4 Diagram Hierarchy
+**When to use this skill:**
+- Deciding which diagrams are necessary for a project
+- Reviewing existing diagrams for clarity and errors
+- Defining the scope and boundaries of a system
+- Explaining the C4 model to a team
 
-```mermaid
-graph TD
-    A[System Context] --> B[Container Diagram]
-    B --> C[Component Diagram]
-    C --> D[Code Level]
-    
-    A -->|Shows| A1[Users & External Systems]
-    B -->|Shows| B1[Applications, Databases, APIs]
-    C -->|Shows| C1[Internal Components]
-    D -->|Shows| D1[Classes & Interfaces]
-```
+**Key strengths:**
+- Abstraction level discipline
+- Scope definition
+- Notation standards (Person, System, Container)
+- Relationship naming advice
 
 ---
 
-## 5.2 The C4 Context Skill
+### C4 Methodology Prompts
 
-> **Source**: Unknown  
-> **Risk Level**: Unknown  
-> **Tags**: c4, context, documentation
+#### Planning Documentation Strategy
 
-### Purpose
+**Context:** You are documenting a legacy Monolith that is being split into Microservices.
 
-The `c4-context` skill creates Level 1 System Context diagrams showing your system's relationship with users and external systems.
+```text
+@c4-architect Plan a documentation strategy for our "Legacy -> Microservices" migration:
 
-### Elements at Context Level
+System: "E-Commerce Monolith" (Java/Spring)
+New State:
+- "Checkout Service" (Go)
+- "Inventory Service" (Python)
+- "Legacy Core" (Remaining Java)
 
-| Element | Symbol | Description |
-|---------|--------|-------------|
-| **Person** | 👤 | Human users of the system |
-| **Software System** | 📦 | Your system being documented |
-| **External System** | 🔌 | Third-party systems you integrate with |
-
-### 40 Copy-Paste Prompts
-
-#### Basic Context Diagrams
-
-```
-1. "Use @c4-context to create a system context diagram for our e-commerce platform"
-
-2. "Apply @c4-context to document the context for our CRM system"
-
-3. "Use @c4-context to show all users and external systems for our SaaS application"
-
-4. "Apply @c4-context to create a context diagram for the payment processing system"
-
-5. "Use @c4-context to document the high-level architecture of our mobile app ecosystem"
+Please provide:
+1. List of recommended diagrams (e.g., L1 Context, L2 Container).
+2. Strategy for showing the "To-Be" vs "As-Is" states.
+3. How to represent the "Strangler Fig" pattern in diagrams.
 ```
 
-#### User Identification
-
-```
-6. "Use @c4-context to identify all user personas for our learning management system"
-
-7. "Apply @c4-context to map the different types of administrators in our system"
-
-8. "Use @c4-context to document internal vs external users"
-
-9. "Apply @c4-context to show the customer journey through our systems"
-
-10. "Use @c4-context to identify API consumers vs web users"
-```
-
-#### External System Mapping
-
-```
-11. "Use @c4-context to map all third-party integrations"
-
-12. "Apply @c4-context to document payment provider integrations"
-
-13. "Use @c4-context to show authentication provider connections"
-
-14. "Apply @c4-context to map email and notification services"
-
-15. "Use @c4-context to document analytics and monitoring integrations"
-```
-
-#### Communication Flows
-
-```
-16. "Use @c4-context to show the primary data flows between systems"
-
-17. "Apply @c4-context to document synchronous vs asynchronous communications"
-
-18. "Use @c4-context to map API dependencies"
-
-19. "Apply @c4-context to show webhook integrations"
-
-20. "Use @c4-context to document event-driven connections"
-```
-
-#### Multi-System Contexts
-
-```
-21. "Use @c4-context to document a microservices ecosystem context"
-
-22. "Apply @c4-context to show multi-tenant system boundaries"
-
-23. "Use @c4-context to map a hybrid cloud architecture context"
-
-24. "Apply @c4-context to document a multi-region deployment"
-
-25. "Use @c4-context to show a platform with multiple product lines"
-```
-
-#### Enterprise Contexts
-
-```
-26. "Use @c4-context to document our enterprise application landscape"
-
-27. "Apply @c4-context to show integration with legacy systems"
-
-28. "Use @c4-context to map data flows for compliance documentation"
-
-29. "Apply @c4-context to document the DevOps toolchain context"
-
-30. "Use @c4-context to show security boundary contexts"
-```
+**Expected Output:** A documentation plan prioritizing which views to create.
 
 ---
 
-## 5.3 The C4 Container Skill
+## 5.2 Context Diagrams (Level 1) with @system-context
 
-> **Source**: Unknown  
-> **Risk Level**: Unknown  
-> **Tags**: c4, container, documentation
+### Skill Introduction
 
-### Purpose
+The `@system-context` skill focuses on the "Big Picture". It shows your system, the users who use it, and the external systems it interacts with. It hides ALL technical details (no "Java", no "SQL").
 
-The `c4-container` skill creates Level 2 Container diagrams showing the high-level technology choices and how containers communicate.
+**When to use this skill:**
+- Explaining the product to non-technical stakeholders
+- Defining system boundaries (What do we own? What is external?)
+- Onboarding new employees to the domain
+- Sales decks and pitch presentations
 
-### Container Types
-
-| Container Type | Examples |
-|----------------|----------|
-| **Web Application** | React SPA, Angular App |
-| **API Application** | REST API, GraphQL Server |
-| **Mobile App** | iOS App, Android App |
-| **Desktop App** | Electron App |
-| **Database** | PostgreSQL, MongoDB |
-| **Message Broker** | RabbitMQ, Kafka |
-| **File Storage** | S3, Azure Blob |
-| **Cache** | Redis, Memcached |
-
-### 40 Copy-Paste Prompts
-
-#### Web Application Containers
-
-```
-31. "Use @c4-container to document the frontend architecture with React SPA"
-
-32. "Apply @c4-container to show the Next.js application structure"
-
-33. "Use @c4-container to map the microfrontend architecture"
-
-34. "Apply @c4-container to document the static site generator containers"
-
-35. "Use @c4-container to show the CDN and edge caching layer"
-```
-
-#### Backend Containers
-
-```
-36. "Use @c4-container to document our microservices containers"
-
-37. "Apply @c4-container to show the API gateway and backend services"
-
-38. "Use @c4-container to map the serverless function containers"
-
-39. "Apply @c4-container to document the background job processors"
-
-40. "Use @c4-container to show the authentication service container"
-```
-
-#### Data Containers
-
-```
-41. "Use @c4-container to document all database containers and their purposes"
-
-42. "Apply @c4-container to show the read replica architecture"
-
-43. "Use @c4-container to map the caching layer with Redis"
-
-44. "Apply @c4-container to document the data warehouse containers"
-
-45. "Use @c4-container to show the search index containers (Elasticsearch)"
-```
-
-#### Messaging Containers
-
-```
-46. "Use @c4-container to document the message queue architecture"
-
-47. "Apply @c4-container to show the event streaming with Kafka"
-
-48. "Use @c4-container to map the notification service containers"
-
-49. "Apply @c4-container to document the pub/sub architecture"
-
-50. "Use @c4-container to show the webhook processing containers"
-```
-
-#### Infrastructure Containers
-
-```
-51. "Use @c4-container to document the Kubernetes cluster structure"
-
-52. "Apply @c4-container to show the container registry and CI/CD"
-
-53. "Use @c4-container to map the monitoring and logging containers"
-
-54. "Apply @c4-container to document the secrets management container"
-
-55. "Use @c4-container to show the service mesh containers"
-```
-
-#### Container Communication
-
-```
-56. "Use @c4-container to map all REST API communications"
-
-57. "Apply @c4-container to show gRPC vs REST protocol usage"
-
-58. "Use @c4-container to document the async message flows"
-
-59. "Apply @c4-container to show the database connection patterns"
-
-60. "Use @c4-container to map the internal vs external APIs"
-```
+**Key strengths:**
+- High-level abstractions
+- External dependency identification
+- User persona mapping
+- Clear boundary definition
 
 ---
 
-## 5.4 The C4 Component Skill
+### Context Diagram Prompts
 
-> **Source**: Unknown  
-> **Risk Level**: Unknown  
-> **Tags**: c4, component, documentation
+#### Visualizing System Scope
 
-### Purpose
+**Context:** You are building a "Ride Sharing" app.
 
-The `c4-component` skill creates Level 3 Component diagrams showing the internal structure of containers.
+```text
+@system-context Generate PlantUML for the "Ride Sharing System" Context Diagram:
 
-### Component Types
+Users:
+- Rider (Mobile App user)
+- Driver (Mobile App user)
+- Admin (Web Portal user)
 
-| Component Type | Description |
-|----------------|-------------|
-| **Controller** | Handles HTTP requests |
-| **Service** | Business logic |
-| **Repository** | Data access |
-| **Facade** | Simplified interface |
-| **Gateway** | External system adapter |
-| **Handler** | Event/message handler |
+External Systems:
+- Google Maps (Navigation)
+- Stripe (Payments)
+- Twilio (SMS Notifications)
 
-### 30 Copy-Paste Prompts
-
-#### Service Components
-
-```
-61. "Use @c4-component to document the internal components of the User Service"
-
-62. "Apply @c4-component to show the Order Service component structure"
-
-63. "Use @c4-component to map the Payment Service components"
-
-64. "Apply @c4-component to document the Notification Service internals"
-
-65. "Use @c4-component to show the Search Service components"
+Please provide:
+1. Complete PlantUML Code (using C4_Context.puml).
+2. Descriptive labels for relationships (e.g., "Sends ride request").
 ```
 
-#### API Components
-
-```
-66. "Use @c4-component to document the API layer components"
-
-67. "Apply @c4-component to show the authentication and authorization components"
-
-68. "Use @c4-component to map the request validation components"
-
-69. "Apply @c4-component to document the response handling components"
-
-70. "Use @c4-component to show the rate limiting components"
-```
-
-#### Data Access Components
-
-```
-71. "Use @c4-component to document the repository layer components"
-
-72. "Apply @c4-component to show the ORM and query builder components"
-
-73. "Use @c4-component to map the caching components"
-
-74. "Apply @c4-component to document the transaction management components"
-
-75. "Use @c4-component to show the data migration components"
-```
-
-#### Integration Components
-
-```
-76. "Use @c4-component to document the external API gateway components"
-
-77. "Apply @c4-component to show the webhook handler components"
-
-78. "Use @c4-component to map the event publisher components"
-
-79. "Apply @c4-component to document the file processing components"
-
-80. "Use @c4-component to show the third-party adapter components"
-```
+**Expected Output:** A PlantUML script that renders a clear System Context diagram.
 
 ---
 
-## 5.5 PlantUML Diagram Generation
+## 5.3 Container Diagrams (Level 2) with @container-diagram
 
-> **Source**: Unknown  
-> **Risk Level**: Unknown  
-> **Tags**: plantuml, diagrams, visualization
+### Skill Introduction
 
-### Purpose
+The `@container-diagram` skill zooms in one level. It reveals the "Containers" (Applications, Services, Databases, File Stores). This is where technical choices (React, Postgres, API Gateway) are documented.
 
-The `plantuml-generator` skill converts code and architecture descriptions into PlantUML diagrams.
+**When to use this skill:**
+- Software Architecture Documents (SAD)
+- Explaining the tech stack to developers
+- Security reviews (Where is data stored?)
+- Infrastructure planning
 
-### PlantUML Syntax for C4
-
-```plantuml
-@startuml C4_Context
-!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml
-
-Person(user, "Customer", "A customer of the bank")
-System(system, "Banking System", "Allows customers to manage accounts")
-System_Ext(email, "Email System", "Microsoft Exchange")
-
-Rel(user, system, "Uses")
-Rel(system, email, "Sends emails", "SMTP")
-@enduml
-```
-
-### 20 Copy-Paste Prompts
-
-```
-81. "Use @plantuml-generator to create a C4 context diagram from this description"
-
-82. "Apply @plantuml-generator to generate a sequence diagram for the login flow"
-
-83. "Use @plantuml-generator to create a class diagram from this Python code"
-
-84. "Apply @plantuml-generator to generate an ERD from the database schema"
-
-85. "Use @plantuml-generator to create a state diagram for order status"
-
-86. "Apply @plantuml-generator to generate an activity diagram for the checkout process"
-
-87. "Use @plantuml-generator to create a deployment diagram"
-
-88. "Apply @plantuml-generator to generate a use case diagram"
-
-89. "Use @plantuml-generator to create a component diagram from the codebase"
-
-90. "Apply @plantuml-generator to generate a timing diagram for API latencies"
-```
+**Key strengths:**
+- Technology stack mapping
+- Protocol definition (HTTPS, gRPC, JDBC)
+- Application boundary definition
+- Data store identification
 
 ---
 
-## 5.6 Complete System Documentation
+### Container Diagram Prompts
 
-> **Source**: Unknown  
-> **Risk Level**: Unknown  
-> **Tags**: documentation, complete, c4
+#### Documenting Microservices
 
-### Purpose
+**Context:** Your "Ride Sharing" system is more complex than just "The System".
 
-The `c4-system-documentation` skill creates comprehensive documentation combining all C4 levels with additional context.
+```text
+@container-diagram Generate PlantUML for the "Ride Sharing" Container View:
 
-### Documentation Structure
+Scope: Inside the "Ride Sharing System"
 
-```markdown
-# System Name - Architecture Documentation
+Containers:
+1. "Mobile App" (Flutter)
+2. "API Gateway" (Nginx)
+3. "Ride Matching Service" (Go)
+4. "Billing Service" (Node.js)
+5. "Ride Database" (Postgres)
+6. "Cache" (Redis)
 
-## 1. Introduction
-### 1.1 Purpose
-### 1.2 Scope
-### 1.3 Audience
-
-## 2. System Context (Level 1)
-### 2.1 Context Diagram
-### 2.2 User Personas
-### 2.3 External Systems
-
-## 3. Containers (Level 2)
-### 3.1 Container Diagram
-### 3.2 Container Descriptions
-### 3.3 Technology Choices
-
-## 4. Components (Level 3)
-### 4.1 [Service A] Components
-### 4.2 [Service B] Components
-
-## 5. Deployment
-### 5.1 Infrastructure Diagram
-### 5.2 Deployment Process
-
-## 6. Architecture Decisions
-### 6.1 ADR Index
+Please provide:
+1. Complete PlantUML Code (using C4_Container.puml).
+2. Relationships showing protocol and direction (e.g., App -> Gateway via HTTPS/JSON).
+3. Notes on technology choices.
 ```
 
-### 10 Copy-Paste Prompts
-
-```
-91. "Use @c4-system-documentation to create complete architecture docs for our platform"
-
-92. "Apply @c4-system-documentation to generate a documentation template"
-
-93. "Use @c4-system-documentation to update our existing architecture docs"
-
-94. "Apply @c4-system-documentation to create onboarding documentation"
-
-95. "Use @c4-system-documentation to generate compliance-ready architecture docs"
-
-96. "Apply @c4-system-documentation to create stakeholder presentation materials"
-
-97. "Use @c4-system-documentation to document the migration architecture"
-
-98. "Apply @c4-system-documentation to create disaster recovery documentation"
-
-99. "Use @c4-system-documentation to generate API architecture documentation"
-
-100. "Apply @c4-system-documentation to create security architecture documentation"
-```
+**Expected Output:** A technical high-level view of the architecture.
 
 ---
 
-## C4 Diagram Templates
+## 5.4 Diagrams as Code with @mermaid-expert
 
-### Context Diagram Template (PlantUML)
+### Skill Introduction
 
-```plantuml
-@startuml C4_Context_Template
-!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml
+The `@mermaid-expert` skill enables you to write diagrams directly in your Markdown documentation. It is perfect for quick, inline visualizations that live alongside your code in GitHub/GitLab.
 
-LAYOUT_WITH_LEGEND()
+**When to use this skill:**
+- Adding flowcharts to Pull Request descriptions
+- Simple Sequence Diagrams for feature logic
+- State Machines for UI logic
+- Quick Entity Relationship Diagrams (ERD)
 
-title System Context Diagram - [System Name]
+**Key strengths:**
+- Markdown native
+- Sequence Diagrams
+- State Diagrams
+- Flowcharts
+- Git integration
 
-Person(customer, "Customer", "Description of customer")
-Person(admin, "Administrator", "Description of admin")
+---
 
-System(system, "System Name", "System description")
+### Mermaid Prompts
 
-System_Ext(ext1, "External System 1", "Description")
-System_Ext(ext2, "External System 2", "Description")
+#### Visualizing a Logic Flow
 
-Rel(customer, system, "Uses", "HTTPS")
-Rel(admin, system, "Manages", "HTTPS")
-Rel(system, ext1, "Integrates with", "API")
-Rel(system, ext2, "Sends data to", "Webhook")
+**Context:** You are documenting the "Password Reset" logic in a README.
 
-@enduml
+```text
+@mermaid-expert Create a Sequence Diagram for "Password Reset":
+
+Actors: User, Browser, API, EmailProvider, Database.
+
+Flow:
+1. User clicks "Forgot Password".
+2. Browser sends email to API.
+3. API checks DB.
+4. API generates token.
+5. API sends email via Provider.
+6. User clicks link.
+7. User enters new password.
+
+Please provide:
+1. Valid Mermaid.js sequence diagram code.
+2. Use "alt" block for the "Email not found" scenario.
 ```
 
-### Container Diagram Template (PlantUML)
-
-```plantuml
-@startuml C4_Container_Template
-!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
-
-LAYOUT_WITH_LEGEND()
-
-title Container Diagram - [System Name]
-
-Person(user, "User", "Description")
-
-System_Boundary(system, "System Name") {
-    Container(web, "Web Application", "React", "Frontend SPA")
-    Container(api, "API Application", "Node.js", "REST API")
-    ContainerDb(db, "Database", "PostgreSQL", "User data")
-    Container(cache, "Cache", "Redis", "Session storage")
-}
-
-Rel(user, web, "Uses", "HTTPS")
-Rel(web, api, "Calls", "REST/JSON")
-Rel(api, db, "Reads/Writes", "SQL")
-Rel(api, cache, "Caches", "Redis Protocol")
-
-@enduml
-```
-
-### Component Diagram Template (PlantUML)
-
-```plantuml
-@startuml C4_Component_Template
-!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
-
-LAYOUT_WITH_LEGEND()
-
-title Component Diagram - [Container Name]
-
-Container_Boundary(api, "API Application") {
-    Component(controllers, "Controllers", "Express", "HTTP handlers")
-    Component(services, "Services", "TypeScript", "Business logic")
-    Component(repos, "Repositories", "TypeScript", "Data access")
-    Component(validators, "Validators", "Zod", "Input validation")
-}
-
-ContainerDb(db, "Database", "PostgreSQL")
-
-Rel(controllers, validators, "Uses")
-Rel(controllers, services, "Uses")
-Rel(services, repos, "Uses")
-Rel(repos, db, "Queries")
-
-@enduml
-```
+**Expected Output:** A Mermaid code block that renders a sequence diagram.
 
 ---
 
-## Best Practices for C4 Documentation
+## Best Practices Summary
 
-### 1. Start at the Right Level
+### Consistency
+- **Standard Notation:** Stick to the C4 naming (Person, System, Container). Don't invent "Bucket" or "Module" unless defined.
+- **Direction:** Ideally, data flows Top-to-Bottom or Left-to-Right.
 
-| Audience | Start Level |
-|----------|-------------|
-| Executives | Context |
-| New developers | Context → Container |
-| Senior developers | Container → Component |
-| Architects | All levels |
-
-### 2. Keep Diagrams Updated
-
-- **Trigger updates on**: Major architectural changes, new integrations, removed components
-- **Review frequency**: Quarterly or after major releases
-- **Ownership**: Assign a documentation owner
-
-### 3. Use Consistent Styling
-
-- Same colors for same types
-- Consistent naming conventions
-- Standard templates
-
-### 4. Add Context, Not Just Diagrams
-
-Each diagram should include:
-- Purpose statement
-- Key decisions explained
-- Links to relevant ADRs
+### Maintenance
+- **Diagrams as Code:** Binary images (PNG/JPG) rot. Code (PlantUML/Mermaid) can be edited. Always store the source.
+- **Keep it High Level:** The more detail you add (Code Level), the faster it becomes obsolete. Stick to Level 1 and 2 for long-term docs.
 
 ---
 
-## Reflection Points for Chapter 5
+## Reflection Points
 
-1. **How complete is your current architecture documentation?**
-   - Do you have all four C4 levels?
-   - Is it up to date?
-
-2. **Who are the primary consumers of your documentation?**
-   - Developers? Stakeholders? Auditors?
-   - Are diagrams at the right abstraction level?
-
-3. **How do you keep documentation in sync with code?**
-   - Automated generation?
-   - Review triggers?
-
-4. **What tools do you use for architecture diagrams?**
-   - PlantUML? Structurizr? Mermaid?
-   - Version-controlled?
+1. **Audience:** Who is this diagram for? (CEO vs Junior Dev).
+2. **Obsolete Docs:** When was the last time you verified the diagram matches production?
+3. **Detail Trap:** Are you documenting *classes* instead of *components*? (Stop, that's Level 4).
 
 ---
 
-## Summary
-
-This chapter covered the C4 Model documentation suite:
-
-- **@c4-context**: System context diagrams showing users and external systems
-- **@c4-container**: Container diagrams showing applications and data stores
-- **@c4-component**: Component diagrams showing internal structure
-- **@plantuml-generator**: Automated diagram generation
-- **@c4-system-documentation**: Complete architecture documentation
-
-**Key Takeaway**: The C4 Model provides a structured approach to architecture documentation that scales from high-level overviews to detailed component diagrams. Start with context, drill down as needed.
-
----
-
-**Next Chapter**: [Chapter 6: Event-Driven & CQRS Patterns →](chapter-06-event-driven-cqrs.md)
+**Next Chapter:** [Chapter 6: Event-Driven Architecture & CQRS →](06-event-driven-cqrs.md)

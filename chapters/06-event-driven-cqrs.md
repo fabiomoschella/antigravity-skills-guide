@@ -1,4 +1,4 @@
-# Chapter 6: Event-Driven & CQRS Patterns
+# Chapter 6: Event-Driven Architecture & CQRS
 
 **Last Updated:** February 5, 2026
 
@@ -6,510 +6,234 @@
 
 ## Overview
 
-Event-driven architecture and CQRS (Command Query Responsibility Segregation) are powerful patterns for building scalable, decoupled systems. This chapter covers the skills that help you design and implement these patterns effectively.
+As systems scale, strict request/response architectures often become bottlenecks. Event-Driven Architecture (EDA) and Command Query Responsibility Segregation (CQRS) allow for highly scalable, decoupled systems. This chapter covers the skills to design, implement, and manage these asynchronous patterns.
 
 ### Skills Covered in This Chapter
 
-| Skill | Source | Purpose |
-|-------|--------|---------|
-| `event-sourcing-architect` | Unknown | Event sourcing patterns |
-| `event-schemas` | Unknown | Event schema design |
-| `cqrs-patterns` | Unknown | CQRS implementation |
-| `message-queue-architect` | Unknown | Message queue design |
-| `async-patterns` | Unknown | Asynchronous programming |
+| Skill | Purpose | Best For |
+|-------|---------|----------|
+| `@eda-architect` | Event Strategy | Designing event flows, choosing brokers |
+| `@cqrs-expert` | Pattern Implementation | Separating Reads from Writes |
+| `@event-sourcing` | Audit & Replay | Financial systems, complete history |
+| `@message-queue-expert` | Broker Infrastructure | Kafka, RabbitMQ, SQS configuration |
+| `@event-schema-designer` | Contract Management | Schema Registry, Avro, Protobuf |
 
 ---
 
-## 6.1 Event Sourcing Architecture
+## 6.1 Event-Driven Strategy with @eda-architect
 
-> **Source**: Unknown  
-> **Risk Level**: Unknown  
-> **Tags**: event-sourcing, architecture, patterns
+### Skill Introduction
 
-### Purpose
+The `@eda-architect` skill helps you design the topology of an event-driven system. It focuses on event granularity, choreography vs orchestration, and handling eventual consistency.
 
-The `event-sourcing-architect` skill provides expert guidance on designing systems where state changes are captured as a sequence of events.
+**When to use this skill:**
+- Decoupling a monolith into microservices
+- Designing a system that needs near real-time updates
+- Handling "bursty" traffic loads
+- Designing for failure (dead letter queues, retry policies)
 
-### Core Concepts
-
-| Concept | Description |
-|---------|-------------|
-| **Event** | Immutable record of something that happened |
-| **Event Store** | Append-only log of events |
-| **Aggregate** | Domain object that processes commands |
-| **Projection** | Read model built from events |
-| **Snapshot** | Point-in-time state for performance |
-
-### Event Sourcing Flow
-
-```mermaid
-graph LR
-    A[Command] --> B[Aggregate]
-    B --> C[Event]
-    C --> D[Event Store]
-    D --> E[Projections]
-    E --> F[Read Models]
-```
-
-### 40 Copy-Paste Prompts
-
-#### Event Design
-
-```
-1. "Use @event-sourcing-architect to design events for an order management system"
-
-2. "Apply @event-sourcing-architect to create event schemas for user lifecycle"
-
-3. "Use @event-sourcing-architect to model payment transaction events"
-
-4. "Apply @event-sourcing-architect to design events for inventory management"
-
-5. "Use @event-sourcing-architect to create auction bidding events"
-
-6. "Apply @event-sourcing-architect to design shopping cart events"
-
-7. "Use @event-sourcing-architect to model subscription lifecycle events"
-
-8. "Apply @event-sourcing-architect to create document workflow events"
-
-9. "Use @event-sourcing-architect to design collaboration events"
-
-10. "Apply @event-sourcing-architect to model booking and reservation events"
-```
-
-#### Aggregate Design
-
-```
-11. "Use @event-sourcing-architect to design the Order aggregate"
-
-12. "Apply @event-sourcing-architect to create the Account aggregate root"
-
-13. "Use @event-sourcing-architect to model the Cart aggregate"
-
-14. "Apply @event-sourcing-architect to design the Subscription aggregate"
-
-15. "Use @event-sourcing-architect to create the Document aggregate"
-
-16. "Apply @event-sourcing-architect to model the Project aggregate"
-
-17. "Use @event-sourcing-architect to design aggregate boundaries"
-
-18. "Apply @event-sourcing-architect to handle cross-aggregate transactions"
-
-19. "Use @event-sourcing-architect to implement optimistic concurrency"
-
-20. "Apply @event-sourcing-architect to design aggregate snapshotting"
-```
-
-#### Event Store Implementation
-
-```
-21. "Use @event-sourcing-architect to choose between EventStoreDB and PostgreSQL"
-
-22. "Apply @event-sourcing-architect to design the event storage schema"
-
-23. "Use @event-sourcing-architect to implement event versioning"
-
-24. "Apply @event-sourcing-architect to design event stream partitioning"
-
-25. "Use @event-sourcing-architect to implement event archival strategy"
-
-26. "Apply @event-sourcing-architect to design event store indexing"
-
-27. "Use @event-sourcing-architect to implement event store replication"
-
-28. "Apply @event-sourcing-architect to design snapshot storage"
-
-29. "Use @event-sourcing-architect to implement event compression"
-
-30. "Apply @event-sourcing-architect to design event retention policies"
-```
-
-#### Projections
-
-```
-31. "Use @event-sourcing-architect to design read model projections"
-
-32. "Apply @event-sourcing-architect to implement real-time projections"
-
-33. "Use @event-sourcing-architect to design materialized views"
-
-34. "Apply @event-sourcing-architect to handle projection rebuilding"
-
-35. "Use @event-sourcing-architect to implement multi-stream projections"
-
-36. "Apply @event-sourcing-architect to design search index projections"
-
-37. "Use @event-sourcing-architect to implement analytics projections"
-
-38. "Apply @event-sourcing-architect to design dashboard projections"
-
-39. "Use @event-sourcing-architect to handle projection failures"
-
-40. "Apply @event-sourcing-architect to implement projection versioning"
-```
+**Key strengths:**
+- Topology design (Pub/Sub vs Streaming)
+- Event Granularity advice (Notification vs State Transfer)
+- Failure handling patterns
+- Consistency models
 
 ---
 
-## 6.2 CQRS Implementation
+### EDA Architecture Prompts
 
-> **Source**: Unknown  
-> **Risk Level**: Unknown  
-> **Tags**: cqrs, patterns, architecture
+#### Designing an E-Commerce Order Flow
 
-### Purpose
+**Context:** You are moving from a synchronous "Place Order" API to an async flow to handle Black Friday traffic.
 
-The `cqrs-patterns` skill provides guidance on implementing Command Query Responsibility Segregation for scalable applications.
+```text
+@eda-architect Design an Event-Driven flow for "Order Placement":
 
-### CQRS Architecture
+Scenario:
+- User places order -> Inventory checked -> Payment processed -> Shipping scheduled -> Email sent.
+- High Scale (10k orders/min).
 
-```mermaid
-graph TB
-    subgraph Commands
-        A[API] --> B[Command Handler]
-        B --> C[Write Model]
-        C --> D[(Write DB)]
-    end
-    
-    subgraph Events
-        D --> E[Event Bus]
-    end
-    
-    subgraph Queries
-        E --> F[Projector]
-        F --> G[(Read DB)]
-        G --> H[Query Handler]
-        H --> I[API]
-    end
+Please provide:
+1. The choreography diagram (Event storming).
+2. List of Events (e.g., `OrderPlaced`, `InventoryReserved`, `PaymentFailed`).
+3. How to handle the failure case (Saga Pattern) if Payment fails after Inventory is reserved.
 ```
 
-### 40 Copy-Paste Prompts
-
-#### Command Side
-
-```
-41. "Use @cqrs-patterns to design the command side for user registration"
-
-42. "Apply @cqrs-patterns to implement command validation"
-
-43. "Use @cqrs-patterns to create command handlers for order processing"
-
-44. "Apply @cqrs-patterns to design idempotent commands"
-
-45. "Use @cqrs-patterns to implement command retry logic"
-
-46. "Apply @cqrs-patterns to design command authorization"
-
-47. "Use @cqrs-patterns to create async command processing"
-
-48. "Apply @cqrs-patterns to implement command logging"
-
-49. "Use @cqrs-patterns to design command versioning"
-
-50. "Apply @cqrs-patterns to handle command failures"
-```
-
-#### Query Side
-
-```
-51. "Use @cqrs-patterns to design optimized read models"
-
-52. "Apply @cqrs-patterns to implement query caching"
-
-53. "Use @cqrs-patterns to create complex query projections"
-
-54. "Apply @cqrs-patterns to design paginated query results"
-
-55. "Use @cqrs-patterns to implement search queries"
-
-56. "Apply @cqrs-patterns to design aggregation queries"
-
-57. "Use @cqrs-patterns to create real-time query updates"
-
-58. "Apply @cqrs-patterns to implement query authorization"
-
-59. "Use @cqrs-patterns to design denormalized read models"
-
-60. "Apply @cqrs-patterns to handle query performance"
-```
-
-#### Synchronization
-
-```
-61. "Use @cqrs-patterns to design eventual consistency handling"
-
-62. "Apply @cqrs-patterns to implement UI optimistic updates"
-
-63. "Use @cqrs-patterns to handle read/write model sync"
-
-64. "Apply @cqrs-patterns to design consistency boundaries"
-
-65. "Use @cqrs-patterns to implement saga patterns"
-
-66. "Apply @cqrs-patterns to handle distributed transactions"
-
-67. "Use @cqrs-patterns to design compensation patterns"
-
-68. "Apply @cqrs-patterns to implement the outbox pattern"
-
-69. "Use @cqrs-patterns to handle duplicate events"
-
-70. "Apply @cqrs-patterns to design conflict resolution"
-```
+**Expected Output:** A robust event flow design including compensation logic (Sagas).
 
 ---
 
-## 6.3 Message Queue Architecture
+#### Choosing the Right Broker
 
-> **Source**: Unknown  
-> **Risk Level**: Unknown  
-> **Tags**: messaging, queues, async
+**Context:** You are debating between Kafka, RabbitMQ, and AWS EventBridge.
 
-### Purpose
+```text
+@eda-architect detailed Compare Message Brokers for our use case:
 
-The `message-queue-architect` skill helps you design robust message-based communication systems.
+Requirements:
+1. High throughput (Log aggregation).
+2. Replayability is mandatory (we need to re-process past events).
+3. strict ordering per partition.
 
-### Message Queue Comparison
+Candidates: Kafka vs RabbitMQ vs SQS/SNS.
 
-| Feature | RabbitMQ | Kafka | SQS |
-|---------|----------|-------|-----|
-| **Model** | Queue | Log | Queue |
-| **Ordering** | Per-queue | Per-partition | Best-effort |
-| **Replay** | No | Yes | No |
-| **Scale** | Moderate | Massive | Managed |
-| **Latency** | Low | Medium | Variable |
-
-### 30 Copy-Paste Prompts
-
+Please provide:
+1. The recommendation.
+2. The Trade-off analysis (Complexity vs Features).
+3. Why the others are insufficient for "Replayability".
 ```
-71. "Use @message-queue-architect to choose between RabbitMQ and Kafka"
 
-72. "Apply @message-queue-architect to design the message routing topology"
-
-73. "Use @message-queue-architect to implement dead letter queues"
-
-74. "Apply @message-queue-architect to design message retry policies"
-
-75. "Use @message-queue-architect to implement message ordering guarantees"
-
-76. "Apply @message-queue-architect to design message partitioning"
-
-77. "Use @message-queue-architect to implement message batching"
-
-78. "Apply @message-queue-architect to design consumer groups"
-
-79. "Use @message-queue-architect to implement backpressure handling"
-
-80. "Apply @message-queue-architect to design message schema evolution"
-
-81. "Use @message-queue-architect to implement priority queues"
-
-82. "Apply @message-queue-architect to design queue monitoring"
-
-83. "Use @message-queue-architect to implement message deduplication"
-
-84. "Apply @message-queue-architect to design queue security"
-
-85. "Use @message-queue-architect to implement message encryption"
-
-86. "Apply @message-queue-architect to design multi-region messaging"
-
-87. "Use @message-queue-architect to implement queue federation"
-
-88. "Apply @message-queue-architect to design disaster recovery"
-
-89. "Use @message-queue-architect to implement queue scaling"
-
-90. "Apply @message-queue-architect to design message tracing"
-```
+**Expected Output:** A reasoned architectural decision on infrastructure.
 
 ---
 
-## 6.4 Event Schema Design
+## 6.2 CQRS Implementation with @cqrs-expert
 
-> **Source**: Unknown  
-> **Risk Level**: Unknown  
-> **Tags**: events, schemas, contracts
+### Skill Introduction
 
-### Purpose
+The `@cqrs-expert` skill (Command Query Responsibility Segregation) separates operations that read data from operations that update data. This allows independent scaling of read and write workloads.
 
-The `event-schemas` skill helps design and maintain event contracts for reliable event-driven systems.
+**When to use this skill:**
+- Optimizing a specialized View Model (e.g., a Dashboard) that requires complex joins
+- High-contention domains (Ticket booking systems)
+- Systems where reads vastly outnumber writes (1000:1 ratio)
+- Implementing Task-Based UIs
 
-### Event Schema Template
-
-```json
-{
-  "eventId": "uuid",
-  "eventType": "OrderPlaced",
-  "eventVersion": "1.0.0",
-  "timestamp": "2026-02-05T10:00:00Z",
-  "aggregateId": "order-123",
-  "aggregateType": "Order",
-  "correlationId": "req-456",
-  "causationId": "evt-789",
-  "metadata": {
-    "userId": "user-123",
-    "source": "web-app"
-  },
-  "payload": {
-    "orderId": "order-123",
-    "items": [],
-    "total": 99.99
-  }
-}
-```
-
-### 10 Copy-Paste Prompts
-
-```
-91. "Use @event-schemas to design event versioning strategy"
-
-92. "Apply @event-schemas to create backward-compatible event changes"
-
-93. "Use @event-schemas to design event envelope structure"
-
-94. "Apply @event-schemas to implement event validation"
-
-95. "Use @event-schemas to create event documentation"
-
-96. "Apply @event-schemas to design event catalog"
-
-97. "Use @event-schemas to implement schema registry"
-
-98. "Apply @event-schemas to design event contract testing"
-
-99. "Use @event-schemas to handle event schema migrations"
-
-100. "Apply @event-schemas to design event naming conventions"
-```
+**Key strengths:**
+- Command handling patterns
+- Query projection design
+- Denormalization strategies
+- Synchronization lag handling
 
 ---
 
-## Event-Driven Anti-Patterns
+### CQRS Prompts
 
-### ❌ Event Overload
+#### Designing a Read Protocol
 
-**Problem**: Publishing too many fine-grained events.
+**Context:** Your "User Profile" write model is a complex normalized SQL database, but the Dashboard search needs to be instant.
 
+```text
+@cqrs-expert Design a Read Projection for "User Search":
+
+Write Model: Relational SQL (3rd Normal Form).
+Read Requirement: Instant search by Name, Location, and Skills.
+
+Please provide:
+1. The Denormalized structure (e.g., for Elasticsearch or Mongo).
+2. The Event Handler logic (`UserUpdated` -> Update Read DB).
+3. Strategy for handling "Eventual Consistency" (User updates profile, but search result is old for 1 second).
 ```
-# Bad: Too granular
-OrderLineItemQuantityChanged
-OrderLineItemPriceChanged
-OrderLineItemDiscountChanged
 
-# Good: Meaningful business events
-OrderLineItemUpdated (contains all changes)
-```
-
-### ❌ Event Sourcing Everything
-
-**Problem**: Using event sourcing for CRUD-heavy domains.
-
-**Solution**: Reserve event sourcing for:
-- Complex business logic
-- Audit requirements
-- Temporal queries
-
-### ❌ Coupling Through Events
-
-**Problem**: Consumers depending on event internals.
-
-**Solution**: Use published language, stable contracts, versioning.
-
-### ❌ Missing Correlation
-
-**Problem**: Can't trace event flows through the system.
-
-**Solution**: Always include correlationId and causationId.
+**Expected Output:** A design for a high-performance Read Model.
 
 ---
 
-## Best Practices
+## 6.3 Event Sourcing with @event-sourcing
 
-### 1. Event Naming
+### Skill Introduction
 
-```
-# Past tense - something that happened
-✅ OrderPlaced
-✅ PaymentReceived
-✅ ItemShipped
+The `@event-sourcing` skill deals with systems where state is determined by a sequence of events, rather than just current state. It is crucial for audit trails, financial ledgers, and debugging.
 
-# Not commands or current state
-❌ PlaceOrder
-❌ OrderPlacing
-❌ OrderStatus
-```
+**When to use this skill:**
+- Building improved audit logs (Who changed what and when?)
+- Financial/Accounting systems
+- Complex domains where "Intent" matters (Why did the state change?)
+- Debugging (Replaying events to reproduce a bug)
 
-### 2. Event Immutability
-
-- Events are **immutable facts**
-- Never delete or modify events
-- Use compensating events for corrections
-
-### 3. Event Versioning
-
-```json
-{
-  "eventType": "OrderPlaced",
-  "eventVersion": "2.0.0",
-  "payload": {
-    // v2 includes new fields
-  }
-}
-```
-
-### 4. Idempotent Consumers
-
-```python
-def handle_order_placed(event):
-    # Check if already processed
-    if event_repository.is_processed(event.event_id):
-        return
-    
-    # Process event
-    process_order(event)
-    
-    # Mark as processed
-    event_repository.mark_processed(event.event_id)
-```
+**Key strengths:**
+- Aggregate design
+- Snapshotting strategies
+- Projection replay
+- Versioning events
 
 ---
 
-## Reflection Points for Chapter 6
+### Event Sourcing Prompts
 
-1. **When should you use event sourcing?**
-   - Audit requirements?
-   - Complex domain logic?
-   - Temporal queries needed?
+#### Modeling a Bank Account
 
-2. **How do you handle eventual consistency in the UI?**
-   - Optimistic updates?
-   - Loading states?
-   - Polling vs pushing?
+**Context:** A simple "Balance" column is not enough. You need a perfect history of transactions.
 
-3. **What's your event versioning strategy?**
-   - Breaking vs non-breaking changes?
-   - Multiple version support?
-   - Migration approach?
+```text
+@event-sourcing Model a Bank Account using Event Sourcing:
 
-4. **How do you debug event-driven systems?**
-   - Correlation IDs?
-   - Event tracing?
-   - Replaying events?
+Operations: Open Account, Deposit, Withdraw, Application Fee, Close Account.
+
+Please provide:
+1. The definition of the Aggregate (`BankAccount`).
+2. The list of Events (`MoneyDeposited`, `BalanceOverdrawn`).
+3. The "Apply" methods logic (How state changes based on events).
+4. Code example in TypeScript.
+```
+
+**Expected Output:** A domain model where state is derived purely from an event stream.
 
 ---
 
-## Summary
+## 6.4 Schema Design with @event-schema-designer
 
-This chapter covered event-driven and CQRS patterns:
+### Skill Introduction
 
-- **@event-sourcing-architect**: Event sourcing design and implementation
-- **@cqrs-patterns**: Command Query Responsibility Segregation
-- **@message-queue-architect**: Message queue design
-- **@event-schemas**: Event contract design
+The `@event-schema-designer` skill ensures that your events are well-defined contracts. In distributed systems, changing an event structure can break downstream consumers. This skill manages that risk.
 
-**Key Takeaway**: Event-driven architecture and CQRS provide powerful tools for building scalable, decoupled systems. Use them when you need audit trails, temporal queries, or massive read/write scale.
+**When to use this skill:**
+- Defining schemas for a Schema Registry (Avro/Protobuf)
+- Planning breaking changes in event structures
+- Documenting events for other teams
+- Ensuring forward/backward compatibility
+
+**Key strengths:**
+- Schema Definition (IDL)
+- Versioning strategies
+- Compatibility modes (Forward, Backward, Full)
+- Documentation generation
 
 ---
 
-**Next Chapter**: [Chapter 7: Monorepo & Build System Architecture →](chapter-07-monorepo-build.md)
+### Schema Prompts
+
+#### Handling a Breaking Change
+
+**Context:** You need to rename a field in an event that 5 other teams consume.
+
+```text
+@event-schema-designer Plan a schema evolution for the `OrderCreated` event:
+
+Change: Renaming `userId` to `customerId` and moving `address` into a nested object.
+Constraint: Zero downtime. Consumers handle the old format.
+
+Please provide:
+1. The strategy (Parallel fields? Versioning the topic?).
+2. The Avro/JSON Schema definition for the transition period.
+3. The rollout plan for consumers.
+```
+
+**Expected Output:** A safe migration plan for a public API contract.
+
+---
+
+## Best Practices Summary
+
+### Design
+- **Events are Facts:** Name them in the past tense (`UserRegistered`, not `RegisterUser`).
+- **Fat Events:** Prefer including changed data in the event (State Transfer) to avoid consumers calling back to the API.
+
+### Infrastructure
+- **Idempotency:** Consumers MUST be able to handle the same message twice without corruption.
+- **Poison Pills:** Always have a Dead Letter Queue (DLQ) for messages that crash consumers.
+
+### Complexity
+- **Don't Over-Engineer:** If a CRUD API works, don't use Event Sourcing. It adds significant complexity.
+
+---
+
+## Reflection Points
+
+1. **Observability:** Can you trace a request from HTTP -> Event -> Consumer -> Database? (Distributed Tracing).
+2. **Consistency:** Is "Eventual Consistency" acceptable for your users? (e.g., "Why didn't my post update immediately?").
+3. **Data Privacy:** How do you handle GDPR "Right to be Forgotten" in an immutable Event Store? (Crypto-shredding).
+
+---
+
+**Next Chapter:** [Chapter 7: Monorepo & Build Architecture →](07-monorepo-build.md)
