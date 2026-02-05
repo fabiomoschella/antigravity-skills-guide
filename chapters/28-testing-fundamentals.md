@@ -15,9 +15,25 @@ This chapter covers essential testing skills to help you design effective test s
 | Skill | Purpose | Best For |
 |-------|---------|----------|
 | `@testing-expert` | Testing strategy | Test design, coverage, best practices |
+| `@testing-patterns` | Test patterns | Common patterns |
 | `@unit-test-expert` | Unit testing | Isolated component testing |
 | `@tdd-expert` | Test-Driven Development | TDD workflow, red-green-refactor |
+| `@tdd-orchestrator` | TDD orchestration | TDD workflows |
+| `@tdd-workflow` | TDD workflow | TDD process |
+| `@tdd-workflows-tdd-cycle` | TDD cycle | Red-green-refactor |
+| `@tdd-workflows-tdd-red` | TDD red phase | Writing failing tests |
+| `@tdd-workflows-tdd-green` | TDD green phase | Making tests pass |
+| `@tdd-workflows-tdd-refactor` | TDD refactor | Improving code |
+| `@test-driven-development` | TDD basics | TDD introduction |
+| `@test-automator` | Test automation | Automated testing |
+| `@test-fixing` | Test debugging | Fixing broken tests |
 | `@mocking-expert` | Test doubles | Mocks, stubs, fakes, spies |
+| `@javascript-testing-patterns` | JS testing | JavaScript tests |
+| `@python-testing-patterns` | Python testing | Python tests |
+| `@bats-testing-patterns` | Bash testing | Shell script tests |
+| `@pypict-skill` | PICT testing | Combinatorial testing |
+| `@e2e-testing-patterns` | E2E testing | End-to-end tests |
+| `@webapp-testing` | Web app testing | Web testing |
 
 ---
 

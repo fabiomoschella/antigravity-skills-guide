@@ -16,8 +16,15 @@ This chapter covers skills for implementing robust observability practices, from
 |-------|---------|----------|
 | `@prometheus-expert` | Prometheus metrics | Metrics collection, alerting, PromQL |
 | `@grafana-expert` | Grafana visualization | Dashboards, alerting, data exploration |
+| `@grafana-dashboard-design` | Dashboard design | Effective dashboards |
 | `@datadog-expert` | Datadog platform | Full-stack observability, APM |
 | `@logging-expert` | Logging systems | ELK stack, Loki, log aggregation |
+| `@logging-patterns` | Logging patterns | Best practices |
+| `@opentelemetry` | OpenTelemetry | Distributed tracing |
+| `@observability-architect` | Observability | Architecture design |
+| `@sentry-error-monitoring` | Sentry | Error tracking |
+| `@posthog-analytics` | PostHog | Product analytics |
+| `@analytics-implementation` | Analytics | Event tracking |
 
 ---
 

@@ -16,8 +16,14 @@ This chapter covers essential skills for building robust, scalable e-commerce pl
 |-------|---------|----------|
 | `@ecommerce-architect` | E-commerce architecture | Platform design |
 | `@payment-expert` | Payment integration | Payments, PCI compliance |
+| `@payment-integration` | Payment integrations | Multiple gateways |
+| `@stripe-integration` | Stripe payments | Stripe implementation |
+| `@paypal-integration` | PayPal payments | PayPal implementation |
+| `@shopify-development` | Shopify dev | Shopify stores |
+| `@shopify-apps` | Shopify apps | Custom Shopify apps |
 | `@inventory-expert` | Inventory systems | Stock management |
 | `@cart-checkout-expert` | Cart and checkout | Conversion optimization |
+| `@algolia-search` | Algolia search | E-commerce search |
 
 ---
 

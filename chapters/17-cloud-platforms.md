@@ -15,9 +15,24 @@ This chapter covers skills for working with major cloud providers, from architec
 | Skill | Purpose | Best For |
 |-------|---------|----------|
 | `@aws-architect` | AWS architecture and services | AWS design, service selection, Well-Architected |
+| `@aws-lambda` | AWS Lambda | Serverless functions |
+| `@aws-cdk-patterns` | AWS CDK | Infrastructure as code |
+| `@aws-cognito` | AWS Cognito | Authentication |
+| `@aws-amplify` | AWS Amplify | Full-stack apps |
 | `@azure-architect` | Azure architecture and services | Azure design, enterprise integration |
+| `@azure-functions` | Azure Functions | Serverless functions |
 | `@gcp-architect` | Google Cloud architecture | GCP design, data/ML platforms |
+| `@google-cloud-functions` | Cloud Functions | GCP serverless |
 | `@cloud-cost-expert` | Cloud cost optimization | FinOps, cost reduction, budgeting |
+| `@cloudflare-workers` | Cloudflare Workers | Edge computing |
+| `@cloudflare-zero-trust` | Cloudflare Zero Trust | Security |
+| `@firebase-auth` | Firebase Auth | Mobile/web auth |
+| `@firebase-development` | Firebase | App development |
+| `@supabase-expert` | Supabase | Backend as a service |
+| `@supabase-best-practices` | Supabase | Best practices |
+| `@vercel-deployment` | Vercel | Frontend deployment |
+| `@vercel-v0` | Vercel v0 | AI-assisted development |
+| `@fly-io-deployment` | Fly.io | Edge deployment |
 
 ---
 

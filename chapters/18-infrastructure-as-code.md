@@ -15,9 +15,17 @@ This chapter covers essential IaC skills using industry-leading tools like Terra
 | Skill | Purpose | Best For |
 |-------|---------|----------|
 | `@terraform-expert` | HashiCorp Terraform | Multi-cloud IaC, declarative infrastructure |
+| `@terraform-patterns` | Terraform patterns | Best practices |
+| `@terraform-aws-modules` | Terraform AWS | AWS modules |
+| `@terraform-module-development` | Module development | Reusable modules |
+| `@terraform-state-management` | State management | Remote state |
 | `@pulumi-expert` | Pulumi infrastructure | Programming language IaC, complex logic |
 | `@ansible-expert` | Ansible automation | Configuration management, ad-hoc automation |
+| `@ansible-role-development` | Ansible roles | Reusable roles |
 | `@cloudformation-expert` | AWS CloudFormation | AWS-native IaC |
+| `@bicep-patterns` | Azure Bicep | Azure IaC |
+| `@nix-and-nixos` | Nix/NixOS | Reproducible builds |
+| `@nixos-environment-management` | NixOS | System configuration |
 
 ---
 

@@ -15,9 +15,15 @@ This chapter covers essential mobile development skills for building high-qualit
 | Skill | Purpose | Best For |
 |-------|---------|----------|
 | `@react-native-expert` | React Native | Cross-platform, React developers |
+| `@react-native-architecture` | RN architecture | App structure |
 | `@flutter-expert` | Flutter development | Cross-platform, performance focus |
 | `@ios-expert` | iOS development | Native iOS, Swift |
+| `@ios-developer` | iOS development | iOS apps |
+| `@swiftui-expert-skill` | SwiftUI | Modern iOS UI |
 | `@android-expert` | Android development | Native Android, Kotlin |
+| `@expo-deployment` | Expo deployment | React Native deployment |
+| `@upgrading-expo` | Expo upgrades | Expo version updates |
+| `@app-store-optimization` | ASO | App store ranking |
 
 ---
 

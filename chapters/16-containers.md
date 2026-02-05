@@ -15,9 +15,19 @@ This chapter covers essential skills for mastering Docker containerization and K
 | Skill | Purpose | Best For |
 |-------|---------|----------|
 | `@docker-expert` | Docker containerization | Building images, container runtime, Docker Compose |
+| `@docker-best-practices` | Docker best practices | Production containers |
+| `@dockerfile-optimization` | Dockerfile optimization | Image size reduction |
+| `@docker-compose-patterns` | Docker Compose | Multi-container apps |
 | `@kubernetes-expert` | Kubernetes orchestration | Cluster management, workload deployment, scaling |
+| `@kubernetes-deployment-patterns` | K8s deployment | Deployment strategies |
+| `@kubernetes-yaml-generator` | K8s YAML | Manifest generation |
+| `@kubernetes-manifests-best-practices` | K8s manifests | Best practices |
+| `@kubernetes-config-auditor` | K8s audit | Security audit |
 | `@helm-expert` | Kubernetes packaging | Chart development, release management |
+| `@helm-charts-best-practices` | Helm charts | Best practices |
+| `@argo-workflows` | Argo | CI/CD workflows |
 | `@service-mesh-expert` | Service mesh implementation | Istio, Linkerd, traffic management |
+| `@coolify` | Coolify | Self-hosted PaaS |
 
 ---
 
