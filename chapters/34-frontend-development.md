@@ -15,9 +15,28 @@ This chapter covers essential frontend development skills for building modern, p
 | Skill | Purpose | Best For |
 |-------|---------|----------|
 | `@react-expert` | React development | SPAs, component architecture |
+| `@react-best-practices` | React best practices | Production quality |
+| `@react-patterns` | React patterns | Design patterns |
+| `@react-state-management` | React state | State management |
+| `@react-ui-patterns` | React UI | UI patterns |
+| `@react-modernization` | React upgrades | Legacy migration |
 | `@vue-expert` | Vue.js development | Progressive apps, simpler apps |
 | `@nextjs-expert` | Next.js development | SSR, full-stack React |
+| `@nextjs-best-practices` | Next.js patterns | Best practices |
+| `@nextjs-app-router-patterns` | App Router | Modern Next.js |
+| `@nextjs-supabase-auth` | Auth patterns | Supabase + Next.js |
+| `@angular` | Angular development | Enterprise SPAs |
+| `@angular-best-practices` | Angular patterns | Best practices |
+| `@angular-state-management` | Angular state | NgRx, signals |
+| `@angular-ui-patterns` | Angular UI | UI components |
+| `@angular-migration` | Angular upgrades | Version migration |
 | `@css-expert` | CSS and styling | Layout, animations, responsive |
+| `@tailwind-design-system` | Tailwind CSS | Utility-first CSS |
+| `@tailwind-patterns` | Tailwind patterns | Common patterns |
+| `@radix-ui-design-system` | Radix UI | Accessible components |
+| `@remotion-best-practices` | Remotion | Video generation |
+| `@scroll-experience` | Scroll effects | Scroll animations |
+| `@canvas-design` | Canvas | Canvas graphics |
 
 ---
 

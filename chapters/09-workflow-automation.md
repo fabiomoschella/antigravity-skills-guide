@@ -12,11 +12,27 @@ Workflow and automation architecture enables organizations to streamline complex
 
 | Skill | Source | Purpose |
 |-------|--------|---------|
-| `workflow-architect` | Unknown | Workflow system design |
-| `state-machine-patterns` | Unknown | State machine implementation |
-| `process-automation` | Unknown | Business process automation |
-| `orchestration-patterns` | Unknown | Service orchestration |
-| `integration-architect` | Unknown | System integration design |
+| `@workflow-architect` | Unknown | Workflow system design |
+| `@state-machine-patterns` | Unknown | State machine implementation |
+| `@process-automation` | Unknown | Business process automation |
+| `@orchestration-patterns` | Unknown | Service orchestration |
+| `@integration-architect` | Unknown | System integration design |
+| `@n8n-mcp-tools-expert` | antigravity | n8n MCP integration |
+| `@n8n-node-configuration` | antigravity | n8n node setup |
+| `@n8n-code-python` | antigravity | n8n Python code |
+| `@zapier-make-patterns` | antigravity | Zapier/Make automation |
+| `@trigger-dev` | antigravity | Trigger.dev workflows |
+| `@browser-automation` | antigravity | Browser automation |
+| `@playwright-skill` | antigravity | Playwright testing |
+| `@firecrawl-scraper` | antigravity | Web scraping |
+| `@discord-bot-builder` | antigravity | Discord bots |
+| `@telegram-bot-builder` | antigravity | Telegram bots |
+| `@telegram-mini-app` | antigravity | Telegram mini apps |
+| `@slack-bot-builder` | antigravity | Slack bots |
+| `@browser-extension-builder` | antigravity | Browser extensions |
+| `@automate-whatsapp` | antigravity | WhatsApp automation |
+| `@observe-whatsapp` | antigravity | WhatsApp monitoring |
+| `@twilio-communications` | antigravity | Twilio integration |
 
 ---
 

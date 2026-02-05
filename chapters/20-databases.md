@@ -15,9 +15,22 @@ This chapter covers essential database skills from relational powerhouses like P
 | Skill | Purpose | Best For |
 |-------|---------|----------|
 | `@postgresql-expert` | PostgreSQL administration | Relational data, complex queries, ACID |
+| `@postgresql` | PostgreSQL basics | General PostgreSQL |
+| `@postgres-best-practices` | PostgreSQL best practices | Production PostgreSQL |
+| `@neon-postgres` | Neon Postgres | Serverless PostgreSQL |
 | `@mysql-expert` | MySQL administration | Web applications, replication, scaling |
 | `@mongodb-expert` | MongoDB administration | Document data, flexible schemas, scaling |
+| `@nosql-expert` | NoSQL databases | Non-relational data |
 | `@database-architect` | Database design | Schema design, data modeling, migrations |
+| `@database-design` | Database design | Schema design |
+| `@database-migration` | Database migration | Schema changes |
+| `@database-optimizer` | Database optimization | Performance tuning |
+| `@sql-pro` | SQL mastery | Complex queries |
+| `@sql-optimization-patterns` | SQL optimization | Query performance |
+| `@prisma-expert` | Prisma ORM | TypeScript/Node.js ORM |
+| `@dbt-transformation-patterns` | dbt transforms | Data transformation |
+| `@vector-database-engineer` | Vector DBs | AI/ML embeddings |
+| `@vector-index-tuning` | Vector indexing | Similarity search |
 
 ---
 

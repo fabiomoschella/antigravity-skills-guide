@@ -15,9 +15,28 @@ This chapter covers essential backend development skills for building production
 | Skill | Purpose | Best For |
 |-------|---------|----------|
 | `@nodejs-expert` | Node.js development | APIs, real-time apps, microservices |
+| `@nodejs-backend-patterns` | Node.js patterns | Backend architecture |
+| `@nodejs-best-practices` | Node.js best practices | Production quality |
 | `@python-expert` | Python development | APIs, data processing, automation |
+| `@python-pro` | Advanced Python | Complex applications |
+| `@python-patterns` | Python patterns | Design patterns |
+| `@python-performance-optimization` | Python performance | Optimization |
+| `@python-testing-patterns` | Python testing | Test strategies |
+| `@fastapi-pro` | FastAPI | High-performance APIs |
+| `@fastapi-templates` | FastAPI templates | Rapid development |
+| `@django-pro` | Django | Full-featured web apps |
 | `@go-expert` | Go development | High-performance services |
+| `@golang-pro` | Go advanced | Complex Go apps |
+| `@go-concurrency-patterns` | Go concurrency | Parallel processing |
+| `@rust-pro` | Rust development | Systems programming |
+| `@rust-async-patterns` | Rust async | Async Rust |
+| `@java-pro` | Java development | Enterprise apps |
+| `@csharp-pro` | C# development | .NET applications |
+| `@typescript-pro` | TypeScript | Type-safe JS |
+| `@typescript-expert` | Advanced TypeScript | Complex types |
+| `@typescript-advanced-types` | Type gymnastics | Advanced typing |
 | `@api-designer` | API design | RESTful and GraphQL API design |
+| `@api-development-patterns` | API patterns | Best practices |
 
 ---
 
